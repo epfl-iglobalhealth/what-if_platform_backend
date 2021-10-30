@@ -1,4 +1,4 @@
-model/data/*
-model/checkpoints/*
+model/data/final_data.csv
+model/checkpoints/CHE
 .idea
 .DS_Store
