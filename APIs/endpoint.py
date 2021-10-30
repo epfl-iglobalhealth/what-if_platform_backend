@@ -11,7 +11,9 @@ def predict_for_country(country):
   parameters = request.json
   predict_pipeline = Predict(country)
   predictions = predict_pipeline.predict_for_a_period(parameters['start_date'], parameters['end_date'])
-  return jsonify(predictions)
+  response = jsonify(predictions)
+  response.headers.add('Access-Control-Allow-Origin', '*')
+  return response
 
 
 if __name__ == '__main__':
