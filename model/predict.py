@@ -123,7 +123,7 @@ class Predict:
         variable_features = features['variable']
         # for each constant feature, repeat it a number of times as long as dates
         for feature in constant_features:
-            feature_values = [constant_features[feature]] * len(dates)
+            feature_values = [float(constant_features[feature])] * len(dates)
             constant_features[feature] = feature_values
         # get the difference in terms of days between sundays[0] and start_date
         repeat_first = (sundays[0] - pd.to_datetime(start_date)).days +1 #+1 because we change policies on monday
