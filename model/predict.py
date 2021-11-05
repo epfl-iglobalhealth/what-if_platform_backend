@@ -113,14 +113,12 @@ class Predict:
         # given start_date and end_date get all the dates in between
         dates = pd.date_range(start_date, end_date)
         sundays = CountryData.get_sundays_between_dates(start_date, end_date)
-        print(sundays)
         constant_features = features['constant']
         variable_features = features['variable']
         # for each constant feature, repeat it a number of times as long as dates
         for feature in constant_features:
             feature_values = [constant_features[feature]] * len(dates)
             constant_features[feature] = feature_values
-        print(constant_features)
         # get the difference in terms of days between sundays[0] and start_date
         repeat_first = (sundays[0] - pd.to_datetime(start_date)).days +1 #+1 because we change policies on monday
         # get the difference in terms of days between end_date and sundays[-1]
@@ -139,7 +137,6 @@ class Predict:
                 else:
                     new_list_of_values += [value] * 7
             variable_features[feature] = new_list_of_values
-        print(variable_features)
 
         # merge the two dictionaries
         features_dict = {**constant_features, **variable_features}
