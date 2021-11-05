@@ -62,12 +62,18 @@ class Predict:
         # Appending NaNs for impossible predictions (missing data in features)
         pred = self.inject_nans(pred, prediction_mask)
 
+        if data is not None:
+            y = [
+                {'label': 'Ground', 'data': ground.values.tolist()},
+                {'label': 'Predictions', 'data': pred.tolist()},
+            ]
+        else:
+            y = [
+                {'label': 'Ground', 'data': ground.values.tolist()},
+                {'label': 'Predictions', 'data': pred.tolist()},
+                {'label': 'Error', 'data': np.abs(pred - ground).values.tolist()}
+            ]
         # We return the prediction, the ground truth and the error
-        y = [
-            {'label': 'Ground', 'data': ground.values.tolist()},
-            {'label': 'Predictions', 'data': pred.tolist()},
-            {'label': 'Error', 'data':np.abs(pred-ground).values.tolist()}
-        ]
         x = final_data_for_prediction.index.strftime('%Y-%m-%d').values.tolist()
         return json.loads(json.dumps({'x':x, 'y':y}, ignore_nan=True))
 
