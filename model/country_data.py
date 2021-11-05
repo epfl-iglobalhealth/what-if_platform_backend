@@ -37,6 +37,12 @@ class CountryData:
     def get_policies_for_a_period(self, iso_code: str, start_date: str, end_date: str):
       # call the function get_sundays to get the sundays of the given period
       sundays = CountryData.get_sundays_between_dates(start_date, end_date)
+      end_date = np.datetime64(end_date)
+      # if the last value of sundays is different from end_date append end_date to sundays, converting it
+      # to a datetime64 object
+      if sundays[-1] != end_date:
+        sundays = np.append(sundays, end_date)
+
       # get the data of the given country where the index is equal to the sundays
       data = self.data[(self.data.iso_code == iso_code) & (self.data.index.isin(sundays))][self.get_policies_name()]
       # return the dataframe
