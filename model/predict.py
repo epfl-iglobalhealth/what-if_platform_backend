@@ -15,7 +15,7 @@ class Predict:
         self.columns_to_use = CountryData.extract_feature_names()
         self.data_swissre = pd.read_csv('../model/data/final_data.csv', parse_dates=['date']).set_index('date')
 
-    def predict_for_a_period(self, start_date: str, end_date: str ):
+    def predict_for_a_period(self, start_date: str, end_date: str):
         start_date = datetime.strptime(start_date, "%Y-%m-%d")
         end_date = datetime.strptime(end_date, "%Y-%m-%d")
         prediction_data = self.data_swissre[(self.data_swissre['iso_code'] == self.iso_code) &
@@ -100,6 +100,21 @@ class Predict:
         # Restore nan
         new_pred = np.append([np.nan] * nb_appended, new_pred)
         return new_pred
+
+    def predict_for_a_period_personalized(self, start_date: str, end_date: str, features: dict):
+        # given start_date and end_date get all the dates in between
+        dates = pd.date_range(start_date, end_date)
+        sundays = CountryData.get_sundays_between_dates(start_date, end_date)
+        constant_features = features['constant']
+        variable_features = features['variable']
+        # for each constant feature, repeat it a number of times as long as dates
+        constant_features = np.repeat(constant_features, len(dates), axis=0)
+        # get the difference in terms of days between sundays[0] and start_date
+        repeat_first = (sundays[0] - pd.to_datetime(start_date)).days
+        # get the difference in terms of days between end_date and sundays[-1]
+        repeat_last = (pd.to_datetime(end_date) - sundays[-1]).days
+
+
         
 if __name__ == '__main__':
     pred = Predict('CHE')
