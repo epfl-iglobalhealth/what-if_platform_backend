@@ -15,13 +15,21 @@ class Predict:
         self.columns_to_use = CountryData.extract_feature_names()
         self.data_swissre = pd.read_csv('../model/data/final_data.csv', parse_dates=['date']).set_index('date')
 
-    def predict_for_a_period(self, start_date: str, end_date: str):
+    def predict_for_a_period(self, start_date: str, end_date: str, data=None):
         start_date = datetime.strptime(start_date, "%Y-%m-%d")
         end_date = datetime.strptime(end_date, "%Y-%m-%d")
-        prediction_data = self.data_swissre[(self.data_swissre['iso_code'] == self.iso_code) &
+        original_data = self.data_swissre[(self.data_swissre['iso_code'] == self.iso_code) &
                                             (self.data_swissre.index >= start_date) &
                                             (self.data_swissre.index <= end_date)]
-        ground = prediction_data['shifted_r_estim']
+
+        ground = original_data['shifted_r_estim']
+
+        if data is not None:
+            weather_cols = self.columns_to_use['variable'][:12]
+            # prediction data is data concatenated to original_data of weather_cols
+            prediction_data = pd.concat([data, original_data[weather_cols]], axis=1)
+        else:
+            prediction_data = original_data
 
         constant_data = prediction_data[self.columns_to_use['constant']]
         variable_data = prediction_data[self.columns_to_use['variable']]
@@ -105,20 +113,39 @@ class Predict:
         # given start_date and end_date get all the dates in between
         dates = pd.date_range(start_date, end_date)
         sundays = CountryData.get_sundays_between_dates(start_date, end_date)
+        print(sundays)
         constant_features = features['constant']
         variable_features = features['variable']
         # for each constant feature, repeat it a number of times as long as dates
-        constant_features = np.repeat(constant_features, len(dates), axis=0)
+        for feature in constant_features:
+            feature_values = [constant_features[feature]] * len(dates)
+            constant_features[feature] = feature_values
+        print(constant_features)
         # get the difference in terms of days between sundays[0] and start_date
-        repeat_first = (sundays[0] - pd.to_datetime(start_date)).days
+        repeat_first = (sundays[0] - pd.to_datetime(start_date)).days +1 #+1 because we change policies on monday
         # get the difference in terms of days between end_date and sundays[-1]
         repeat_last = (pd.to_datetime(end_date) - sundays[-1]).days
+        for feature in variable_features:
+            list_of_values = variable_features[feature]
+            new_list_of_values = []
+            for i, value in enumerate(list_of_values):
+                # if the value is first repeat it repeat_first times,
+                # if the value is last repeat_it repeat_last times,
+                # else repeat it 7 times
+                if i == 0:
+                    new_list_of_values += [value] * repeat_first
+                elif i == len(list_of_values)-1 and repeat_last > 0:
+                    new_list_of_values += [value] * repeat_last
+                else:
+                    new_list_of_values += [value] * 7
+            variable_features[feature] = new_list_of_values
+        print(variable_features)
 
+        # merge the two dictionaries
+        features_dict = {**constant_features, **variable_features}
+        df = pd.DataFrame(index=dates, data=features_dict)
+        return self.predict_for_a_period(start_date, end_date, df)
 
-        
-if __name__ == '__main__':
-    pred = Predict('CHE')
-    print(pred.predict_for_a_period('2020-04-01', '2020-06-01'))
 
 
 

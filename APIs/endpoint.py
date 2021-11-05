@@ -43,7 +43,7 @@ def get_variable_data(country):
 def predict_for_country_personalized(country):
     parameters = request.json
     predict_pipeline = Predict(country)
-    predictions = predict_pipeline.predict_for_a_period_personalized(parameters['start_date'], parameters['end_date'], parameters['personalized_features'])
+    predictions = predict_pipeline.predict_for_a_period_personalized(parameters['start_date'], parameters['end_date'], parameters['features'])
     response = jsonify(predictions)
     return response
 
