@@ -1,8 +1,9 @@
 import flask
 from flask import request, jsonify
+
+from model.country_data import CountryData
 from model.predict import Predict
 from flask_cors import CORS
-
 
 app = flask.Flask(__name__)
 app.config["DEBUG"] = True
@@ -11,11 +12,17 @@ cors = CORS(app, resources={r"/api/*": {"origins": "http://localhost:4200"}})
 
 @app.route('/api/v1/<country>/predict', methods=['POST'])
 def predict_for_country(country):
-  parameters = request.json
-  predict_pipeline = Predict(country)
-  predictions = predict_pipeline.predict_for_a_period(parameters['start_date'], parameters['end_date'])
-  response = jsonify(predictions)
-  return response
+    parameters = request.json
+    predict_pipeline = Predict(country)
+    predictions = predict_pipeline.predict_for_a_period(parameters['start_date'], parameters['end_date'])
+    response = jsonify(predictions)
+    return response
+
+
+@app.route('/api/v1/<country>/get_constant_data', methods=['GET'])
+def get_constant_data(country):
+    cd = CountryData()
+    return jsonify(cd.get_constant_features(country))
 
 
 if __name__ == '__main__':
