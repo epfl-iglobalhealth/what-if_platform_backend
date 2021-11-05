@@ -12,6 +12,9 @@ class CountryData:
     def get_constant_features(self, iso_code: str):
         return self.data[self.data.iso_code == iso_code][self.features['constant']].iloc[0].to_dict()
 
+    def get_policies_name(self):
+        return self.features['variable'][12:]
+
     @staticmethod
     def extract_feature_names():
         with open('../model/config/r_estim_features.yaml', 'r', encoding='utf-8') as file:
@@ -23,3 +26,17 @@ class CountryData:
                             swissre_features['policies']
 
         return {'constant': constant_columns, 'variable': variable_columns}
+
+    def get_policies_for_a_period(self, iso_code: str, start_date: str, end_date: str):
+      # call the function get_sundays to get the sundays of the given period
+      sundays = self.get_sundays_between_dates(start_date, end_date)
+      # get the data of the given country where the index is equal to the sundays
+      data = self.data[(self.data.iso_code == iso_code) & (self.data.index.isin(sundays))][self.get_policies_name()]
+      # return the dataframe
+      return data
+
+    def get_sundays_between_dates(self, start_date: str, end_date: str):
+        start_date = pd.to_datetime(start_date)
+        end_date = pd.to_datetime(end_date)
+        sundays = pd.date_range(start_date, end_date, freq='W-SUN')
+        return sundays
