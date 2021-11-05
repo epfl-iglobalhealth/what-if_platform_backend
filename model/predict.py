@@ -64,13 +64,13 @@ class Predict:
 
         if data is not None:
             y = [
-                {'label': 'Ground', 'data': ground.values.tolist()},
-                {'label': 'Predictions', 'data': pred.tolist()},
+                {'label': 'Ground', 'data': [round(value, 4) for value in ground.values.tolist()]},
+                {'label': 'Predictions', 'data': [round(value, 4) for value in pred.values.tolist()]},
             ]
         else:
             y = [
-                {'label': 'Ground', 'data': ground.values.tolist()},
-                {'label': 'Predictions', 'data': pred.tolist()},
+                {'label': 'Ground', 'data': [round(value, 4) for value in ground.values.tolist()]},
+                {'label': 'Predictions', 'data': [round(value, 4) for value in pred.values.tolist()]},
                 {'label': 'Error', 'data': np.abs(pred - ground).values.tolist()}
             ]
         # We return the prediction, the ground truth and the error
