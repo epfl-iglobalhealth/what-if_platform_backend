@@ -26,12 +26,16 @@ def get_constant_data(country):
 @app.route('/api/v1/<country>/get_variable_data', methods=['GET'])
 def get_variable_data(country):
     start_date = request.args.get('start_date')
-    emd_date = request.args.get('emd_date')
+    end_date = request.args.get('end_date')
+    print(start_date, end_date)
     cd = CountryData()
     policies_df = cd.get_policies_for_a_period(country, start_date, end_date)
     #convert the index, which is a date, into a string
-    policies_df.index = policies_df.index.astype(str)
-    format_to_return = {"dates": policies_df.index.values.tolist(), "policies": {}}
+
+    dates = policies_df.index.astype(str).values.tolist()
+    if dates[-1] != end_date:
+        dates += [end_date]
+    format_to_return = {"dates": dates, "policies": {}}
     for policy in policies_df.columns:
         format_to_return["policies"][policy] = policies_df[policy].values.tolist()
 
