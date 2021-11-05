@@ -31,10 +31,7 @@ def get_variable_data(country):
     cd = CountryData()
     policies_df = cd.get_policies_for_a_period(country, start_date, end_date)
     #convert the index, which is a date, into a string
-
     dates = policies_df.index.astype(str).values.tolist()
-    if dates[-1] != end_date:
-        dates += [end_date]
     format_to_return = {"dates": dates, "policies": {}}
     for policy in policies_df.columns:
         format_to_return["policies"][policy] = policies_df[policy].values.tolist()
