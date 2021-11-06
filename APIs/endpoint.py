@@ -48,5 +48,4 @@ def predict_for_country_personalized(country):
     response = jsonify(predictions)
     return response
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=105)
+

@@ -6,12 +6,12 @@ import yaml
 class CountryData:
 
     def __init__(self):
-        self.data = pd.read_csv('../model/data/final_data.csv', parse_dates=['date']).set_index('date')
+        self.data = pd.read_csv('./model/data/final_data.csv', parse_dates=['date']).set_index('date')
         self.features = CountryData.extract_feature_names()
 
     @staticmethod
     def extract_feature_names():
-      with open('../model/config/r_estim_features.yaml', 'r', encoding='utf-8') as file:
+      with open('./model/config/r_estim_features.yaml', 'r', encoding='utf-8') as file:
         swissre_features = yaml.load(file, Loader=yaml.FullLoader)
       constant_columns = swissre_features['demography'] + \
                          swissre_features['sanitary'] + \

@@ -10,10 +10,10 @@ from model.hybrid import HybridLSTM
 class Predict:
     def __init__(self, iso_code: str):
         self.iso_code = iso_code
-        self.model = HybridLSTM.load_from_checkpoint(checkpoint_path=f"../model/checkpoints/{self.iso_code}/model.ckpt")
+        self.model = HybridLSTM.load_from_checkpoint(checkpoint_path=f"./model/checkpoints/{self.iso_code}/model.ckpt")
         # TODO: one model for each country to avoid leakage
         self.columns_to_use = CountryData.extract_feature_names()
-        self.data_swissre = pd.read_csv('../model/data/final_data.csv', parse_dates=['date']).set_index('date')
+        self.data_swissre = pd.read_csv('./model/data/final_data.csv', parse_dates=['date']).set_index('date')
 
     def predict_for_a_period(self, start_date: str, end_date: str, data=None):
         start_date = datetime.strptime(start_date, "%Y-%m-%d")
