@@ -1,0 +1,15 @@
+name: igh-whatif
+channels:
+  - defaults
+dependencies:
+  - python=3.8
+  - numpy=1.19.2
+  - pandas=1.2.3
+  - torchvision
+  - pytorch
+  - torchaudio
+  - shap
+  - flask
+  - simplejson
+  - flask-cors
+  - waitress
