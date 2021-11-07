@@ -1,10 +1,11 @@
-import torch
-from torch import nn, optim
-import torch.nn.functional as F
-import pytorch_lightning as pl
-from pytorch_lightning import seed_everything
-from torch.utils.data import DataLoader, Dataset
 from argparse import Namespace
+
+import pytorch_lightning as pl
+import torch
+import torch.nn.functional as F
+from pytorch_lightning import seed_everything
+from torch import nn, optim
+from torch.utils.data import DataLoader, Dataset
 
 
 ################## Model Definition ##################
@@ -26,7 +27,7 @@ class HybridLSTM(pl.LightningModule):
       hparams = Namespace(**hparams)
     self.hparams = hparams
     self.__debug = False
-    self.hidden_sizes =[20, 50, 15]
+    self.hidden_sizes = [20, 50, 15]
     self.dropout = 0.2
     self.lr = 0.001
     self.batch_size = 64
@@ -63,10 +64,9 @@ class HybridLSTM(pl.LightningModule):
     x_mlp = x_mlp.double()
     x_lstm = x_lstm.double()
 
-
     # x_mlp, x_lstm = x
     # x = (x_mlp, x_lstm)
-    
+
     x1, _ = self.lstm_1(x_lstm)
     x1 = x1[:, x1.size(1) - 1, :].clone()
     x1 = MC_dropout(x1, p=self.dropout, mask=mask)
@@ -92,29 +92,27 @@ class HybridLSTM(pl.LightningModule):
   def train_dataloader(self):
     dataset = HybridDataset(self.train_data)
     return DataLoader(dataset, batch_size=self.batch_size,
-                      shuffle=True) #num_workers = 16
+                      shuffle=True)  # num_workers = 16
 
   def val_dataloader(self):
     dataset = HybridDataset(self.val_data)
-    return DataLoader(dataset, batch_size=self.batch_size,) #num_workers = 1
+    return DataLoader(dataset, batch_size=self.batch_size, )  # num_workers = 1
 
   def training_step(self, batch, batch_nb):
     if len(batch) == 3:
       x_mlp, x_lstm, y = batch
       pred = self(x_mlp, x_lstm)
       pred = pred.reshape(pred.size(0))
-      loss = nn.functional.mse_loss(pred, y) 
+      loss = nn.functional.mse_loss(pred, y)
     else:
       x_mlp, x_lstm, y, discount = batch
       pred = self(x_mlp, x_lstm)
       pred = pred.reshape(pred.size(0))
       loss = nn.functional.mse_loss(pred, y, reduction='none')
-      loss = torch.sum(loss * discount) / torch.sum(discount) 
+      loss = torch.sum(loss * discount) / torch.sum(discount)
 
     self.log('train_loss', loss)
     return {'loss': loss}
-
-
 
   def validation_step(self, batch, batch_nb):
     if len(batch) == 3:
@@ -122,13 +120,13 @@ class HybridLSTM(pl.LightningModule):
       pred = self(x_mlp, x_lstm)
       pred = pred.reshape(pred.size(0))
       loss = nn.functional.mse_loss(pred, y)
-      
+
     else:
       x_mlp, x_lstm, y, discount = batch
       pred = self(x_mlp, x_lstm)
       pred = pred.reshape(pred.size(0))
       loss = nn.functional.mse_loss(pred, y, reduction='none')
-      loss = torch.sum(loss * discount) / torch.sum(discount)    
+      loss = torch.sum(loss * discount) / torch.sum(discount)
 
     self.log('val_loss', loss)
     return {'val_loss': loss}
