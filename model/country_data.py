@@ -7,6 +7,7 @@ class CountryData:
 
   def __init__(self):
     self.data = pd.read_csv('./model/data/final_data.csv', parse_dates=['date']).set_index('date')
+    self.shap = pd.read_csv('./model/data/final_shap.csv')
     self.features = CountryData.extract_feature_names()
 
   @staticmethod
@@ -27,6 +28,11 @@ class CountryData:
     end_date = pd.to_datetime(end_date)
     sundays = pd.date_range(start_date, end_date, freq='W-SUN')
     return sundays
+
+  def get_shap_for_country(self, iso_code):
+    data = self.shap[self.shap.iso3 == iso_code][['policy', 'shap_value_normalized']].\
+      sort_values(by='shap_value_normalized', ascending=False)
+    return {'policies': data['policy'].values.tolist(), 'shap_values': data['shap_value_normalized'].values.tolist()}
 
   def get_constant_features(self, iso_code: str):
     return self.data[self.data.iso_code == iso_code][self.features['constant']].iloc[0].to_dict()

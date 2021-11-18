@@ -1,0 +1,1099 @@
+iso3,variable,abs_shap,sign,iso2,policy,shap_value,shap_value_normalized
+BLR,Workplace closing,0.016004273785303,1,BY,workplace_closing,0.016004273785303,0.0
+BLR,Public information campaigns,0.0153516807926108,1,BY,public_information_campaigns,0.0153516807926108,0.01932215694307369
+DOM,International travel controls,0.0122075842623392,1,DO,international_travel_controls,0.0122075842623392,0.11241345164340585
+AFG,Close public transport,0.0120014731041884,1,AF,close_public_transport,0.0120014731041884,0.11851604880596353
+NAM,International travel controls,0.0114437768545132,1,,international_travel_controls,0.0114437768545132,0.13502847628136908
+BRB,Stay at home requirements,0.0109407276644473,1,BB,stay_at_home_requirements,0.0109407276644473,0.1499228982402085
+BHS,Close public transport,0.0108045381576148,1,BS,close_public_transport,0.0108045381576148,0.15395523547717682
+CHL,Stay at home requirements,0.0105969889598106,1,CL,stay_at_home_requirements,0.0105969889598106,0.16010041052240334
+GHA,Close public transport,0.0102844345531757,1,GH,close_public_transport,0.0102844345531757,0.1693546093352571
+NZL,Cancel public events,0.0098645337421768,1,NZ,cancel_public_events,0.0098645337421768,0.18178715069181348
+KEN,Stay at home requirements,0.0091020550467166,1,KE,stay_at_home_requirements,0.0091020550467166,0.20436283444019973
+SMR,Stay at home requirements,0.0090114781525146,1,SM,stay_at_home_requirements,0.0090114781525146,0.20704466060870827
+JAM,Restrictions on internal movement,0.0089891345765132,1,JM,restrictions_on_internal_movement,0.0089891345765132,0.2077062154936106
+SYC,Close public transport,0.0087410479837667,1,SC,close_public_transport,0.0087410479837667,0.21505163313400685
+SLV,School closing,0.0086567416191244,1,SV,school_closing,0.0086567416191244,0.21754779969901752
+SUR,Close public transport,0.0085791036946528,1,SR,close_public_transport,0.0085791036946528,0.21984652521120257
+LBN,Restrictions on gatherings,0.0078647252537575,1,LB,restrictions_on_gatherings,0.0078647252537575,0.2409980430888052
+IRN,International travel controls,0.0077938239407951,1,IR,international_travel_controls,0.0077938239407951,0.24309730911199348
+SLV,Stay at home requirements,0.0076218294607956,1,SV,stay_at_home_requirements,0.0076218294607956,0.2481897700686807
+KEN,International travel controls,0.00761442885322,1,KE,international_travel_controls,0.00761442885322,0.24840888934003527
+EGY,International travel controls,0.0075581585110858,1,EG,international_travel_controls,0.0075581585110858,0.2500749574623301
+AFG,Cancel public events,0.007493861305888,1,AF,cancel_public_events,0.007493861305888,0.25197868720467337
+LKA,Close public transport,0.007489828748322,1,LK,close_public_transport,0.007489828748322,0.25209808430369945
+LTU,Public information campaigns,0.0073981556160579,1,LT,public_information_campaigns,0.0073981556160579,0.2548123681971914
+BRA,Close public transport,0.0073830236091335,1,BR,close_public_transport,0.0073830236091335,0.25526040091579405
+TGO,Stay at home requirements,0.0073828690051347,1,TG,stay_at_home_requirements,0.0073828690051347,0.2552649784744903
+ARG,Close public transport,0.0072472219466239,1,AR,close_public_transport,0.0072472219466239,0.259281254748925
+NGA,School closing,0.0071336286819447,1,NG,school_closing,0.0071336286819447,0.26264455609047466
+SYC,Stay at home requirements,0.0071070897875422,1,SC,stay_at_home_requirements,0.0071070897875422,0.2634303271430036
+NGA,Stay at home requirements,0.0068969603348017,1,NG,stay_at_home_requirements,0.0068969603348017,0.26965189910237203
+AND,Close public transport,0.0065562247592899,1,AD,close_public_transport,0.0065562247592899,0.2797404938924678
+SVK,Cancel public events,0.0064224700638144,1,SK,cancel_public_events,0.0064224700638144,0.28370074054971256
+PHL,Close public transport,0.0063775513195938,1,PH,close_public_transport,0.0063775513195938,0.2850307073670633
+MNG,International travel controls,0.0063710094933582,1,MN,international_travel_controls,0.0063710094933582,0.28522439959887397
+DOM,Stay at home requirements,0.0061917221194208,1,DO,stay_at_home_requirements,0.0061917221194208,0.29053279061122417
+MLT,Close public transport,0.0061780975515107,1,MT,close_public_transport,0.0061780975515107,0.29093619065135407
+URY,Restrictions on gatherings,0.0060387887745543,1,UY,restrictions_on_gatherings,0.0060387887745543,0.2950608841157977
+PER,Stay at home requirements,0.0059168838423263,1,PE,stay_at_home_requirements,0.0059168838423263,0.29867027964872694
+MWI,Restrictions on internal movement,0.0058715573841538,1,MW,restrictions_on_internal_movement,0.0058715573841538,0.3000123181754811
+AUT,Close public transport,0.0058672284479908,1,AT,close_public_transport,0.0058672284479908,0.30014049053539715
+BLR,International travel controls,0.0058216747535788,1,BY,international_travel_controls,0.0058216747535788,0.30148925713666624
+JPN,Restrictions on gatherings,0.005730655062167,1,JP,restrictions_on_gatherings,0.005730655062167,0.3041841937695492
+OMN,Close public transport,0.0057236685711395,1,OM,close_public_transport,0.0057236685711395,0.3043910517616306
+COL,Close public transport,0.0056974698058685,1,CO,close_public_transport,0.0056974698058685,0.3051667521751344
+MNG,Restrictions on gatherings,0.0056517356382219,1,MN,restrictions_on_gatherings,0.0056517356382219,0.306520862278712
+TUN,Stay at home requirements,0.0055752250786631,1,TN,stay_at_home_requirements,0.0055752250786631,0.30878620845336024
+SAU,Restrictions on internal movement,0.0055544640540718,1,SA,restrictions_on_internal_movement,0.0055544640540718,0.3094009067108411
+SGP,Restrictions on internal movement,0.0054498589918137,1,SG,restrictions_on_internal_movement,0.0054498589918137,0.31249808282616043
+NZL,Close public transport,0.005449596953724,1,NZ,close_public_transport,0.005449596953724,0.312505841323648
+UKR,International travel controls,0.0054467710678732,1,UA,international_travel_controls,0.0054467710678732,0.31258951094701787
+MWI,Close public transport,0.0054110835187485,1,MW,close_public_transport,0.0054110835187485,0.31364615794265355
+SRB,Close public transport,0.0053394873396549,1,RS,close_public_transport,0.0053394873396549,0.31576599775776387
+HUN,Stay at home requirements,0.0053257331389,1,HU,stay_at_home_requirements,0.0053257331389,0.3161732360036365
+AZE,International travel controls,0.0052221119763066,1,AZ,international_travel_controls,0.0052221119763066,0.3192412805408505
+TUN,Close public transport,0.005173712694257,1,TN,close_public_transport,0.005173712694257,0.32067430010153636
+IDN,Close public transport,0.005132134003298,1,ID,close_public_transport,0.005132134003298,0.3219053736821506
+GTM,Stay at home requirements,0.0050179152888071,1,GT,stay_at_home_requirements,0.0050179152888071,0.32528719351770347
+RWA,International travel controls,0.0049803895748169,1,RW,international_travel_controls,0.0049803895748169,0.32639826541586825
+LKA,School closing,0.0049776563422986,1,LK,school_closing,0.0049776563422986,0.32647919173330026
+AZE,Stay at home requirements,0.0049773879523584,1,AZ,stay_at_home_requirements,0.0049773879523584,0.32648713829816467
+SAU,Close public transport,0.0049628436677351,1,SA,close_public_transport,0.0049628436677351,0.32691776956951313
+LUX,Close public transport,0.0049315314173227,1,LU,close_public_transport,0.0049315314173227,0.3278448714898284
+NZL,School closing,0.0049071215583684,1,NZ,school_closing,0.0049071215583684,0.32856760546177544
+KWT,International travel controls,0.0048795193628308,1,KW,international_travel_controls,0.0048795193628308,0.32938485903348597
+PAK,International travel controls,0.0048674953820908,1,PK,international_travel_controls,0.0048674953820908,0.32974086843833766
+GHA,Cancel public events,0.004852990983541,1,GH,cancel_public_events,0.004852990983541,0.33017031875159947
+TUR,International travel controls,0.004847374304827,1,TR,international_travel_controls,0.004847374304827,0.3303366189552885
+TTO,Stay at home requirements,0.0047465867504903,1,TT,stay_at_home_requirements,0.0047465867504903,0.33332076522196596
+PAK,Close public transport,0.0047319494812614,1,PK,close_public_transport,0.0047319494812614,0.3337541496076794
+URY,Close public transport,0.0047242403959242,1,UY,close_public_transport,0.0047242403959242,0.3339824023753936
+JOR,International travel controls,0.0046845305538871,1,JO,international_travel_controls,0.0046845305538871,0.33515814255130355
+TUN,Restrictions on internal movement,0.004600165573515,1,TN,restrictions_on_internal_movement,0.004600165573515,0.3376560446273345
+GIN,School closing,0.0045942803877315,1,GN,school_closing,0.0045942803877315,0.33783029486388516
+BLZ,International travel controls,0.0045666344428118,1,BZ,international_travel_controls,0.0045666344428118,0.33864884377961024
+LVA,Cancel public events,0.0045304177217841,1,LV,cancel_public_events,0.0045304177217841,0.3397211586458393
+NAM,Close public transport,0.0045232109930889,1,,close_public_transport,0.0045232109930889,0.33993453749675273
+BGD,Cancel public events,0.0045053087508322,1,BD,cancel_public_events,0.0045053087508322,0.3404645921225155
+TTO,Restrictions on gatherings,0.0045017555764276,1,TT,restrictions_on_gatherings,0.0045017555764276,0.34056979551001826
+ISL,Close public transport,0.004486758936742,1,IS,close_public_transport,0.004486758936742,0.34101382023732724
+MMR,Stay at home requirements,0.0044770187976266,1,MM,stay_at_home_requirements,0.0044770187976266,0.3413022090167696
+MMR,Stay at home requirements,0.0044770187976266,1,MM,stay_at_home_requirements,0.0044770187976266,0.3413022090167696
+GTM,International travel controls,0.0044693717286403,1,GT,international_travel_controls,0.0044693717286403,0.34152862558691727
+HUN,Close public transport,0.0044601886361801,1,HU,close_public_transport,0.0044601886361801,0.34180052117226023
+CZE,Stay at home requirements,0.00445756099824,1,CZ,stay_at_home_requirements,0.00445756099824,0.3418783210157105
+TGO,Cancel public events,0.0044267033554718,1,TG,cancel_public_events,0.0044267033554718,0.3427919627849865
+HRV,Stay at home requirements,0.0044072332837371,1,HR,stay_at_home_requirements,0.0044072332837371,0.34336843814706297
+MEX,School closing,0.0043737716322612,1,MX,school_closing,0.0043737716322612,0.344359180138828
+SUR,Stay at home requirements,0.0043569566669087,1,SR,stay_at_home_requirements,0.0043569566669087,0.34485704236409187
+PAN,Restrictions on internal movement,0.0043393756039022,1,PA,restrictions_on_internal_movement,0.0043393756039022,0.3453775874242468
+DZA,Stay at home requirements,0.0043317699494989,1,DZ,stay_at_home_requirements,0.0043317699494989,0.3456027777797686
+ROU,Restrictions on internal movement,0.0043226761215555,1,RO,restrictions_on_internal_movement,0.0043226761215555,0.34587203039618236
+LVA,Close public transport,0.0043152720005754,1,LV,close_public_transport,0.0043152720005754,0.346091253693406
+CAN,Restrictions on gatherings,0.0042620935873168,1,CA,restrictions_on_gatherings,0.0042620935873168,0.347665775115598
+CHE,Close public transport,0.0042479799623436,1,CH,close_public_transport,0.0042479799623436,0.3480836552948547
+PHL,School closing,0.0042076840474891,1,PH,school_closing,0.0042076840474891,0.3492767480796413
+NZL,Stay at home requirements,0.0041740310737605,1,NZ,stay_at_home_requirements,0.0041740310737605,0.3502731547944953
+JOR,Workplace closing,0.004169153259078,1,JO,workplace_closing,0.004169153259078,0.3504175785040507
+IRL,Stay at home requirements,0.0041677301094048,1,IE,stay_at_home_requirements,0.0041677301094048,0.35045971551999633
+MWI,International travel controls,0.004166816044274,1,MW,international_travel_controls,0.004166816044274,0.350486779417573
+MDA,International travel controls,0.0041110514210234,1,MD,international_travel_controls,0.0041110514210234,0.35213787407287167
+IRN,Restrictions on gatherings,0.004085445036261,1,IR,restrictions_on_gatherings,0.004085445036261,0.3528960351176029
+SMR,Close public transport,0.0040821758268551,1,SM,close_public_transport,0.0040821758268551,0.35299283078952703
+EST,Cancel public events,0.0040349190798377,1,EE,cancel_public_events,0.0040349190798377,0.3543920218515126
+IRL,Cancel public events,0.0039974905636614,1,IE,cancel_public_events,0.0039974905636614,0.3555002158894555
+THA,Restrictions on gatherings,0.0039877092678866,1,TH,restrictions_on_gatherings,0.0039877092678866,0.3557898232468493
+FIN,Restrictions on gatherings,0.0039849764098438,1,FI,restrictions_on_gatherings,0.0039849764098438,0.3558707384767054
+AUS,Restrictions on internal movement,0.0039694137678059,1,AU,restrictions_on_internal_movement,0.0039694137678059,0.3563315215609133
+HND,International travel controls,0.0039629224388882,1,HN,international_travel_controls,0.0039629224388882,0.3565237186539275
+MDA,Close public transport,0.0039434887756514,1,MD,close_public_transport,0.0039434887756514,0.3570991160229542
+CYP,Close public transport,0.0039293691218393,1,CY,close_public_transport,0.0039293691218393,0.3575171747057692
+GIN,Close public transport,0.0039129187383655,1,GN,close_public_transport,0.0039129187383655,0.3580042422881888
+TGO,International travel controls,0.0039098714946736,1,TG,international_travel_controls,0.0039098714946736,0.35809446593679983
+MYS,Close public transport,0.003903121814664,1,MY,close_public_transport,0.003903121814664,0.35829431236163345
+SVN,Close public transport,0.0038581218734613,1,SI,close_public_transport,0.0038581218734613,0.359626683282076
+AZE,Close public transport,0.0038429749259981,1,AZ,close_public_transport,0.0038429749259981,0.36007515836435516
+BLR,Cancel public events,0.0038252577122591,1,BY,cancel_public_events,0.0038252577122591,0.3605997346137057
+TGO,Restrictions on internal movement,0.0038225064682342,1,TG,restrictions_on_internal_movement,0.0038225064682342,0.3606811942208929
+OMN,International travel controls,0.0038204742508153,1,OM,international_travel_controls,0.0038204742508153,0.36074136468602225
+EGY,Stay at home requirements,0.0037976469924592,1,EG,stay_at_home_requirements,0.0037976469924592,0.36141724057417274
+SYC,Cancel public events,0.0037742018895,1,SC,cancel_public_events,0.0037742018895,0.36211140977917045
+IDN,Cancel public events,0.0037704764720779,1,ID,cancel_public_events,0.0037704764720779,0.36222171298639816
+TGO,Restrictions on gatherings,0.0037516457193792,1,TG,restrictions_on_gatherings,0.0037516457193792,0.362779259210576
+SLE,Restrictions on internal movement,0.003743029541924,1,SL,restrictions_on_internal_movement,0.003743029541924,0.36303436941694206
+PRY,Stay at home requirements,0.0036564545420245,1,PY,stay_at_home_requirements,0.0036564545420245,0.3655977063729577
+DNK,Close public transport,0.0036548237020437,1,DK,close_public_transport,0.0036548237020437,0.365645992741967
+JAM,Stay at home requirements,0.0036514848577108,1,JM,stay_at_home_requirements,0.0036514848577108,0.3657448501844024
+JOR,Restrictions on gatherings,0.0036363489326049,1,JO,restrictions_on_gatherings,0.0036363489326049,0.3661929989136253
+DOM,Cancel public events,0.0036193316796062,1,DO,cancel_public_events,0.0036193316796062,0.36669685052843415
+JPN,Close public transport,0.0035852858884929,1,JP,close_public_transport,0.0035852858884929,0.3677048878909385
+LUX,International travel controls,0.0035846143248847,1,LU,international_travel_controls,0.0035846143248847,0.3677247717352031
+VNM,Close public transport,0.0035752258275831,1,VN,close_public_transport,0.0035752258275831,0.36800274900488356
+VNM,Close public transport,0.0035752258275831,1,VN,close_public_transport,0.0035752258275831,0.36800274900488356
+BOL,International travel controls,0.0035715472740297,1,BO,international_travel_controls,0.0035715472740297,0.36811166465350104
+BOL,International travel controls,0.0035715472740297,1,BO,international_travel_controls,0.0035715472740297,0.36811166465350104
+KOR,Stay at home requirements,0.003554856623874,1,KR,stay_at_home_requirements,0.003554856623874,0.3686058461194404
+KOR,Stay at home requirements,0.003554856623874,1,KR,stay_at_home_requirements,0.003554856623874,0.3686058461194404
+SEN,Close public transport,0.0035535326365709,1,SN,close_public_transport,0.0035535326365709,0.3686450471080314
+ITA,Close public transport,0.0035343372839635,1,IT,close_public_transport,0.0035343372839635,0.369213388508891
+SRB,International travel controls,0.0035332812147287,1,RS,international_travel_controls,0.0035332812147287,0.36924465690393365
+MOZ,International travel controls,0.0034963794229797,1,MZ,international_travel_controls,0.0034963794229797,0.3703372555368324
+RWA,Stay at home requirements,0.0034946728822215,1,RW,stay_at_home_requirements,0.0034946728822215,0.3703877832757584
+DNK,Cancel public events,0.0034691659812851,1,DK,cancel_public_events,0.0034691659812851,0.37114299877537843
+PAK,Stay at home requirements,0.0034616520212722,1,PK,stay_at_home_requirements,0.0034616520212722,0.37136547421758975
+ZWE,International travel controls,0.0034602237615028,1,ZW,international_travel_controls,0.0034602237615028,0.3714077625347014
+JPN,Workplace closing,0.0033735520774052,1,JP,workplace_closing,0.0033735520774052,0.3739739621436577
+KAZ,Restrictions on internal movement,0.0033660447936932,1,KZ,restrictions_on_internal_movement,0.0033660447936932,0.37419623991207357
+DZA,Close public transport,0.0033456901848212,1,DZ,close_public_transport,0.0033456901848212,0.3747989048985871
+SEN,School closing,0.0033346679651672,1,SN,school_closing,0.0033346679651672,0.3751252538793462
+ARG,Stay at home requirements,0.0033328687630559,1,AR,stay_at_home_requirements,0.0033328687630559,0.37517852516168626
+MOZ,Close public transport,0.0033261406338001,1,MZ,close_public_transport,0.0033261406338001,0.3753777335057378
+IDN,School closing,0.0033163596935103,1,ID,school_closing,0.0033163596935103,0.37566733033783173
+URY,Stay at home requirements,0.003314213894166,1,UY,stay_at_home_requirements,0.003314213894166,0.375730863768566
+JOR,Close public transport,0.0032948892744622,1,JO,close_public_transport,0.0032948892744622,0.37630303254598674
+BRB,Close public transport,0.0032916116873097,1,BB,close_public_transport,0.0032916116873097,0.37640007626858935
+PER,International travel controls,0.003274221234679,1,PE,international_travel_controls,0.003274221234679,0.37691497768310694
+PER,Close public transport,0.0032664561328655,1,PE,close_public_transport,0.0032664561328655,0.3771448890024124
+MCO,Cancel public events,0.0032574249065712,1,MC,cancel_public_events,0.0032574249065712,0.3774122880915859
+TUR,Stay at home requirements,0.0032527977588981,1,TR,stay_at_home_requirements,0.0032527977588981,0.3775492899817986
+EST,Stay at home requirements,0.003248698092853,1,EE,stay_at_home_requirements,0.003248698092853,0.3776706740475557
+ZAF,Close public transport,0.0032421470244953,1,ZA,close_public_transport,0.0032421470244953,0.377864639922718
+TUR,Close public transport,0.0032330627531682,1,TR,close_public_transport,0.0032330627531682,0.37813360958414755
+ESP,Close public transport,0.003226458200119,1,ES,close_public_transport,0.003226458200119,0.3783291590491043
+NPL,International travel controls,0.0032000877584459,1,NP,international_travel_controls,0.0032000877584459,0.3791099425058248
+MWI,Cancel public events,0.0031828134811999,1,MW,cancel_public_events,0.0031828134811999,0.3796214041668648
+CZE,Cancel public events,0.0031514982585673,1,CZ,cancel_public_events,0.0031514982585673,0.38054859408951197
+ECU,Stay at home requirements,0.0031446184398645,1,EC,stay_at_home_requirements,0.0031446184398645,0.38075229369739005
+BOL,Stay at home requirements,0.0031432183312465,1,BO,stay_at_home_requirements,0.0031432183312465,0.38079374850729036
+BOL,Stay at home requirements,0.0031432183312465,1,BO,stay_at_home_requirements,0.0031432183312465,0.38079374850729036
+TTO,Workplace closing,0.0031270655211779,1,TT,workplace_closing,0.0031270655211779,0.38127200545260265
+MNG,Restrictions on internal movement,0.0031161392162445,1,MN,restrictions_on_internal_movement,0.0031161392162445,0.38159551456332735
+BRB,International travel controls,0.0030969508401956,1,BB,international_travel_controls,0.0030969508401956,0.3821636494002799
+LTU,Cancel public events,0.0030966260778048,1,LT,cancel_public_events,0.0030966260778048,0.3821732650565228
+NAM,Restrictions on gatherings,0.0030752053908653,1,,restrictions_on_gatherings,0.0030752053908653,0.38280749478241366
+LBN,Stay at home requirements,0.0030712043842211,1,LB,stay_at_home_requirements,0.0030712043842211,0.38292595771286986
+ALB,Close public transport,0.003066040282407,1,AL,close_public_transport,0.003066040282407,0.38307885789236834
+BGR,Close public transport,0.0030642717541203,1,BG,close_public_transport,0.0030642717541203,0.38313122097547914
+GHA,Restrictions on gatherings,0.0030624035712388,1,GH,restrictions_on_gatherings,0.0030624035712388,0.38318653465987185
+SYC,International travel controls,0.0030214429435847,1,SC,international_travel_controls,0.0030214429435847,0.3843993084482546
+SLE,Stay at home requirements,0.0030155209837263,1,SL,stay_at_home_requirements,0.0030155209837263,0.3845746475019618
+AGO,Close public transport,0.0030054970095634,1,AO,close_public_transport,0.0030054970095634,0.38487144014935115
+BRA,International travel controls,0.0029668103989097,1,BR,international_travel_controls,0.0029668103989097,0.386016884202562
+SAU,International travel controls,0.0029606118672668,1,SA,international_travel_controls,0.0029606118672668,0.3862004120714817
+MOZ,Restrictions on gatherings,0.0029414420050997,1,MZ,restrictions_on_gatherings,0.0029414420050997,0.3867679987442128
+PAN,International travel controls,0.002906550776036,1,PA,international_travel_controls,0.002906550776036,0.3878010680714275
+BOL,Restrictions on internal movement,0.0029033797039189,1,BO,restrictions_on_internal_movement,0.0029033797039189,0.38789495806689256
+BOL,Restrictions on internal movement,0.0029033797039189,1,BO,restrictions_on_internal_movement,0.0029033797039189,0.38789495806689256
+AND,International travel controls,0.0028926720136653,1,AD,international_travel_controls,0.0028926720136653,0.38821199437266773
+BGR,Restrictions on internal movement,0.0028530512928133,1,BG,restrictions_on_internal_movement,0.0028530512928133,0.3893850958234538
+AUT,Stay at home requirements,0.0028522416937769,1,AT,stay_at_home_requirements,0.0028522416937769,0.3894090666595147
+DEU,Close public transport,0.0028384497211774,1,DE,close_public_transport,0.0028384497211774,0.38981742326478974
+VNM,School closing,0.0028271865275044,1,VN,school_closing,0.0028271865275044,0.39015090707210454
+VNM,School closing,0.0028271865275044,1,VN,school_closing,0.0028271865275044,0.39015090707210454
+MWI,Workplace closing,0.0028196721287271,1,MW,workplace_closing,0.0028196721287271,0.3903733955053757
+SLE,Close public transport,0.0028189344601813,1,SL,close_public_transport,0.0028189344601813,0.39039523660323233
+BGD,Stay at home requirements,0.0028172777946105,1,BD,stay_at_home_requirements,0.0028172777946105,0.39044428762357675
+ARE,Close public transport,0.0028085316719381,1,AE,close_public_transport,0.0028085316719381,0.3907032452844954
+ZWE,Stay at home requirements,0.0027975198348226,1,ZW,stay_at_home_requirements,0.0027975198348226,0.39102928685613336
+ECU,Close public transport,0.0027894275484836,1,EC,close_public_transport,0.0027894275484836,0.39126888554692746
+SVK,International travel controls,0.0027580400863143,1,SK,international_travel_controls,0.0027580400863143,0.3921982143581028
+POL,Restrictions on internal movement,0.0027450812608736,1,PL,restrictions_on_internal_movement,0.0027450812608736,0.3925819029078834
+POL,Cancel public events,0.0027291428103736,1,PL,cancel_public_events,0.0027291428103736,0.39305381303477577
+CZE,Close public transport,0.0027209752918831,1,CZ,close_public_transport,0.0027209752918831,0.393295639220279
+DZA,Cancel public events,0.002710342265484,1,DZ,cancel_public_events,0.002710342265484,0.39361046485764245
+SVK,Close public transport,0.0026829604891084,1,SK,close_public_transport,0.0026829604891084,0.3944211921967867
+HUN,Cancel public events,0.0026803481206778,1,HU,cancel_public_events,0.0026803481206778,0.39449853993630335
+GIN,Stay at home requirements,0.0026775235883398,1,GN,stay_at_home_requirements,0.0026775235883398,0.39458216948448543
+UGA,Stay at home requirements,0.0026551696202039,1,UG,stay_at_home_requirements,0.0026551696202039,0.3952440320626299
+PRY,Close public transport,0.0026433362101612,1,PY,close_public_transport,0.0026433362101612,0.39559439899665655
+NGA,Close public transport,0.0026414664102581,1,NG,close_public_transport,0.0026414664102581,0.39564976055827983
+LTU,Stay at home requirements,0.0026139286697496,1,LT,stay_at_home_requirements,0.0026139286697496,0.3964651057273534
+MOZ,Stay at home requirements,0.0025945255600508,1,MZ,stay_at_home_requirements,0.0025945255600508,0.3970395984586303
+KEN,Workplace closing,0.0025853317024685,1,KE,workplace_closing,0.0025853317024685,0.3973118127807373
+CIV,Cancel public events,0.0025798965262215,1,CI,cancel_public_events,0.0025798965262215,0.39747273900831526
+CIV,Cancel public events,0.0025798965262215,1,CI,cancel_public_events,0.0025798965262215,0.39747273900831526
+FIN,Stay at home requirements,0.0025777963776004,1,FI,stay_at_home_requirements,0.0025777963776004,0.3975349207995927
+ISR,Cancel public events,0.0025746552580312,1,IL,cancel_public_events,0.0025746552580312,0.397627923951592
+SRB,Restrictions on gatherings,0.0025492253025095,1,RS,restrictions_on_gatherings,0.0025492253025095,0.39838086122972394
+BRA,Stay at home requirements,0.0025309472119147,1,BR,stay_at_home_requirements,0.0025309472119147,0.39892204407883103
+LBN,International travel controls,0.0025203782036234,1,LB,international_travel_controls,0.0025203782036234,0.39923497425004645
+BOL,Restrictions on gatherings,0.0025109847481028,1,BO,restrictions_on_gatherings,0.0025109847481028,0.39951309832407006
+BOL,Restrictions on gatherings,0.0025109847481028,1,BO,restrictions_on_gatherings,0.0025109847481028,0.39951309832407006
+CYP,Workplace closing,0.0025081548941625,1,CY,workplace_closing,0.0025081548941625,0.3995968854357503
+IDN,Restrictions on gatherings,0.0024983710051315,1,ID,restrictions_on_gatherings,0.0024983710051315,0.3998865695750033
+ZWE,Close public transport,0.0024874312064144,1,ZW,close_public_transport,0.0024874312064144,0.4002104782134725
+AND,Cancel public events,0.0024818715185726,1,AD,cancel_public_events,0.0024818715185726,0.40037509101538227
+FRA,Close public transport,0.0024782107587785,1,FR,close_public_transport,0.0024782107587785,0.4004834798213679
+TUR,Restrictions on internal movement,0.0024730483599526,1,TR,restrictions_on_internal_movement,0.0024730483599526,0.40063632957831247
+GIN,International travel controls,0.002435713443805,1,GN,international_travel_controls,0.002435713443805,0.40174175228027015
+GBR,International travel controls,0.002414828579285,1,GB,international_travel_controls,0.002414828579285,0.40236011722520393
+NOR,Cancel public events,0.0024126661459086,1,NO,cancel_public_events,0.0024126661459086,0.40242414316104086
+DZA,School closing,0.0024047136120159,1,DZ,school_closing,0.0024047136120159,0.4026596040220838
+NPL,Stay at home requirements,0.0023920961203279,1,NP,stay_at_home_requirements,0.0023920961203279,0.4030331862660758
+CRI,Close public transport,0.0023899376402685,1,CR,close_public_transport,0.0023899376402685,0.4030970951509907
+BHS,Stay at home requirements,0.0023672056645617,1,BS,stay_at_home_requirements,0.0023672056645617,0.4037701498836518
+BOL,Cancel public events,0.0023659813802567,1,BO,cancel_public_events,0.0023659813802567,0.4038063988378223
+BOL,Cancel public events,0.0023659813802567,1,BO,cancel_public_events,0.0023659813802567,0.4038063988378223
+MAR,School closing,0.0023591117900989,1,MA,school_closing,0.0023591117900989,0.40400979559606215
+GRC,Cancel public events,0.0023554118748859,1,GR,cancel_public_events,0.0023554118748859,0.40411934372670744
+SGP,School closing,0.0023476570066091,1,SG,school_closing,0.0023476570066091,0.404348952048579
+SLE,Cancel public events,0.0023408216993535,1,SL,cancel_public_events,0.0023408216993535,0.40455133374900454
+CIV,Restrictions on internal movement,0.0023198057206373,1,CI,restrictions_on_internal_movement,0.0023198057206373,0.40517358075995
+CIV,Restrictions on internal movement,0.0023198057206373,1,CI,restrictions_on_internal_movement,0.0023198057206373,0.40517358075995
+HUN,International travel controls,0.0023163330256172,1,HU,international_travel_controls,0.0023163330256172,0.40527640129119263
+MMR,International travel controls,0.0022880329064827,1,MM,international_travel_controls,0.0022880329064827,0.4061143191811299
+MMR,International travel controls,0.0022880329064827,1,MM,international_travel_controls,0.0022880329064827,0.4061143191811299
+BLZ,School closing,0.0022733140741359,1,BZ,school_closing,0.0022733140741359,0.406550118510587
+KOR,International travel controls,0.0022703210933711,1,KR,international_travel_controls,0.0022703210933711,0.4066387355271849
+KOR,International travel controls,0.0022703210933711,1,KR,international_travel_controls,0.0022703210933711,0.4066387355271849
+HND,Stay at home requirements,0.0022699642433024,1,HN,stay_at_home_requirements,0.0022699642433024,0.40664930124442333
+TUN,School closing,0.0022669863558115,1,TN,school_closing,0.0022669863558115,0.4067374713751209
+CRI,Restrictions on gatherings,0.0022464661448707,1,CR,restrictions_on_gatherings,0.0022464661448707,0.40734503955428175
+THA,Restrictions on internal movement,0.00222328221932,1,TH,restrictions_on_internal_movement,0.00222328221932,0.40803147574508286
+ROU,Close public transport,0.0021672581281307,1,RO,close_public_transport,0.0021672581281307,0.40969025280011523
+CHE,Cancel public events,0.0021478864781708,1,CH,cancel_public_events,0.0021478864781708,0.41026381406259116
+LBN,Cancel public events,0.0021448847782986,1,LB,cancel_public_events,0.0021448847782986,0.41035268923697416
+THA,School closing,0.0021266977235582,1,TH,school_closing,0.0021266977235582,0.41089117667089003
+NLD,Close public transport,0.0021182206754981,1,NL,close_public_transport,0.0021182206754981,0.4111421674949801
+VNM,Workplace closing,0.0021137501257655,1,VN,workplace_closing,0.0021137501257655,0.41127453278930964
+VNM,Workplace closing,0.0021137501257655,1,VN,workplace_closing,0.0021137501257655,0.41127453278930964
+MLT,Workplace closing,0.0021116099646813,1,MT,workplace_closing,0.0021116099646813,0.4113378992808525
+ISR,Restrictions on internal movement,0.0021090292003006,1,IL,restrictions_on_internal_movement,0.0021090292003006,0.4114143112787676
+GTM,Close public transport,0.0021014185134945,1,GT,close_public_transport,0.0021014185134945,0.4116396506350874
+AGO,School closing,0.0021008964389233,1,AO,school_closing,0.0021008964389233,0.41165510836588387
+SRB,Stay at home requirements,0.0020988441272308,1,RS,stay_at_home_requirements,0.0020988441272308,0.41171587378791974
+RWA,Restrictions on internal movement,0.0020919345635085,1,RW,restrictions_on_internal_movement,0.0020919345635085,0.4119204540947043
+AUS,Cancel public events,0.0020913108547315,1,AU,cancel_public_events,0.0020913108547315,0.41193892103966223
+CIV,Restrictions on gatherings,0.002075700774326,1,CI,restrictions_on_gatherings,0.002075700774326,0.4124011086924055
+CIV,Restrictions on gatherings,0.002075700774326,1,CI,restrictions_on_gatherings,0.002075700774326,0.4124011086924055
+CHN,Close public transport,0.0020550824405303,1,CN,close_public_transport,0.0020550824405303,0.4130115821206623
+TTO,Cancel public events,0.0020522899929562,1,TT,cancel_public_events,0.0020522899929562,0.4130942616941273
+NLD,Cancel public events,0.0020474256475541,1,NL,cancel_public_events,0.0020474256475541,0.4132382866014389
+AUT,Cancel public events,0.001992565827312,1,AT,cancel_public_events,0.001992565827312,0.41486259159468397
+CHL,School closing,0.0019801689552584,1,CL,school_closing,0.0019801689552584,0.4152296416704665
+SLV,Workplace closing,0.0019667004883425,1,SV,workplace_closing,0.0019667004883425,0.4156284198284391
+CIV,International travel controls,0.0019526397763259,1,CI,international_travel_controls,0.0019526397763259,0.416044733345989
+CIV,International travel controls,0.0019526397763259,1,CI,international_travel_controls,0.0019526397763259,0.416044733345989
+NOR,Restrictions on internal movement,0.0019476388584629,1,NO,restrictions_on_internal_movement,0.0019476388584629,0.4161928019291494
+VNM,International travel controls,0.0019421656499781,1,VN,international_travel_controls,0.0019421656499781,0.41635485422592505
+VNM,International travel controls,0.0019421656499781,1,VN,international_travel_controls,0.0019421656499781,0.41635485422592505
+SVN,International travel controls,0.0019327298959567,1,SI,international_travel_controls,0.0019327298959567,0.41663423068586153
+KWT,Stay at home requirements,0.0019325952407015,1,KW,stay_at_home_requirements,0.0019325952407015,0.41663821759654457
+BHR,Close public transport,0.0018592092930669,1,BH,close_public_transport,0.0018592092930669,0.41881104938219127
+CAN,Restrictions on internal movement,0.0018503872815191,1,CA,restrictions_on_internal_movement,0.0018503872815191,0.4190722539822851
+BGR,Restrictions on gatherings,0.0018438340910882,1,BG,restrictions_on_gatherings,0.0018438340910882,0.41926628268838767
+URY,Restrictions on internal movement,0.0018331502215381,1,UY,restrictions_on_internal_movement,0.0018331502215381,0.41958261370407135
+COL,International travel controls,0.0018310933518329,1,CO,international_travel_controls,0.0018310933518329,0.4196435140810297
+CHL,Close public transport,0.0018217335183025,1,CL,close_public_transport,0.0018217335183025,0.41992064266570744
+CHN,School closing,0.001778096886217,1,CN,school_closing,0.001778096886217,0.42121264834622335
+VEN,Stay at home requirements,0.0017694209160064,1,VE,stay_at_home_requirements,0.0017694209160064,0.4214695289133148
+VEN,Stay at home requirements,0.0017694209160064,1,VE,stay_at_home_requirements,0.0017694209160064,0.4214695289133148
+NOR,International travel controls,0.0017586010761678,1,NO,international_travel_controls,0.0017586010761678,0.4217898857755573
+QAT,Cancel public events,0.0017574075369478,1,QA,cancel_public_events,0.0017574075369478,0.4218252244206007
+PAK,Cancel public events,0.0017486483968816,1,PK,cancel_public_events,0.0017486483968816,0.4220845675041776
+CHL,International travel controls,0.0017145928657373,1,CL,international_travel_controls,0.0017145928657373,0.42309289325226035
+ARG,International travel controls,0.0017145492070941,1,AR,international_travel_controls,0.0017145492070941,0.42309418590965214
+EST,Restrictions on internal movement,0.0017131150846151,1,EE,restrictions_on_internal_movement,0.0017131150846151,0.42313664781151916
+IDN,International travel controls,0.0017129856876224,1,ID,international_travel_controls,0.0017129856876224,0.4231404790340865
+JAM,Workplace closing,0.0017054871438771,1,JM,workplace_closing,0.0017054871438771,0.42336249802710924
+GRC,Close public transport,0.0016736751344897,1,GR,close_public_transport,0.0016736751344897,0.4243043969517699
+MAR,Close public transport,0.0016627019851061,1,MA,close_public_transport,0.0016627019851061,0.4246292930461565
+HND,Close public transport,0.0016529395066716,1,HN,close_public_transport,0.0016529395066716,0.42491834325444416
+MEX,Restrictions on internal movement,0.0016475813453442,1,MX,restrictions_on_internal_movement,0.0016475813453442,0.42507698920261355
+ARE,International travel controls,0.0016435187025955,1,AE,international_travel_controls,0.0016435187025955,0.4251972770721939
+USA,Close public transport,0.0016304657185841,1,US,close_public_transport,0.0016304657185841,0.4255837534954286
+JOR,Cancel public events,0.0016162077010167,1,JO,cancel_public_events,0.0016162077010167,0.42600590889124107
+CHL,Cancel public events,0.0016003790483688,1,CL,cancel_public_events,0.0016003790483688,0.42647456809243534
+HRV,Close public transport,0.0015866636260583,1,HR,close_public_transport,0.0015866636260583,0.4268806581752153
+IRL,Close public transport,0.0015748684027273,1,IE,close_public_transport,0.0015748684027273,0.4272298944663376
+MMR,Cancel public events,0.0015554816027228,1,MM,cancel_public_events,0.0015554816027228,0.42780390429559667
+MMR,Cancel public events,0.0015554816027228,1,MM,cancel_public_events,0.0015554816027228,0.42780390429559667
+VEN,Close public transport,0.0015521398685685,1,VE,close_public_transport,0.0015521398685685,0.4279028473006771
+VEN,Close public transport,0.0015521398685685,1,VE,close_public_transport,0.0015521398685685,0.4279028473006771
+ALB,Stay at home requirements,0.0015327932938328,1,AL,stay_at_home_requirements,0.0015327932938328,0.4284756661288597
+HND,Restrictions on gatherings,0.0015321531847432,1,HN,restrictions_on_gatherings,0.0015321531847432,0.4284946186588875
+ALB,International travel controls,0.0015252947603888,1,AL,international_travel_controls,0.0015252947603888,0.4286976848168786
+NLD,Restrictions on internal movement,0.001513841637394,1,NL,restrictions_on_internal_movement,0.001513841637394,0.42903679210499224
+ECU,International travel controls,0.0015110683788042,1,EC,international_travel_controls,0.0015110683788042,0.42911890352561105
+ZWE,Cancel public events,0.0014904277258406,1,ZW,cancel_public_events,0.0014904277258406,0.4297300377860709
+CRI,Restrictions on internal movement,0.0014781740217924,1,CR,restrictions_on_internal_movement,0.0014781740217924,0.43009284890326743
+JAM,Close public transport,0.0014729029356869,1,JM,close_public_transport,0.0014729029356869,0.4302489167037671
+SAU,Cancel public events,0.0014699155370761,1,SA,cancel_public_events,0.0014699155370761,0.4303373684423787
+CAN,Close public transport,0.0014672707574698,1,CA,close_public_transport,0.0014672707574698,0.4304156758211048
+NPL,Cancel public events,0.0014667892597135,1,NP,cancel_public_events,0.0014667892597135,0.4304299321421489
+AGO,Cancel public events,0.0014664537932039,1,AO,cancel_public_events,0.0014664537932039,0.430439864728953
+BLZ,Close public transport,0.0014583572443939,1,BZ,close_public_transport,0.0014583572443939,0.4306795896241878
+MLT,Cancel public events,0.0014543352962078,1,MT,cancel_public_events,0.0014543352962078,0.4307986725977087
+THA,Close public transport,0.0014533393148311,1,TH,close_public_transport,0.0014533393148311,0.43082816189454226
+BEL,Cancel public events,0.0014474787684372,1,BE,cancel_public_events,0.0014474787684372,0.43100168260111305
+JAM,International travel controls,0.0014428566909374,1,JM,international_travel_controls,0.0014428566909374,0.43113853437220817
+ZWE,School closing,0.0014289768525689,1,ZW,school_closing,0.0014289768525689,0.431549492531894
+SVK,Restrictions on internal movement,0.0014085619187348,1,SK,restrictions_on_internal_movement,0.0014085619187348,0.4321539436368586
+MCO,Restrictions on internal movement,0.0013598661986819,1,MC,restrictions_on_internal_movement,0.0013598661986819,0.4335957402173528
+UKR,Stay at home requirements,0.0013462327625929,1,UA,stay_at_home_requirements,0.0013462327625929,0.4339994028290188
+TTO,Close public transport,0.001336061606077,1,TT,close_public_transport,0.001336061606077,0.4343005532929274
+MYS,Restrictions on internal movement,0.0013357821312295,1,MY,restrictions_on_internal_movement,0.0013357821312295,0.43430882806284604
+CAN,Stay at home requirements,0.0013257844902386,1,CA,stay_at_home_requirements,0.0013257844902386,0.43460484103026964
+ITA,International travel controls,0.0012965071769722,1,IT,international_travel_controls,0.0012965071769722,0.43547169195901037
+THA,Stay at home requirements,0.0012856444703199,1,TH,stay_at_home_requirements,0.0012856444703199,0.43579331803393406
+FIN,International travel controls,0.0012801085471937,1,FI,international_travel_controls,0.0012801085471937,0.43595722720345786
+CIV,Stay at home requirements,0.0012131014556568,1,CI,stay_at_home_requirements,0.0012131014556568,0.4379411920229906
+CIV,Stay at home requirements,0.0012131014556568,1,CI,stay_at_home_requirements,0.0012131014556568,0.4379411920229906
+MDA,Cancel public events,0.0012019318037732,1,MD,cancel_public_events,0.0012019318037732,0.43827190621868556
+EST,International travel controls,0.0011780399511506,1,EE,international_travel_controls,0.0011780399511506,0.43897930291341597
+ISL,Cancel public events,0.0011278501353068,1,IS,cancel_public_events,0.0011278501353068,0.44046533710247027
+MCO,Workplace closing,0.0011210190577969,1,MC,workplace_closing,0.0011210190577969,0.440667593567395
+FRA,Cancel public events,0.0011004572742057,1,FR,cancel_public_events,0.0011004572742057,0.4412763926412859
+MCO,International travel controls,0.0010986914043988,1,MC,international_travel_controls,0.0010986914043988,0.4413286770113788
+HND,Restrictions on internal movement,0.001081777815245,1,HN,restrictions_on_internal_movement,0.001081777815245,0.4418294593179007
+MEX,International travel controls,0.0010749437152673,1,MX,international_travel_controls,0.0010749437152673,0.4420318052729024
+PRT,International travel controls,0.001034319895026,1,PT,international_travel_controls,0.001034319895026,0.4432346067726418
+SGP,International travel controls,0.0010083025100735,1,SG,international_travel_controls,0.0010083025100735,0.44400493682664177
+BGD,International travel controls,0.0009858036777889,1,BD,international_travel_controls,0.0009858036777889,0.44467108858326043
+ROU,International travel controls,0.0009563029620813,1,RO,international_travel_controls,0.0009563029620813,0.4455445540743374
+THA,Public information campaigns,0.0009412750601289,1,TH,public_information_campaigns,0.0009412750601289,0.4459895044236378
+TGO,Public information campaigns,0.0009345779776518,1,TG,public_information_campaigns,0.0009345779776518,0.44618779352593013
+BHR,Cancel public events,0.0009220262794527,1,BH,cancel_public_events,0.0009220262794527,0.44655942773779106
+MMR,Close public transport,0.0009110694556225,1,MM,close_public_transport,0.0009110694556225,0.4468838404605991
+MMR,Close public transport,0.0009110694556225,1,MM,close_public_transport,0.0009110694556225,0.4468838404605991
+CYP,International travel controls,0.000910467755219,1,CY,international_travel_controls,0.000910467755219,0.4469016557754421
+QAT,Stay at home requirements,0.0008206700394213,1,QA,stay_at_home_requirements,0.0008206700394213,0.4495604118105242
+ESP,International travel controls,0.0007860233300797,1,ES,international_travel_controls,0.0007860233300797,0.45058624132900815
+TTO,Public information campaigns,0.0007511743068518,1,TT,public_information_campaigns,0.0007511743068518,0.45161806101396135
+BGR,International travel controls,0.000737158153954,1,BG,international_travel_controls,0.000737158153954,0.4520330552125845
+MWI,Public information campaigns,0.0007303964410974,1,MW,public_information_campaigns,0.0007303964410974,0.45223325790933777
+BLZ,Public information campaigns,0.0006716877807282,1,BZ,public_information_campaigns,0.0006716877807282,0.4539715204439867
+AZE,Public information campaigns,0.0006202204371626,1,AZ,public_information_campaigns,0.0006202204371626,0.4554953800332769
+ZWE,Public information campaigns,0.0006138625438189,1,ZW,public_information_campaigns,0.0006138625438189,0.45568362632827236
+MNG,Cancel public events,0.0006115088796522,1,MN,cancel_public_events,0.0006115088796522,0.4557533142791537
+AUT,International travel controls,0.000586663951343,1,AT,international_travel_controls,0.000586663951343,0.4564889299069731
+SGP,Public information campaigns,0.0005606336460931,1,SG,public_information_campaigns,0.0005606336460931,0.4572596425087737
+COL,Public information campaigns,0.0005356265713195,1,CO,public_information_campaigns,0.0005356265713195,0.45800005901473306
+NOR,Public information campaigns,0.0005027060768781,1,NO,public_information_campaigns,0.0005027060768781,0.4589747782767591
+HND,Public information campaigns,0.0004674874753805,1,HN,public_information_campaigns,0.0004674874753805,0.46001754053910715
+HUN,Public information campaigns,0.0004615917238159,1,HU,public_information_campaigns,0.0004615917238159,0.46019210361027746
+DZA,Public information campaigns,0.0004594811457442,1,DZ,public_information_campaigns,0.0004594811457442,0.4602545941996627
+NGA,Public information campaigns,0.0004569531599108,1,NG,public_information_campaigns,0.0004569531599108,0.46032944351549937
+CZE,Public information campaigns,0.0004326740603513,1,CZ,public_information_campaigns,0.0004326740603513,0.4610483059264944
+JAM,Public information campaigns,0.0004311456793806,1,JM,public_information_campaigns,0.0004311456793806,0.46109355866030455
+UKR,Public information campaigns,0.0004231061920464,1,UA,public_information_campaigns,0.0004231061920464,0.46133159406330876
+SLV,Public information campaigns,0.0003957599285636,1,SV,public_information_campaigns,0.0003957599285636,0.46214126992673094
+PRT,Public information campaigns,0.0003851298555951,1,PT,public_information_campaigns,0.0003851298555951,0.46245600811809023
+SUR,Public information campaigns,0.0003753126473331,1,SR,public_information_campaigns,0.0003753126473331,0.4627466787825095
+KEN,Public information campaigns,0.0003648182493213,1,KE,public_information_campaigns,0.0003648182493213,0.46305739987157696
+PER,Public information campaigns,0.0003648018297214,1,PE,public_information_campaigns,0.0003648018297214,0.4630578860277106
+MYS,Public information campaigns,0.0003546172177673,1,MY,public_information_campaigns,0.0003546172177673,0.46335943488401937
+CHE,Public information campaigns,0.0003536056007841,1,CH,public_information_campaigns,0.0003536056007841,0.46338938712428945
+ROU,Public information campaigns,0.0003498670267683,1,RO,public_information_campaigns,0.0003498670267683,0.4635000798756452
+CAN,Public information campaigns,0.0003359945587832,1,CA,public_information_campaigns,0.0003359945587832,0.46391081981094556
+MNG,Public information campaigns,0.0003295085307021,1,MN,public_information_campaigns,0.0003295085307021,0.46410285995529826
+JPN,Public information campaigns,0.0003294610483492,1,JP,public_information_campaigns,0.0003294610483492,0.4641042658261627
+ITA,Public information campaigns,0.0003239242253276,1,IT,public_information_campaigns,0.0003239242253276,0.4642682016400427
+MOZ,Public information campaigns,0.0003204765994145,1,MZ,public_information_campaigns,0.0003204765994145,0.4643702799181117
+ISL,Public information campaigns,0.0003184902839611,1,IS,public_information_campaigns,0.0003184902839611,0.4644290913049315
+GTM,Public information campaigns,0.000308068032775,1,GT,public_information_campaigns,0.000308068032775,0.46473767625048407
+KAZ,Public information campaigns,0.00029678305941,1,KZ,public_information_campaigns,0.00029678305941,0.4650718049170476
+PAK,Public information campaigns,0.0002954099829727,1,PK,public_information_campaigns,0.0002954099829727,0.4651124593505359
+IRL,Public information campaigns,0.0002936141530544,1,IE,public_information_campaigns,0.0002936141530544,0.4651656307880368
+BOL,Public information campaigns,0.0002915635180911,1,BO,public_information_campaigns,0.0002915635180911,0.4652263465650028
+BOL,Public information campaigns,0.0002915635180911,1,BO,public_information_campaigns,0.0002915635180911,0.4652263465650028
+ARG,Public information campaigns,0.0002860931989857,1,AR,public_information_campaigns,0.0002860931989857,0.46538831331222014
+IDN,Public information campaigns,0.0002853050392058,1,ID,public_information_campaigns,0.0002853050392058,0.4654116493687423
+SVK,Public information campaigns,0.0002820740920478,1,SK,public_information_campaigns,0.0002820740920478,0.465507312161265
+MCO,Public information campaigns,0.0002750454939322,1,MC,public_information_campaigns,0.0002750454939322,0.4657154168718583
+PAN,Public information campaigns,0.0002732314778996,1,PA,public_information_campaigns,0.0002732314778996,0.46576912676894827
+BGD,Public information campaigns,0.0002671109014509,1,BD,public_information_campaigns,0.0002671109014509,0.4659503465185444
+UGA,Public information campaigns,0.0002561227768445,1,UG,public_information_campaigns,0.0002561227768445,0.4662756860035411
+SLE,Public information campaigns,0.0002512486863116,1,SL,public_information_campaigns,0.0002512486863116,0.4664199994474273
+CRI,Public information campaigns,0.000243933571406,1,CR,public_information_campaigns,0.000243933571406,0.4666365874277541
+AUS,Public information campaigns,0.0002404029324585,1,AU,public_information_campaigns,0.0002404029324585,0.4667411235791024
+POL,Public information campaigns,0.0002296247053177,1,PL,public_information_campaigns,0.0002296247053177,0.46706024836088017
+NZL,Public information campaigns,0.0002286614349081,1,NZ,public_information_campaigns,0.0002286614349081,0.4670887691421962
+DNK,Public information campaigns,0.0002153205439163,1,DK,public_information_campaigns,0.0002153205439163,0.46748376999631297
+FIN,Public information campaigns,0.0002142036240873,1,FI,public_information_campaigns,0.0002142036240873,0.46751684007286975
+SVN,Public information campaigns,0.0002069255355703,1,SI,public_information_campaigns,0.0002069255355703,0.46773233176546497
+TUN,Public information campaigns,0.0002025663429862,1,TN,public_information_campaigns,0.0002025663429862,0.46786139996601
+FRA,Public information campaigns,0.0002013927937494,1,FR,public_information_campaigns,0.0002013927937494,0.46789614674200636
+LVA,Public information campaigns,0.0001943680684643,1,LV,public_information_campaigns,0.0001943680684643,0.46810413678474455
+ZAF,Public information campaigns,0.0001889929845862,1,ZA,public_information_campaigns,0.0001889929845862,0.4682632837805564
+BGR,Public information campaigns,0.0001826688306733,1,BG,public_information_campaigns,0.0001826688306733,0.46845053110899165
+HRV,Public information campaigns,0.0001548582089029,1,HR,public_information_campaigns,0.0001548582089029,0.4692739558232463
+GBR,Public information campaigns,0.0001450893928272,1,GB,public_information_campaigns,0.0001450893928272,0.4695631936781979
+MMR,Public information campaigns,0.0001331879705149,1,MM,public_information_campaigns,0.0001331879705149,0.46991557433863884
+MMR,Public information campaigns,0.0001331879705149,1,MM,public_information_campaigns,0.0001331879705149,0.46991557433863884
+MLT,Public information campaigns,0.0001268593957533,1,MT,public_information_campaigns,0.0001268593957533,0.47010295256080625
+BHR,Public information campaigns,-0.0001169870397062,-1,BH,public_information_campaigns,-0.0001169870397062,0.4773228264312262
+ARE,Public information campaigns,-0.000117490309241,-1,AE,public_information_campaigns,-0.000117490309241,0.4773377273772139
+USA,Public information campaigns,-0.0001228450039965,-1,US,public_information_campaigns,-0.0001228450039965,0.47749627068614714
+SEN,Public information campaigns,-0.0001282391798069,-1,SN,public_information_campaigns,-0.0001282391798069,0.4776559829612623
+LBN,Public information campaigns,-0.0001469284994976,-1,LB,public_information_campaigns,-0.0001469284994976,0.47820934159714534
+CHN,Public information campaigns,-0.0001506764225848,-1,CN,public_information_campaigns,-0.0001506764225848,0.47832031115843754
+MAR,Public information campaigns,-0.0001576740019124,-1,MA,public_information_campaigns,-0.0001576740019124,0.47852749745602824
+MEX,Public information campaigns,-0.0001668182649818,-1,MX,public_information_campaigns,-0.0001668182649818,0.47879824336984317
+EST,Public information campaigns,-0.0001685233952164,-1,EE,public_information_campaigns,-0.0001685233952164,0.47884872934558964
+VEN,Public information campaigns,-0.00017205022371,-1,VE,public_information_campaigns,-0.00017205022371,0.4789531526759467
+VEN,Public information campaigns,-0.00017205022371,-1,VE,public_information_campaigns,-0.00017205022371,0.4789531526759467
+GIN,Public information campaigns,-0.000179079917307,-1,GN,public_information_campaigns,-0.000179079917307,0.4791612898218615
+ECU,Public information campaigns,-0.0002110873910091,-1,EC,public_information_campaigns,-0.0002110873910091,0.4801089761089482
+DEU,Public information campaigns,-0.0002199369703179,-1,DE,public_information_campaigns,-0.0002199369703179,0.4803709969430663
+GRC,Public information campaigns,-0.0002252239217927,-1,GR,public_information_campaigns,-0.0002252239217927,0.4805275344898841
+SWE,Public information campaigns,-0.0002288928993827,-1,SE,public_information_campaigns,-0.0002288928993827,0.4806361666106829
+BHS,Public information campaigns,-0.0002317208215542,-1,BS,public_information_campaigns,-0.0002317208215542,0.480719896526009
+TUR,Public information campaigns,-0.0002395662192825,-1,TR,public_information_campaigns,-0.0002395662192825,0.48095218526935213
+LUX,Public information campaigns,-0.0002544829639337,-1,LU,public_information_campaigns,-0.0002544829639337,0.4813938444420031
+URY,Public information campaigns,-0.0002677459276052,-1,UY,public_information_campaigns,-0.0002677459276052,0.48178653800209453
+LKA,Public information campaigns,-0.0002756109803814,-1,LK,public_information_campaigns,-0.0002756109803814,0.48201940869762616
+ESP,Public information campaigns,-0.0002814396780638,-1,ES,public_information_campaigns,-0.0002814396780638,0.4821919864185858
+VNM,Public information campaigns,-0.0002838096627889,-1,VN,public_information_campaigns,-0.0002838096627889,0.4822621575931523
+VNM,Public information campaigns,-0.0002838096627889,-1,VN,public_information_campaigns,-0.0002838096627889,0.4822621575931523
+CHL,Public information campaigns,-0.0002851408258602,-1,CL,public_information_campaigns,-0.0002851408258602,0.4823015710439072
+ISR,Public information campaigns,-0.0002964715953381,-1,IL,public_information_campaigns,-0.0002964715953381,0.4826370556546668
+NLD,Public information campaigns,-0.0002992194409768,-1,NL,public_information_campaigns,-0.0002992194409768,0.4827184146414792
+SRB,Public information campaigns,-0.0003005375488035,-1,RS,public_information_campaigns,-0.0003005375488035,0.4827574415488787
+CYP,Public information campaigns,-0.0003008569262351,-1,CY,public_information_campaigns,-0.0003008569262351,0.4827668977657345
+JOR,Public information campaigns,-0.0003017880113978,-1,JO,public_information_campaigns,-0.0003017880113978,0.4827944655972045
+SAU,Public information campaigns,-0.0003108530586387,-1,SA,public_information_campaigns,-0.0003108530586387,0.4830628660664809
+SYC,Public information campaigns,-0.0003167107489109,-1,SC,public_information_campaigns,-0.0003167107489109,0.48323630220819674
+RWA,Public information campaigns,-0.0003172615052853,-1,RW,public_information_campaigns,-0.0003172615052853,0.48325260915789237
+CHN,International travel controls,-0.0003451402700161,-1,CN,international_travel_controls,-0.0003451402700161,0.4840780514680914
+AUT,Public information campaigns,-0.0003472921336588,-1,AT,public_information_campaigns,-0.0003472921336588,0.48414176445227897
+QAT,Public information campaigns,-0.0003859153493974,-1,QA,public_information_campaigns,-0.0003859153493974,0.48528533149100667
+ALB,Public information campaigns,-0.0003899438945863,-1,AL,public_information_campaigns,-0.0003899438945863,0.4854046097904427
+EGY,Public information campaigns,-0.0004254908223771,-1,EG,public_information_campaigns,-0.0004254908223771,0.48645709323005865
+KOR,Public information campaigns,-0.0004354114698563,-1,KR,public_information_campaigns,-0.0004354114698563,0.4867508265519247
+KOR,Public information campaigns,-0.0004354114698563,-1,KR,public_information_campaigns,-0.0004354114698563,0.4867508265519247
+USA,International travel controls,-0.0004367622581002,-1,US,international_travel_controls,-0.0004367622581002,0.4867908210703118
+BRA,Public information campaigns,-0.0004456559808128,-1,BR,public_information_campaigns,-0.0004456559808128,0.4870541489147498
+PHL,Public information campaigns,-0.0004548320804828,-1,PH,public_information_campaigns,-0.0004548320804828,0.48732583745559305
+SEN,International travel controls,-0.0004574020448629,-1,SN,international_travel_controls,-0.0004574020448629,0.4874019296840516
+BEL,Public information campaigns,-0.0004799231328935,-1,BE,public_information_campaigns,-0.0004799231328935,0.4880687403950597
+PRY,Public information campaigns,-0.0004865064294852,-1,PY,public_information_campaigns,-0.0004865064294852,0.4882636604928421
+CHE,International travel controls,-0.000495404034895,-1,CH,international_travel_controls,-0.000495404034895,0.4885271032972714
+FRA,International travel controls,-0.0005059316994815,-1,FR,international_travel_controls,-0.0005059316994815,0.4888388093524425
+CIV,Public information campaigns,-0.00053755025905,-1,CI,public_information_campaigns,-0.00053755025905,0.48977498056043556
+CIV,Public information campaigns,-0.00053755025905,-1,CI,public_information_campaigns,-0.00053755025905,0.48977498056043556
+NAM,Public information campaigns,-0.0005567829454404,-1,,public_information_campaigns,-0.0005567829454404,0.49034442735044653
+KWT,Public information campaigns,-0.0005725119731906,-1,KW,public_information_campaigns,-0.0005725119731906,0.4908101368296389
+EGY,Workplace closing,-0.0005786701778966,-1,EG,workplace_closing,-0.0005786701778966,0.4909924706872644
+BRB,Public information campaigns,-0.0006042071471558,-1,BB,public_information_campaigns,-0.0006042071471558,0.491748576458246
+NPL,Public information campaigns,-0.0006428011715363,-1,NP,public_information_campaigns,-0.0006428011715363,0.49289127919102965
+SMR,Public information campaigns,-0.0006865520383127,-1,SM,public_information_campaigns,-0.0006865520383127,0.4941866671644151
+GHA,Public information campaigns,-0.0006986190560008,-1,GH,public_information_campaigns,-0.0006986190560008,0.49454395081933517
+CRI,Stay at home requirements,-0.000701685309439,-1,CR,stay_at_home_requirements,-0.000701685309439,0.4946347373138633
+ISL,International travel controls,-0.000734030574842,-1,IS,international_travel_controls,-0.000734030574842,0.4955924250326723
+USA,Stay at home requirements,-0.0007701768336814,-1,US,stay_at_home_requirements,-0.0007701768336814,0.4966626536346047
+CRI,Cancel public events,-0.0008413205833751,-1,CR,cancel_public_events,-0.0008413205833751,0.49876909779274603
+HND,Cancel public events,-0.000880498607173,-1,HN,cancel_public_events,-0.000880498607173,0.49992909174459577
+SUR,Cancel public events,-0.0009445869210968,-1,SR,cancel_public_events,-0.0009445869210968,0.5018266365753241
+BHR,Workplace closing,-0.0009547761788015,-1,BH,workplace_closing,-0.0009547761788015,0.5021283229843237
+BLZ,Cancel public events,-0.0009723397971966,-1,BZ,cancel_public_events,-0.0009723397971966,0.5026483515395161
+LTU,Restrictions on internal movement,-0.0009768859396692,-1,LT,restrictions_on_internal_movement,-0.0009768859396692,0.5027829550049606
+MAR,International travel controls,-0.0009841439923629,-1,MA,international_travel_controls,-0.0009841439923629,0.5029978534712622
+CHN,Cancel public events,-0.0009958539675006,-1,CN,cancel_public_events,-0.0009958539675006,0.5033445657098916
+NLD,International travel controls,-0.0010058080581489,-1,NL,international_travel_controls,-0.0010058080581489,0.503639289226518
+MLT,International travel controls,-0.0010153409712992,-1,MT,international_travel_controls,-0.0010153409712992,0.5039215424012801
+GRC,International travel controls,-0.0010310588107693,-1,GR,international_travel_controls,-0.0010310588107693,0.5043869206147273
+ALB,Cancel public events,-0.001037552991302,-1,AL,cancel_public_events,-0.001037552991302,0.5045792021391609
+DOM,Public information campaigns,-0.0010442648945428,-1,DO,public_information_campaigns,-0.0010442648945428,0.5047779300587949
+USA,School closing,-0.0010456638877357,-1,US,school_closing,-0.0010456638877357,0.504819351842875
+ESP,Restrictions on internal movement,-0.001073508633814,-1,ES,restrictions_on_internal_movement,-0.001073508633814,0.5056437869192392
+SUR,Workplace closing,-0.0010928683575403,-1,SR,workplace_closing,-0.0010928683575403,0.5062169950664351
+POL,International travel controls,-0.0010975538000189,-1,PL,international_travel_controls,-0.0010975538000189,0.5063557229656511
+ARE,Restrictions on internal movement,-0.0011390311559861,-1,AE,restrictions_on_internal_movement,-0.0011390311559861,0.5075837961913162
+SWE,Stay at home requirements,-0.0011423639072813,-1,SE,stay_at_home_requirements,-0.0011423639072813,0.507682473229377
+BEL,International travel controls,-0.0011513661679774,-1,BE,international_travel_controls,-0.0011513661679774,0.5079490146969691
+LVA,Stay at home requirements,-0.0011710449295364,-1,LV,stay_at_home_requirements,-0.0011710449295364,0.5085316690060809
+ARE,Cancel public events,-0.0011975735288823,-1,AE,cancel_public_events,-0.0011975735288823,0.5093171352396775
+JPN,Restrictions on internal movement,-0.0012004086610508,-1,JP,restrictions_on_internal_movement,-0.0012004086610508,0.5094010786306234
+PAN,Cancel public events,-0.0012008321174232,-1,PA,cancel_public_events,-0.0012008321174232,0.5094136164460422
+LTU,Close public transport,-0.0012320892991247,-1,LT,close_public_transport,-0.0012320892991247,0.5103390878764709
+MYS,International travel controls,-0.0012409499562363,-1,MY,international_travel_controls,-0.0012409499562363,0.5106014367052911
+QAT,International travel controls,-0.0012481341683085,-1,QA,international_travel_controls,-0.0012481341683085,0.5108141488776955
+MMR,Restrictions on gatherings,-0.0012506461707799,-1,MM,restrictions_on_gatherings,-0.0012506461707799,0.510888524953653
+MMR,Restrictions on gatherings,-0.0012506461707799,-1,MM,restrictions_on_gatherings,-0.0012506461707799,0.510888524953653
+SWE,International travel controls,-0.0012580963697378,-1,SE,international_travel_controls,-0.0012580963697378,0.5111091125406079
+GIN,Cancel public events,-0.0012711091278593,-1,GN,cancel_public_events,-0.0012711091278593,0.5114943979443762
+DEU,International travel controls,-0.0012845697116911,-1,DE,international_travel_controls,-0.0012845697116911,0.5118929426977769
+MCO,Stay at home requirements,-0.001322797371524,-1,MC,stay_at_home_requirements,-0.001322797371524,0.5130247980059538
+DNK,Stay at home requirements,-0.0013271955948503,-1,DK,stay_at_home_requirements,-0.0013271955948503,0.5131550218396956
+MNG,Close public transport,-0.0013330466201718,-1,MN,close_public_transport,-0.0013330466201718,0.513328260643676
+BHR,Stay at home requirements,-0.00133946649412,-1,BH,stay_at_home_requirements,-0.00133946649412,0.5135183420778484
+ESP,Cancel public events,-0.0013522749221007,-1,ES,cancel_public_events,-0.0013522749221007,0.5138975776173171
+RWA,Workplace closing,-0.0013634967431504,-1,RW,workplace_closing,-0.0013634967431504,0.5142298364523606
+PRT,Cancel public events,-0.0013709148971577,-1,PT,cancel_public_events,-0.0013709148971577,0.5144494752434019
+CRI,Workplace closing,-0.0013806168306315,-1,CR,workplace_closing,-0.0013806168306315,0.5147367328194581
+BHR,Restrictions on gatherings,-0.0013974396242477,-1,BH,restrictions_on_gatherings,-0.0013974396242477,0.5152348268261562
+MAR,Cancel public events,-0.0014004866443144,-1,MA,cancel_public_events,-0.0014004866443144,0.5153250438536093
+BRA,Cancel public events,-0.0014056628931781,-1,BR,cancel_public_events,-0.0014056628931781,0.51547830368637
+SMR,Cancel public events,-0.0014155074860433,-1,SM,cancel_public_events,-0.0014155074860433,0.5157697851618259
+QAT,Workplace closing,-0.0014662804577526,-1,QA,workplace_closing,-0.0014662804577526,0.5172730855938243
+AUS,Close public transport,-0.0014797228851461,-1,AU,close_public_transport,-0.0014797228851461,0.5176710927662912
+CHN,Restrictions on internal movement,-0.0014847849030494,-1,CN,restrictions_on_internal_movement,-0.0014847849030494,0.517820970416636
+ISR,Close public transport,-0.0014857486041147,-1,IL,close_public_transport,-0.0014857486041147,0.5178495039489271
+CZE,International travel controls,-0.0014953729480107,-1,CZ,international_travel_controls,-0.0014953729480107,0.518134464230933
+BHR,International travel controls,-0.0014985136226943,-1,BH,international_travel_controls,-0.0014985136226943,0.5182274542106342
+AGO,Stay at home requirements,-0.0015049287200303,-1,AO,stay_at_home_requirements,-0.0015049287200303,0.5184173942175287
+SVN,Cancel public events,-0.001506127831677,-1,SI,cancel_public_events,-0.001506127831677,0.5184528978525499
+DNK,International travel controls,-0.0015261404986905,-1,DK,international_travel_controls,-0.0015261404986905,0.5190454385283072
+BHS,Cancel public events,-0.0015283503466363,-1,BS,cancel_public_events,-0.0015283503466363,0.5191108683280555
+SEN,Cancel public events,-0.001541550872736,-1,SN,cancel_public_events,-0.001541550872736,0.5195017132189536
+COL,Restrictions on internal movement,-0.0015660502575481,-1,CO,restrictions_on_internal_movement,-0.0015660502575481,0.5202270978976876
+DEU,Cancel public events,-0.0015833594888298,-1,DE,cancel_public_events,-0.0015833594888298,0.5207395944876513
+KAZ,Cancel public events,-0.0015866673688834,-1,KZ,cancel_public_events,-0.0015866673688834,0.520837535130993
+KAZ,International travel controls,-0.0015916006723817,-1,KZ,international_travel_controls,-0.0015916006723817,0.5209836017690191
+GBR,Cancel public events,-0.0016061408298962,-1,GB,cancel_public_events,-0.0016061408298962,0.521414110843769
+URY,Cancel public events,-0.0016092089447079,-1,UY,cancel_public_events,-0.0016092089447079,0.5215049524503674
+MAR,Restrictions on internal movement,-0.0016312215463337,-1,MA,restrictions_on_internal_movement,-0.0016312215463337,0.5221567077528331
+GTM,Cancel public events,-0.0016463910880431,-1,GT,cancel_public_events,-0.0016463910880431,0.5226058518119109
+MYS,Cancel public events,-0.0016658722956213,-1,MY,cancel_public_events,-0.0016658722956213,0.5231826568871749
+SLV,International travel controls,-0.0016901208924186,-1,SV,international_travel_controls,-0.0016901208924186,0.5239006161638043
+MEX,Cancel public events,-0.0017139374803777,-1,MX,cancel_public_events,-0.0017139374803777,0.5246057844012012
+CAN,Cancel public events,-0.0017430642054844,-1,CA,cancel_public_events,-0.0017430642054844,0.5254681766733394
+LBN,Restrictions on internal movement,-0.001746619861637,-1,LB,restrictions_on_internal_movement,-0.001746619861637,0.5255734535411353
+ALB,Workplace closing,-0.0017472795553803,-1,AL,workplace_closing,-0.0017472795553803,0.5255929859391002
+SRB,Cancel public events,-0.0017504647754787,-1,RS,cancel_public_events,-0.0017504647754787,0.5256872948319764
+NLD,Stay at home requirements,-0.0017539957908435,-1,NL,stay_at_home_requirements,-0.0017539957908435,0.525791842128394
+SLV,Cancel public events,-0.0017841490126955,-1,SV,cancel_public_events,-0.0017841490126955,0.5266846272049854
+TUR,Workplace closing,-0.0017854320442097,-1,TR,workplace_closing,-0.0017854320442097,0.5267226155630552
+USA,Cancel public events,-0.0018073639339453,-1,US,cancel_public_events,-0.0018073639339453,0.5273719811251665
+OMN,Cancel public events,-0.0018191185968485,-1,OM,cancel_public_events,-0.0018191185968485,0.5277200164917303
+LUX,Cancel public events,-0.0018211693752916,-1,LU,cancel_public_events,-0.0018211693752916,0.5277807365168865
+FRA,Restrictions on internal movement,-0.0018266106624147,-1,FR,restrictions_on_internal_movement,-0.0018266106624147,0.5279418436770035
+PHL,Restrictions on internal movement,-0.001835024887932,-1,PH,restrictions_on_internal_movement,-0.001835024887932,0.5281909744335704
+PHL,Cancel public events,-0.001850450321295,-1,PH,cancel_public_events,-0.001850450321295,0.5286476950047264
+VNM,Restrictions on gatherings,-0.001862117254881,-1,VN,restrictions_on_gatherings,-0.001862117254881,0.5289931328569827
+VNM,Restrictions on gatherings,-0.001862117254881,-1,VN,restrictions_on_gatherings,-0.001862117254881,0.5289931328569827
+JPN,Stay at home requirements,-0.0018701179183966,-1,JP,stay_at_home_requirements,-0.0018701179183966,0.5292300187534423
+SLE,Restrictions on gatherings,-0.001870582609267,-1,SL,restrictions_on_gatherings,-0.001870582609267,0.5292437774514799
+ISR,School closing,-0.0018781515202694,-1,IL,school_closing,-0.0018781515202694,0.5294678798980496
+UGA,Workplace closing,-0.0018801689443747,-1,UG,workplace_closing,-0.0018801689443747,0.5295276123585876
+BGR,Stay at home requirements,-0.0018807501190956,-1,BG,stay_at_home_requirements,-0.0018807501190956,0.5295448199432449
+FIN,Close public transport,-0.0018845548901187,-1,FI,close_public_transport,-0.0018845548901187,0.5296574726742183
+ZWE,Restrictions on gatherings,-0.0018855007409444,-1,ZW,restrictions_on_gatherings,-0.0018855007409444,0.5296854776915929
+KAZ,Restrictions on gatherings,-0.0018903691059473,-1,KZ,restrictions_on_gatherings,-0.0018903691059473,0.5298296216123759
+POL,Close public transport,-0.0018989850098069,-1,PL,close_public_transport,-0.0018989850098069,0.5300847237180465
+FIN,Cancel public events,-0.0019013677645212,-1,FI,cancel_public_events,-0.0019013677645212,0.5301552729900462
+AUS,School closing,-0.001903290093904,-1,AU,school_closing,-0.001903290093904,0.5302121898592843
+ZAF,Cancel public events,-0.0019034519636042,-1,ZA,cancel_public_events,-0.0019034519636042,0.5302169825429119
+SYC,Restrictions on internal movement,-0.0019081704166102,-1,SC,restrictions_on_internal_movement,-0.0019081704166102,0.530356687827111
+BHR,Restrictions on internal movement,-0.0019197198100565,-1,BH,restrictions_on_internal_movement,-0.0019197198100565,0.5306986455178397
+GBR,Stay at home requirements,-0.0019227224480681,-1,GB,stay_at_home_requirements,-0.0019227224480681,0.5307875484689181
+SUR,International travel controls,-0.0019230101635123,-1,SR,international_travel_controls,-0.0019230101635123,0.5307960672287424
+SGP,Cancel public events,-0.0019255069253415,-1,SG,cancel_public_events,-0.0019255069253415,0.5308699920554775
+KAZ,School closing,-0.0019417696146823,-1,KZ,school_closing,-0.0019417696146823,0.531351502337197
+DZA,Workplace closing,-0.0019702344363703,-1,DZ,workplace_closing,-0.0019702344363703,0.5321942967866793
+ROU,Stay at home requirements,-0.0019753413555073,-1,RO,stay_at_home_requirements,-0.0019753413555073,0.5323455038853852
+LBN,School closing,-0.0019765655374323,-1,LB,school_closing,-0.0019765655374323,0.5323817498082599
+THA,International travel controls,-0.0019781194915168,-1,TH,international_travel_controls,-0.0019781194915168,0.5324277597180187
+KOR,Cancel public events,-0.0019796248548228,-1,KR,cancel_public_events,-0.0019796248548228,0.5324723309383361
+KOR,Cancel public events,-0.0019796248548228,-1,KR,cancel_public_events,-0.0019796248548228,0.5324723309383361
+ROU,Cancel public events,-0.0019842478036755,-1,RO,cancel_public_events,-0.0019842478036755,0.5326092085086931
+QAT,Restrictions on gatherings,-0.00201109654467,-1,QA,restrictions_on_gatherings,-0.00201109654467,0.5334041535862973
+PAN,Workplace closing,-0.0020201689122569,-1,PA,workplace_closing,-0.0020201689122569,0.5336727707984378
+THA,Cancel public events,-0.0020213051924201,-1,TH,cancel_public_events,-0.0020213051924201,0.5337064141012168
+SLV,Close public transport,-0.002030213819491,-1,SV,close_public_transport,-0.002030213819491,0.5339701832380889
+AND,Workplace closing,-0.0020371921661436,-1,AD,workplace_closing,-0.0020371921661436,0.5341768000892267
+GIN,Restrictions on internal movement,-0.0020395086948514,-1,GN,restrictions_on_internal_movement,-0.0020395086948514,0.5342453885229926
+CYP,School closing,-0.0020433567824722,-1,CY,school_closing,-0.0020433567824722,0.5343593237839782
+PRY,Workplace closing,-0.002044659536159,-1,PY,workplace_closing,-0.002044659536159,0.5343978960816835
+LTU,International travel controls,-0.0020474238835979,-1,LT,international_travel_controls,-0.0020474238835979,0.5344797436584392
+POL,Stay at home requirements,-0.0020486003267459,-1,PL,stay_at_home_requirements,-0.0020486003267459,0.5345145761181725
+GRC,Restrictions on internal movement,-0.0020621666126413,-1,GR,restrictions_on_internal_movement,-0.0020621666126413,0.5349162505280128
+MYS,Workplace closing,-0.0020714364130379,-1,MY,workplace_closing,-0.0020714364130379,0.5351907133863332
+MAR,Workplace closing,-0.0020742425298359,-1,MA,workplace_closing,-0.0020742425298359,0.5352737976820254
+MDA,Workplace closing,-0.0020767674510248,-1,MD,workplace_closing,-0.0020767674510248,0.5353485562590055
+PHL,International travel controls,-0.0020936654046782,-1,PH,international_travel_controls,-0.0020936654046782,0.5358488756252322
+SEN,Restrictions on internal movement,-0.0021104504480996,-1,SN,restrictions_on_internal_movement,-0.0021104504480996,0.5363458519135411
+MCO,Close public transport,-0.0021183787631655,-1,MC,close_public_transport,-0.0021183787631655,0.5365805956967459
+CRI,International travel controls,-0.0021206126777849,-1,CR,international_travel_controls,-0.0021206126777849,0.5366467380693377
+AZE,Cancel public events,-0.0021271842424711,-1,AZ,cancel_public_events,-0.0021271842424711,0.5368413108055611
+POL,Restrictions on gatherings,-0.0021284426815878,-1,PL,restrictions_on_gatherings,-0.0021284426815878,0.5368785710250065
+MAR,Restrictions on gatherings,-0.0021304006601895,-1,MA,restrictions_on_gatherings,-0.0021304006601895,0.5369365434063481
+AGO,Restrictions on gatherings,-0.0021322624298527,-1,AO,restrictions_on_gatherings,-0.0021322624298527,0.5369916672063689
+SLV,Restrictions on internal movement,-0.0021341961885287,-1,SV,restrictions_on_internal_movement,-0.0021341961885287,0.5370489224773359
+PER,Cancel public events,-0.0021345123256074,-1,PE,cancel_public_events,-0.0021345123256074,0.5370582827529112
+MEX,Stay at home requirements,-0.0021470838764736,-1,MX,stay_at_home_requirements,-0.0021470838764736,0.5374305047681254
+EGY,Cancel public events,-0.0021632992649738,-1,EG,cancel_public_events,-0.0021632992649738,0.5379106145532477
+ITA,Cancel public events,-0.0021661136074329,-1,IT,cancel_public_events,-0.0021661136074329,0.5379939423966282
+VNM,Restrictions on internal movement,-0.0021771337603282,-1,VN,restrictions_on_internal_movement,-0.0021771337603282,0.5383202301842143
+VNM,Restrictions on internal movement,-0.0021771337603282,-1,VN,restrictions_on_internal_movement,-0.0021771337603282,0.5383202301842143
+PRT,Close public transport,-0.0021797998690715,-1,PT,close_public_transport,-0.0021797998690715,0.53839916908203
+HND,Workplace closing,-0.0021843055332425,-1,HN,workplace_closing,-0.0021843055332425,0.5385325740545315
+TUR,Cancel public events,-0.0021963892448636,-1,TR,cancel_public_events,-0.0021963892448636,0.5388903519881169
+MEX,Close public transport,-0.0021968323642827,-1,MX,close_public_transport,-0.0021968323642827,0.5389034719925551
+BLZ,Workplace closing,-0.0022065221115763,-1,BZ,workplace_closing,-0.0022065221115763,0.5391903687567591
+BGR,School closing,-0.002209553712975,-1,BG,school_closing,-0.002209553712975,0.539280129263952
+GBR,Close public transport,-0.0022194903669024,-1,GB,close_public_transport,-0.0022194903669024,0.5395743365092399
+EGY,School closing,-0.0022231909677811,-1,EG,school_closing,-0.0022231909677811,0.5396839049412683
+CHN,Workplace closing,-0.0022237272525642,-1,CN,workplace_closing,-0.0022237272525642,0.5396997834120169
+NOR,Close public transport,-0.0022254736323315,-1,NO,close_public_transport,-0.0022254736323315,0.5397514907155335
+LUX,Stay at home requirements,-0.0022267085110925,-1,LU,stay_at_home_requirements,-0.0022267085110925,0.5397880533533382
+MWI,Restrictions on gatherings,-0.00223075126195,-1,MW,restrictions_on_gatherings,-0.00223075126195,0.5399077522582071
+MYS,School closing,-0.002232264689909,-1,MY,school_closing,-0.002232264689909,0.5399525622590396
+ESP,Stay at home requirements,-0.0022376093814559,-1,ES,stay_at_home_requirements,-0.0022376093814559,0.540110809390158
+DZA,Restrictions on gatherings,-0.0022447805430694,-1,DZ,restrictions_on_gatherings,-0.0022447805430694,0.5403231351609092
+AZE,School closing,-0.002247674521233,-1,AZ,school_closing,-0.002247674521233,0.5404088208806351
+ARE,Restrictions on gatherings,-0.0022552479808528,-1,AE,restrictions_on_gatherings,-0.0022552479808528,0.5406330580039486
+NGA,Cancel public events,-0.0022644895269129,-1,NG,cancel_public_events,-0.0022644895269129,0.5409066842999241
+IRN,Stay at home requirements,-0.0022706156869567,-1,IR,stay_at_home_requirements,-0.0022706156869567,0.5410880693701748
+CHE,Workplace closing,-0.002279646583048,-1,CH,workplace_closing,-0.002279646583048,0.5413554586826049
+TUN,Cancel public events,-0.0022823772506471,-1,TN,cancel_public_events,-0.0022823772506471,0.5414363090571876
+SWE,School closing,-0.002298466895848,-1,SE,school_closing,-0.002298466895848,0.5419126957993248
+GRC,Stay at home requirements,-0.0023071512467687,-1,GR,stay_at_home_requirements,-0.0023071512467687,0.5421698245048389
+SWE,Cancel public events,-0.002307586612638,-1,SE,cancel_public_events,-0.002307586612638,0.5421827149399928
+MEX,Restrictions on gatherings,-0.0023083822235417,-1,MX,restrictions_on_gatherings,-0.0023083822235417,0.542206271611485
+ALB,School closing,-0.0023189149368188,-1,AL,school_closing,-0.0023189149368188,0.5425181271497079
+IRN,School closing,-0.0023190781999049,-1,IR,school_closing,-0.0023190781999049,0.5425229610890974
+ECU,Cancel public events,-0.0023242555018692,-1,EC,cancel_public_events,-0.0023242555018692,0.5426762521023569
+GTM,Restrictions on gatherings,-0.0023287811031354,-1,GT,restrictions_on_gatherings,-0.0023287811031354,0.5428102473779828
+DEU,Restrictions on internal movement,-0.0023367740309266,-1,DE,restrictions_on_internal_movement,-0.0023367740309266,0.5430469042329378
+THA,Workplace closing,-0.0023663498107191,-1,TH,workplace_closing,-0.0023663498107191,0.5439225922425607
+NPL,Restrictions on internal movement,-0.0023747976882806,-1,NP,restrictions_on_internal_movement,-0.0023747976882806,0.5441727193783207
+BGR,Cancel public events,-0.0023896200585662,-1,BG,cancel_public_events,-0.0023896200585662,0.5446115842882014
+ARE,Workplace closing,-0.0024018620792985,-1,AE,workplace_closing,-0.0024018620792985,0.5449740494824936
+SMR,Restrictions on internal movement,-0.0024131571876309,-1,SM,restrictions_on_internal_movement,-0.0024131571876309,0.5453084782280235
+RWA,Close public transport,-0.0024331025211678,-1,RW,close_public_transport,-0.0024331025211678,0.5458990252752605
+URY,International travel controls,-0.002437060098826,-1,UY,international_travel_controls,-0.002437060098826,0.54601620234808
+BGD,Restrictions on gatherings,-0.0024391224248789,-1,BD,restrictions_on_gatherings,-0.0024391224248789,0.5460772642781163
+GIN,Workplace closing,-0.0024517922354636,-1,GN,workplace_closing,-0.0024517922354636,0.5464523955947225
+GRC,School closing,-0.0024579032707982,-1,GR,school_closing,-0.0024579032707982,0.5466333328483277
+RWA,Cancel public events,-0.0024586339890811,-1,RW,cancel_public_events,-0.0024586339890811,0.5466549681608448
+NAM,Restrictions on internal movement,-0.0024742393059316,-1,,restrictions_on_internal_movement,-0.0024742393059316,0.5471170147729113
+FRA,Stay at home requirements,-0.0025085609360103,-1,FR,stay_at_home_requirements,-0.0025085609360103,0.5481332192531141
+KWT,Cancel public events,-0.0025100289398193,-1,KW,cancel_public_events,-0.0025100289398193,0.5481766843229328
+IRN,Cancel public events,-0.0025112036762266,-1,IR,cancel_public_events,-0.0025112036762266,0.5482114662490073
+BRB,Workplace closing,-0.0025230075387629,-1,BB,workplace_closing,-0.0025230075387629,0.5485609583321508
+SMR,International travel controls,-0.0025260792224076,-1,SM,international_travel_controls,-0.0025260792224076,0.5486519056057608
+CHN,Stay at home requirements,-0.002533266928159,-1,CN,stay_at_home_requirements,-0.002533266928159,0.5488647212200018
+HRV,Restrictions on gatherings,-0.0025399044910405,-1,HR,restrictions_on_gatherings,-0.0025399044910405,0.5490612480493611
+BGD,Close public transport,-0.0025459459715172,-1,BD,close_public_transport,-0.0025459459715172,0.5492401259031636
+CHN,Restrictions on gatherings,-0.0025617758659379,-1,CN,restrictions_on_gatherings,-0.0025617758659379,0.5497088218711164
+SUR,Restrictions on gatherings,-0.0025638947863737,-1,SR,restrictions_on_gatherings,-0.0025638947863737,0.549771559463565
+BLZ,Stay at home requirements,-0.0025810965651483,-1,BZ,stay_at_home_requirements,-0.0025810965651483,0.5502808745694655
+SYC,School closing,-0.0025886879272231,-1,SC,school_closing,-0.0025886879272231,0.5505056417537035
+TGO,Workplace closing,-0.0026064431205258,-1,TG,workplace_closing,-0.0026064431205258,0.5510313425126623
+SGP,Stay at home requirements,-0.0026136148275776,-1,SG,stay_at_home_requirements,-0.0026136148275776,0.5512436844329041
+RWA,Restrictions on gatherings,-0.0026225941457835,-1,RW,restrictions_on_gatherings,-0.0026225941457835,0.5515095466127912
+KAZ,Workplace closing,-0.0026422351032876,-1,KZ,workplace_closing,-0.0026422351032876,0.5520910816088089
+KEN,Close public transport,-0.0026447015261723,-1,KE,close_public_transport,-0.0026447015261723,0.5521641081515389
+MOZ,School closing,-0.0026573634377128,-1,MZ,school_closing,-0.0026573634377128,0.552539005591022
+SWE,Restrictions on gatherings,-0.0026658824409496,-1,SE,restrictions_on_gatherings,-0.0026658824409496,0.5527912386357884
+IRL,International travel controls,-0.0026701645624734,-1,IE,international_travel_controls,-0.0026701645624734,0.5529180248946951
+TUN,International travel controls,-0.0026729649946692,-1,TN,international_travel_controls,-0.0026729649946692,0.553000940879086
+RWA,School closing,-0.0026756517195464,-1,RW,school_closing,-0.0026756517195464,0.5530804901851948
+PAN,Restrictions on gatherings,-0.0026871749686753,-1,PA,restrictions_on_gatherings,-0.0026871749686753,0.5534216737876179
+PER,Workplace closing,-0.0027016447243678,-1,PE,workplace_closing,-0.0027016447243678,0.5538500983854135
+KOR,Restrictions on internal movement,-0.0027076976095133,-1,KR,restrictions_on_internal_movement,-0.0027076976095133,0.5540293139118586
+KOR,Restrictions on internal movement,-0.0027076976095133,-1,KR,restrictions_on_internal_movement,-0.0027076976095133,0.5540293139118586
+DNK,Restrictions on gatherings,-0.0027123433522986,-1,DK,restrictions_on_gatherings,-0.0027123433522986,0.5541668663713853
+AUS,Stay at home requirements,-0.002713893513033,-1,AU,stay_at_home_requirements,-0.002713893513033,0.5542127639665672
+ITA,Workplace closing,-0.0027173879066125,-1,IT,workplace_closing,-0.0027173879066125,0.5543162269548616
+LVA,International travel controls,-0.0027181144735307,-1,LV,international_travel_controls,-0.0027181144735307,0.5543377393526047
+ECU,Restrictions on gatherings,-0.0027297576194856,-1,EC,restrictions_on_gatherings,-0.0027297576194856,0.5546824728939864
+LVA,Workplace closing,-0.0027401349804056,-1,LV,workplace_closing,-0.0027401349804056,0.5549897287159099
+ISR,Restrictions on gatherings,-0.0027425354197659,-1,IL,restrictions_on_gatherings,-0.0027425354197659,0.5550608015998841
+BGD,Restrictions on internal movement,-0.0027485542220797,-1,BD,restrictions_on_internal_movement,-0.0027485542220797,0.5552390079922587
+AGO,Workplace closing,-0.0027494942665434,-1,AO,workplace_closing,-0.0027494942665434,0.5552668410932335
+PRY,International travel controls,-0.0027606407535805,-1,PY,international_travel_controls,-0.0027606407535805,0.5555968694176358
+OMN,Restrictions on gatherings,-0.002764273826574,-1,OM,restrictions_on_gatherings,-0.002764273826574,0.5557044384650391
+ZAF,Workplace closing,-0.0027879964730029,-1,ZA,workplace_closing,-0.0027879964730029,0.556406825255178
+JOR,Stay at home requirements,-0.0027924617743261,-1,JO,stay_at_home_requirements,-0.0027924617743261,0.5565390351531254
+SEN,Workplace closing,-0.002805239035907,-1,SN,workplace_closing,-0.002805239035907,0.5569173479090599
+MLT,Restrictions on gatherings,-0.0028065655408056,-1,MT,restrictions_on_gatherings,-0.0028065655408056,0.5569566234393267
+NLD,School closing,-0.002818152123769,-1,NL,school_closing,-0.002818152123769,0.5572996822477415
+GRC,Workplace closing,-0.0028634901882875,-1,GR,workplace_closing,-0.0028634901882875,0.5586420644184535
+USA,Restrictions on gatherings,-0.0028666956456218,-1,US,restrictions_on_gatherings,-0.0028666956456218,0.5587369725011043
+HRV,Cancel public events,-0.0028720406616302,-1,HR,cancel_public_events,-0.0028720406616302,0.5588952292389701
+CHE,Restrictions on internal movement,-0.0028803968451056,-1,CH,restrictions_on_internal_movement,-0.0028803968451056,0.5591426414704296
+MMR,Restrictions on internal movement,-0.0028809614339367,-1,MM,restrictions_on_internal_movement,-0.0028809614339367,0.5591593579753951
+MMR,Restrictions on internal movement,-0.0028809614339367,-1,MM,restrictions_on_internal_movement,-0.0028809614339367,0.5591593579753951
+QAT,Restrictions on internal movement,-0.0028971793982208,-1,QA,restrictions_on_internal_movement,-0.0028971793982208,0.5596395440250518
+FRA,School closing,-0.0029002451235069,-1,FR,school_closing,-0.0029002451235069,0.559730314881904
+ALB,Restrictions on gatherings,-0.0029073860605839,-1,AL,restrictions_on_gatherings,-0.0029073860605839,0.5599417457560744
+BLZ,Restrictions on internal movement,-0.0029111872851964,-1,BZ,restrictions_on_internal_movement,-0.0029111872851964,0.5600542934839248
+JPN,International travel controls,-0.0029137006989785,-1,JP,international_travel_controls,-0.0029137006989785,0.5601287113463665
+POL,Workplace closing,-0.0029152889547252,-1,PL,workplace_closing,-0.0029152889547252,0.560175736869391
+SVN,Stay at home requirements,-0.0029190510744023,-1,SI,stay_at_home_requirements,-0.0029190510744023,0.5602871267673114
+QAT,School closing,-0.0029240484845551,-1,QA,school_closing,-0.0029240484845551,0.5604350914932013
+HRV,Workplace closing,-0.0029260176601279,-1,HR,workplace_closing,-0.0029260176601279,0.5604933953976137
+KOR,Close public transport,-0.0029270753159179,-1,KR,close_public_transport,-0.0029270753159179,0.5605247107678291
+KOR,Close public transport,-0.0029270753159179,-1,KR,close_public_transport,-0.0029270753159179,0.5605247107678291
+AFG,School closing,-0.0029277686179957,-1,AF,school_closing,-0.0029277686179957,0.560545238250818
+AGO,International travel controls,-0.0029295330998501,-1,AO,international_travel_controls,-0.0029295330998501,0.5605974815260228
+SWE,Close public transport,-0.0029338921045963,-1,SE,close_public_transport,-0.0029338921045963,0.5607265441650104
+LTU,School closing,-0.0029448177346464,-1,LT,school_closing,-0.0029448177346464,0.5610500332936004
+NAM,Cancel public events,-0.0029465159497012,-1,,cancel_public_events,-0.0029465159497012,0.5611003145227577
+SRB,Restrictions on internal movement,-0.0029602714133792,-1,RS,restrictions_on_internal_movement,-0.0029602714133792,0.5615075901616127
+JPN,School closing,-0.0029659340267677,-1,JP,school_closing,-0.0029659340267677,0.5616752504120687
+EST,Close public transport,-0.0029729883416844,-1,EE,close_public_transport,-0.0029729883416844,0.5618841165529446
+EST,Restrictions on gatherings,-0.0029736933181634,-1,EE,restrictions_on_gatherings,-0.0029736933181634,0.5619049896948891
+PHL,Restrictions on gatherings,-0.0029745610238722,-1,PH,restrictions_on_gatherings,-0.0029745610238722,0.5619306809696554
+ALB,Restrictions on internal movement,-0.0029761403098579,-1,AL,restrictions_on_internal_movement,-0.0029761403098579,0.5619774409134726
+NPL,Restrictions on gatherings,-0.0029787438589767,-1,NP,restrictions_on_gatherings,-0.0029787438589767,0.562054527528324
+BHS,Workplace closing,-0.0029840635927466,-1,BS,workplace_closing,-0.0029840635927466,0.5622120357025588
+CIV,School closing,-0.0029927568605397,-1,CI,school_closing,-0.0029927568605397,0.5624694284213397
+CIV,School closing,-0.0029927568605397,-1,CI,school_closing,-0.0029927568605397,0.5624694284213397
+FRA,Workplace closing,-0.0030030301899805,-1,FR,workplace_closing,-0.0030030301899805,0.5627736040499565
+ZWE,Restrictions on internal movement,-0.0030036586356188,-1,ZW,restrictions_on_internal_movement,-0.0030036586356188,0.5627922112452366
+PRY,Cancel public events,-0.0030115990739586,-1,PY,cancel_public_events,-0.0030115990739586,0.563027313977746
+HND,School closing,-0.0030268219024276,-1,HN,school_closing,-0.0030268219024276,0.5634780357661949
+MDA,Restrictions on gatherings,-0.0030320026946296,-1,MD,restrictions_on_gatherings,-0.0030320026946296,0.5636314301193943
+DZA,Restrictions on internal movement,-0.0030326727829598,-1,DZ,restrictions_on_internal_movement,-0.0030326727829598,0.5636512702832129
+BLZ,Restrictions on gatherings,-0.0030355666950038,-1,BZ,restrictions_on_gatherings,-0.0030355666950038,0.5637369540452511
+SWE,Restrictions on internal movement,-0.003045052012713,-1,SE,restrictions_on_internal_movement,-0.003045052012713,0.5640177980008014
+KEN,Cancel public events,-0.0030488674440898,-1,KE,cancel_public_events,-0.0030488674440898,0.5641307663665264
+CAN,International travel controls,-0.0030502386508649,-1,CA,international_travel_controls,-0.0030502386508649,0.5641713654425303
+GBR,Restrictions on internal movement,-0.0030584073086672,-1,GB,restrictions_on_internal_movement,-0.0030584073086672,0.5644132253610978
+KAZ,Stay at home requirements,-0.0030636502024997,-1,KZ,stay_at_home_requirements,-0.0030636502024997,0.5645684584368461
+PRT,School closing,-0.0030647093674017,-1,PT,school_closing,-0.0030647093674017,0.5645998184892743
+PAN,Stay at home requirements,-0.0030701388422905,-1,PA,stay_at_home_requirements,-0.0030701388422905,0.5647605759094346
+AND,Restrictions on internal movement,-0.0030730539643472,-1,AD,restrictions_on_internal_movement,-0.0030730539643472,0.5648468876634964
+GTM,Restrictions on internal movement,-0.0030865847752529,-1,GT,restrictions_on_internal_movement,-0.0030865847752529,0.5652475117198603
+MOZ,Cancel public events,-0.0030885737939064,-1,MZ,cancel_public_events,-0.0030885737939064,0.5653064031437892
+USA,Workplace closing,-0.0030889767532846,-1,US,workplace_closing,-0.0030889767532846,0.5653183340784367
+DNK,Workplace closing,-0.0030900249355755,-1,DK,workplace_closing,-0.0030900249355755,0.5653493689546253
+EGY,Close public transport,-0.003117647255734,-1,EG,close_public_transport,-0.003117647255734,0.5661672183817738
+MAR,Stay at home requirements,-0.0031213594063508,-1,MA,stay_at_home_requirements,-0.0031213594063508,0.5662771287816973
+SVK,Stay at home requirements,-0.0031245705439915,-1,SK,stay_at_home_requirements,-0.0031245705439915,0.5663722050484581
+UGA,Restrictions on internal movement,-0.0031429692421913,-1,UG,restrictions_on_internal_movement,-0.0031429692421913,0.5669169588814684
+NPL,School closing,-0.0031534814381608,-1,NP,school_closing,-0.0031534814381608,0.5672282069374751
+JAM,Restrictions on gatherings,-0.00315749570844,-1,JM,restrictions_on_gatherings,-0.00315749570844,0.5673470625813684
+ESP,School closing,-0.00316220195034,-1,ES,school_closing,-0.00316220195034,0.5674864063157053
+AGO,Restrictions on internal movement,-0.0031797345243618,-1,AO,restrictions_on_internal_movement,-0.0031797345243618,0.5680055157003583
+DEU,Workplace closing,-0.0032095326399767,-1,DE,workplace_closing,-0.0032095326399767,0.5688877866915678
+PAK,Restrictions on internal movement,-0.003233484999113,-1,PK,restrictions_on_internal_movement,-0.003233484999113,0.56959697488018
+MMR,School closing,-0.0032443577963614,-1,MM,school_closing,-0.0032443577963614,0.5699188997203122
+MMR,School closing,-0.0032443577963614,-1,MM,school_closing,-0.0032443577963614,0.5699188997203122
+NOR,Restrictions on gatherings,-0.0032539292761421,-1,NO,restrictions_on_gatherings,-0.0032539292761421,0.5702022947867184
+KWT,Restrictions on internal movement,-0.0032687658689532,-1,KW,restrictions_on_internal_movement,-0.0032687658689532,0.5706415808011358
+CAN,School closing,-0.0032741576529145,-1,CA,school_closing,-0.0032741576529145,0.5708012222577098
+PRT,Stay at home requirements,-0.003286816905104,-1,PT,stay_at_home_requirements,-0.003286816905104,0.5711760409583801
+MOZ,Workplace closing,-0.0032926067053677,-1,MZ,workplace_closing,-0.0032926067053677,0.5713474669936227
+FIN,Restrictions on internal movement,-0.0032955597699219,-1,FI,restrictions_on_internal_movement,-0.0032955597699219,0.5714349021598262
+MCO,School closing,-0.0033066772779875,-1,MC,school_closing,-0.0033066772779875,0.5717640724666865
+KWT,Close public transport,-0.0033083711160863,-1,KW,close_public_transport,-0.0033083711160863,0.571814224101699
+KAZ,Close public transport,-0.003313593724786,-1,KZ,close_public_transport,-0.003313593724786,0.5719688565695279
+SAU,Restrictions on gatherings,-0.0033204055797636,-1,SA,restrictions_on_gatherings,-0.0033204055797636,0.5721705438883078
+AGO,Public information campaigns,-0.0033295646640857,-1,AO,public_information_campaigns,-0.0033295646640857,0.5724417286339428
+ARE,School closing,-0.0033314657185524,-1,AE,school_closing,-0.0033314657185524,0.5724980155894791
+LVA,Restrictions on internal movement,-0.0033400000751883,-1,LV,restrictions_on_internal_movement,-0.0033400000751883,0.5727507032220059
+AUT,Restrictions on internal movement,-0.003375603810682,-1,AT,restrictions_on_internal_movement,-0.003375603810682,0.573804868640073
+NPL,Workplace closing,-0.0033775323365309,-1,NP,workplace_closing,-0.0033775323365309,0.5738619689760227
+DZA,International travel controls,-0.003381561015754,-1,DZ,international_travel_controls,-0.003381561015754,0.5739812512439811
+CIV,Close public transport,-0.003387273423047,-1,CI,close_public_transport,-0.003387273423047,0.5741503858063716
+CIV,Close public transport,-0.003387273423047,-1,CI,close_public_transport,-0.003387273423047,0.5741503858063716
+UGA,School closing,-0.0034030533066201,-1,UG,school_closing,-0.0034030533066201,0.5746176010390774
+ZWE,Workplace closing,-0.0034199224191308,-1,ZW,workplace_closing,-0.0034199224191308,0.5751170664686364
+KEN,Restrictions on internal movement,-0.0034251590483934,-1,KE,restrictions_on_internal_movement,-0.0034251590483934,0.5752721140612365
+JPN,Cancel public events,-0.0034258034890424,-1,JP,cancel_public_events,-0.0034258034890424,0.5752911948412937
+AUS,International travel controls,-0.0034305481895173,-1,AU,international_travel_controls,-0.0034305481895173,0.5754316772679371
+CYP,Cancel public events,-0.0034469477241857,-1,CY,cancel_public_events,-0.0034469477241857,0.5759172393046194
+DOM,Workplace closing,-0.0034587908482551,-1,DO,workplace_closing,-0.0034587908482551,0.5762678938542817
+SRB,School closing,-0.0034633793382827,-1,RS,school_closing,-0.0034633793382827,0.5764037511580495
+MCO,Restrictions on gatherings,-0.0034713567918385,-1,MC,restrictions_on_gatherings,-0.0034713567918385,0.576639949847489
+SGP,Workplace closing,-0.0034755311891346,-1,SG,workplace_closing,-0.0034755311891346,0.5767635465771525
+IDN,Workplace closing,-0.003478256739655,-1,ID,workplace_closing,-0.003478256739655,0.5768442454438292
+SVN,Restrictions on gatherings,-0.0034938273996056,-1,SI,restrictions_on_gatherings,-0.0034938273996056,0.5773052659246523
+UKR,Workplace closing,-0.0035014503485305,-1,UA,workplace_closing,-0.0035014503485305,0.5775309683412355
+CYP,Restrictions on gatherings,-0.0035141584051999,-1,CY,restrictions_on_gatherings,-0.0035141584051999,0.5779072320586786
+ESP,Workplace closing,-0.003517646314544,-1,ES,workplace_closing,-0.003517646314544,0.5780105030599069
+TUR,Restrictions on gatherings,-0.0035228153360793,-1,TR,restrictions_on_gatherings,-0.0035228153360793,0.5781635489038948
+NOR,Stay at home requirements,-0.0035263382521132,-1,NO,stay_at_home_requirements,-0.0035263382521132,0.5782678563930442
+ARE,Stay at home requirements,-0.003526954770295,-1,AE,stay_at_home_requirements,-0.003526954770295,0.5782861104368363
+SVK,School closing,-0.0035276891462063,-1,SK,school_closing,-0.0035276891462063,0.5783078540454443
+SVN,Workplace closing,-0.0035310849214809,-1,SI,workplace_closing,-0.0035310849214809,0.5784083971152196
+ARG,Cancel public events,-0.0035384087425989,-1,AR,cancel_public_events,-0.0035384087425989,0.5786252428715328
+NGA,Restrictions on internal movement,-0.0035442276967099,-1,NG,restrictions_on_internal_movement,-0.0035442276967099,0.578797532102089
+COL,Cancel public events,-0.0035536764798112,-1,CO,cancel_public_events,-0.0035536764798112,0.5790772943306891
+LUX,Restrictions on gatherings,-0.0035545776625955,-1,LU,restrictions_on_gatherings,-0.0035545776625955,0.5791039768041261
+SRB,Workplace closing,-0.0035693622246694,-1,RS,workplace_closing,-0.0035693622246694,0.5795417222778371
+AFG,Public information campaigns,-0.0035840725457434,-1,AF,public_information_campaigns,-0.0035840725457434,0.5799772696031342
+IRN,Close public transport,-0.0036015914588726,-1,IR,close_public_transport,-0.0036015914588726,0.5804959745122356
+IDN,Restrictions on internal movement,-0.0036264001576618,-1,ID,restrictions_on_internal_movement,-0.0036264001576618,0.581230517446233
+GIN,Restrictions on gatherings,-0.00362918757547,-1,GN,restrictions_on_gatherings,-0.00362918757547,0.5813130480969741
+BRA,Restrictions on gatherings,-0.0036311413716937,-1,BR,restrictions_on_gatherings,-0.0036311413716937,0.5813708966452912
+TGO,School closing,-0.0036320410083763,-1,TG,school_closing,-0.0036320410083763,0.5813975333413139
+BRB,Cancel public events,-0.0036590102464266,-1,BB,cancel_public_events,-0.0036590102464266,0.5821960461296496
+SAU,School closing,-0.0036590426584222,-1,SA,school_closing,-0.0036590426584222,0.5821970057931349
+PHL,Stay at home requirements,-0.0036609315159042,-1,PH,stay_at_home_requirements,-0.0036609315159042,0.5822529316169164
+PAK,Restrictions on gatherings,-0.0036613267195673,-1,PK,restrictions_on_gatherings,-0.0036613267195673,0.5822646329181691
+CHE,Restrictions on gatherings,-0.0036616434249937,-1,CH,restrictions_on_gatherings,-0.0036616434249937,0.582274010021543
+HRV,Restrictions on internal movement,-0.0037107053124992,-1,HR,restrictions_on_internal_movement,-0.0037107053124992,0.5837266481909997
+PHL,Workplace closing,-0.0037156496264444,-1,PH,workplace_closing,-0.0037156496264444,0.5838730408294357
+ITA,Restrictions on gatherings,-0.0037188051138333,-1,IT,restrictions_on_gatherings,-0.0037188051138333,0.5839664693878832
+ISR,International travel controls,-0.0037212133160248,-1,IL,international_travel_controls,-0.0037212133160248,0.584037772115948
+ITA,Restrictions on internal movement,-0.0037235082501348,-1,IT,restrictions_on_internal_movement,-0.0037235082501348,0.584105721170786
+IRN,Workplace closing,-0.0037264393825965,-1,IR,workplace_closing,-0.0037264393825965,0.584192506965424
+LUX,Restrictions on internal movement,-0.0037350292203076,-1,LU,restrictions_on_internal_movement,-0.0037350292203076,0.5844468372972357
+MNG,Workplace closing,-0.0037436871456663,-1,MN,workplace_closing,-0.0037436871456663,0.5847031835872749
+ISL,Restrictions on gatherings,-0.0037444810684858,-1,IS,restrictions_on_gatherings,-0.0037444810684858,0.584726690277495
+HRV,International travel controls,-0.0037532058166729,-1,HR,international_travel_controls,-0.0037532058166729,0.5849850150766389
+BGD,School closing,-0.0037561537883187,-1,BD,school_closing,-0.0037561537883187,0.5850722994505776
+SVN,Restrictions on internal movement,-0.0037726649395774,-1,SI,restrictions_on_internal_movement,-0.0037726649395774,0.5855611662626702
+VNM,Cancel public events,-0.0037755452513413,-1,VN,cancel_public_events,-0.0037755452513413,0.5856464473437886
+VNM,Cancel public events,-0.0037755452513413,-1,VN,cancel_public_events,-0.0037755452513413,0.5856464473437886
+BEL,Workplace closing,-0.0038386221718506,-1,BE,workplace_closing,-0.0038386221718506,0.5875140465537319
+BHS,International travel controls,-0.003851928369535,-1,BS,international_travel_controls,-0.003851928369535,0.5879080201986416
+SUR,Restrictions on internal movement,-0.003872979805305,-1,SR,restrictions_on_internal_movement,-0.003872979805305,0.5885313170320123
+PRY,Restrictions on internal movement,-0.0039049584064414,-1,PY,restrictions_on_internal_movement,-0.0039049584064414,0.5894781484520503
+IRL,Restrictions on internal movement,-0.0039274307468638,-1,IE,restrictions_on_internal_movement,-0.0039274307468638,0.590143515830159
+LBN,Workplace closing,-0.0039318470420566,-1,LB,workplace_closing,-0.0039318470420566,0.590274274740809
+SVK,Restrictions on gatherings,-0.0039398078326949,-1,SK,restrictions_on_gatherings,-0.0039398078326949,0.5905099800698986
+LBN,Close public transport,-0.0039451495903202,-1,LB,close_public_transport,-0.0039451495903202,0.5906681403326409
+ESP,Restrictions on gatherings,-0.0039548094593249,-1,ES,restrictions_on_gatherings,-0.0039548094593249,0.5909541524520606
+LKA,Restrictions on gatherings,-0.0039804660808513,-1,LK,restrictions_on_gatherings,-0.0039804660808513,0.5917138009210351
+UKR,Restrictions on gatherings,-0.0039815097189325,-1,UA,restrictions_on_gatherings,-0.0039815097189325,0.5917447012509843
+HUN,Restrictions on internal movement,-0.003983321463495,-1,HU,restrictions_on_internal_movement,-0.003983321463495,0.5917983438937485
+ITA,Stay at home requirements,-0.0039895644791538,-1,IT,stay_at_home_requirements,-0.0039895644791538,0.5919831888579271
+BRB,School closing,-0.0040036670181725,-1,BB,school_closing,-0.0040036670181725,0.5924007408011237
+ROU,School closing,-0.0040183505339482,-1,RO,school_closing,-0.0040183505339482,0.5928354944676069
+FRA,Restrictions on gatherings,-0.0040467908562486,-1,FR,restrictions_on_gatherings,-0.0040467908562486,0.5936775635323281
+PRT,Workplace closing,-0.0040482197493477,-1,PT,workplace_closing,-0.0040482197493477,0.5937198706012438
+USA,Restrictions on internal movement,-0.0040597928787958,-1,US,restrictions_on_internal_movement,-0.0040597928787958,0.5940625310741922
+PAK,School closing,-0.0040683309935733,-1,PK,school_closing,-0.0040683309935733,0.5943153299788329
+KOR,Restrictions on gatherings,-0.0040838320804985,-1,KR,restrictions_on_gatherings,-0.0040838320804985,0.5947742905219446
+KOR,Restrictions on gatherings,-0.0040838320804985,-1,KR,restrictions_on_gatherings,-0.0040838320804985,0.5947742905219446
+OMN,Stay at home requirements,-0.0040846999389393,-1,OM,stay_at_home_requirements,-0.0040846999389393,0.5947999863188431
+PAN,School closing,-0.0040883687528739,-1,PA,school_closing,-0.0040883687528739,0.5949086135940868
+UGA,Close public transport,-0.0040903156382703,-1,UG,close_public_transport,-0.0040903156382703,0.5949662575246846
+DEU,Stay at home requirements,-0.0040979187497803,-1,DE,stay_at_home_requirements,-0.0040979187497803,0.5951913725895059
+AUS,Workplace closing,-0.0040980547579104,-1,AU,workplace_closing,-0.0040980547579104,0.5951953995564897
+GTM,Workplace closing,-0.0040981718256132,-1,GT,workplace_closing,-0.0040981718256132,0.5951988657299727
+POL,School closing,-0.004098241472189,-1,PL,school_closing,-0.004098241472189,0.5952009278453849
+ECU,Restrictions on internal movement,-0.0041195694301977,-1,EC,restrictions_on_internal_movement,-0.0041195694301977,0.5958324120270022
+CHE,Stay at home requirements,-0.0041446284355611,-1,CH,stay_at_home_requirements,-0.0041446284355611,0.5965743661084757
+DNK,School closing,-0.0041479327234584,-1,DK,school_closing,-0.0041479327234584,0.5966722003942428
+PRT,Restrictions on internal movement,-0.0041535757840016,-1,PT,restrictions_on_internal_movement,-0.0041535757840016,0.5968392817185536
+CIV,Workplace closing,-0.0041556140777767,-1,CI,workplace_closing,-0.0041556140777767,0.596899632094147
+CIV,Workplace closing,-0.0041556140777767,-1,CI,workplace_closing,-0.0041556140777767,0.596899632094147
+TGO,Close public transport,-0.0041853668004896,-1,TG,close_public_transport,-0.0041853668004896,0.5977805590795423
+PRY,School closing,-0.0041888527767253,-1,PY,school_closing,-0.0041888527767253,0.5978837728447531
+ISR,Workplace closing,-0.0042103962853628,-1,IL,workplace_closing,-0.0042103962853628,0.5985216391100359
+MDA,Public information campaigns,-0.0042137977718696,-1,MD,public_information_campaigns,-0.0042137977718696,0.5986223512795813
+ZAF,School closing,-0.0042676081546171,-1,ZA,school_closing,-0.0042676081546171,0.6002155842322134
+UKR,School closing,-0.0042908329712895,-1,UA,school_closing,-0.0042908329712895,0.600903231138851
+BGR,Workplace closing,-0.0042976037320222,-1,BG,workplace_closing,-0.0042976037320222,0.6011037017276656
+AUS,Restrictions on gatherings,-0.0043253460718096,-1,AU,restrictions_on_gatherings,-0.0043253460718096,0.6019251047297556
+BOL,Close public transport,-0.0043317228866326,-1,BO,close_public_transport,-0.0043317228866326,0.6021139112572339
+BOL,Close public transport,-0.0043317228866326,-1,BO,close_public_transport,-0.0043317228866326,0.6021139112572339
+AND,Public information campaigns,-0.0043334578983066,-1,AD,public_information_campaigns,-0.0043334578983066,0.6021652819710456
+AFG,Restrictions on internal movement,-0.0043747007702348,-1,AF,restrictions_on_internal_movement,-0.0043747007702348,0.6033864125273088
+AND,Restrictions on gatherings,-0.0043854746980204,-1,AD,restrictions_on_gatherings,-0.0043854746980204,0.6037054100125683
+SMR,Restrictions on gatherings,-0.0043884927510135,-1,SM,restrictions_on_gatherings,-0.0043884927510135,0.6037947693747561
+ECU,Workplace closing,-0.0043907364612899,-1,EC,workplace_closing,-0.0043907364612899,0.6038612017799164
+SUR,School closing,-0.0043933349977585,-1,SR,school_closing,-0.0043933349977585,0.6039381399788105
+MNG,Stay at home requirements,-0.0043968837673608,-1,MN,stay_at_home_requirements,-0.0043968837673608,0.6040432129476875
+ISL,Workplace closing,-0.0043973374099985,-1,IS,workplace_closing,-0.0043973374099985,0.6040566445265426
+LKA,Stay at home requirements,-0.0044169210595135,-1,LK,stay_at_home_requirements,-0.0044169210595135,0.6046364827314947
+OMN,School closing,-0.0044238122575342,-1,OM,school_closing,-0.0044238122575342,0.6048405192614189
+MYS,Restrictions on gatherings,-0.0044400495675265,-1,MY,restrictions_on_gatherings,-0.0044400495675265,0.6053212781042473
+VEN,International travel controls,-0.0044569705098949,-1,VE,international_travel_controls,-0.0044569705098949,0.6058222781268159
+VEN,International travel controls,-0.0044569705098949,-1,VE,international_travel_controls,-0.0044569705098949,0.6058222781268159
+HUN,Workplace closing,-0.0044717897337855,-1,HU,workplace_closing,-0.0044717897337855,0.6062610498773482
+LKA,International travel controls,-0.0044943962747619,-1,LK,international_travel_controls,-0.0044943962747619,0.6069303907032191
+IRL,Restrictions on gatherings,-0.0045485593465867,-1,IE,restrictions_on_gatherings,-0.0045485593465867,0.6085340661732855
+MWI,Stay at home requirements,-0.0045597795712514,-1,MW,stay_at_home_requirements,-0.0045597795712514,0.6088662777421127
+AUT,Workplace closing,-0.0045694758194101,-1,AT,workplace_closing,-0.0045694758194101,0.6091533669857596
+BEL,Stay at home requirements,-0.0045929316290739,-1,BE,stay_at_home_requirements,-0.0045929316290739,0.6098478531978797
+SLE,Workplace closing,-0.0046068096209107,-1,SL,workplace_closing,-0.0046068096209107,0.6102587566849353
+IRL,School closing,-0.0046096585820237,-1,IE,school_closing,-0.0046096585820237,0.6103431095271609
+SEN,Restrictions on gatherings,-0.004610736907932,-1,SN,restrictions_on_gatherings,-0.004610736907932,0.6103750369040548
+CHL,Restrictions on internal movement,-0.0046173885253217,-1,CL,restrictions_on_internal_movement,-0.0046173885253217,0.6105719798632472
+PER,Restrictions on gatherings,-0.0046198541959694,-1,PE,restrictions_on_gatherings,-0.0046198541959694,0.6106449841335325
+NLD,Restrictions on gatherings,-0.0046542355845351,-1,NL,restrictions_on_gatherings,-0.0046542355845351,0.6116629579598323
+GBR,School closing,-0.0046555300745529,-1,GB,school_closing,-0.0046555300745529,0.6117012855845007
+AZE,Workplace closing,-0.0046838818361407,-1,AZ,workplace_closing,-0.0046838818361407,0.6125407325187255
+DOM,Restrictions on gatherings,-0.004710337962767,-1,DO,restrictions_on_gatherings,-0.004710337962767,0.613324052959649
+LVA,Restrictions on gatherings,-0.0047321006771924,-1,LV,restrictions_on_gatherings,-0.0047321006771924,0.6139684095315762
+GBR,Restrictions on gatherings,-0.0047356877128776,-1,GB,restrictions_on_gatherings,-0.0047356877128776,0.6140746154934023
+PER,School closing,-0.0047513642777674,-1,PE,school_closing,-0.0047513642777674,0.6145387716374628
+VEN,Restrictions on gatherings,-0.0047623266051084,-1,VE,restrictions_on_gatherings,-0.0047623266051084,0.6148633473097672
+VEN,Restrictions on gatherings,-0.0047623266051084,-1,VE,restrictions_on_gatherings,-0.0047623266051084,0.6148633473097672
+SLE,International travel controls,-0.0047655066211065,-1,SL,international_travel_controls,-0.0047655066211065,0.6149575021181773
+MLT,Restrictions on internal movement,-0.0047802459540858,-1,MT,restrictions_on_internal_movement,-0.0047802459540858,0.6153939084361296
+KOR,Workplace closing,-0.0047955514086887,-1,KR,workplace_closing,-0.0047955514086887,0.6158470766423991
+KOR,Workplace closing,-0.0047955514086887,-1,KR,workplace_closing,-0.0047955514086887,0.6158470766423991
+SAU,Stay at home requirements,-0.0047969182317223,-1,SA,stay_at_home_requirements,-0.0047969182317223,0.6158875459233513
+DOM,School closing,-0.0047981124115151,-1,DO,school_closing,-0.0047981124115151,0.6159229035346543
+SLV,Restrictions on gatherings,-0.0048036586694288,-1,SV,restrictions_on_gatherings,-0.0048036586694288,0.6160871186994742
+ISL,Stay at home requirements,-0.004820584029819,-1,IS,stay_at_home_requirements,-0.004820584029819,0.6165882495320754
+JAM,Cancel public events,-0.0048235352155612,-1,JM,cancel_public_events,-0.0048235352155612,0.6166756290698846
+VEN,Cancel public events,-0.004831230754341,-1,VE,cancel_public_events,-0.004831230754341,0.6169034807473158
+VEN,Cancel public events,-0.004831230754341,-1,VE,cancel_public_events,-0.004831230754341,0.6169034807473158
+LTU,Restrictions on gatherings,-0.0048384798824371,-1,LT,restrictions_on_gatherings,-0.0048384798824371,0.6171181149716206
+ZAF,International travel controls,-0.0048626429425504,-1,ZA,international_travel_controls,-0.0048626429425504,0.6178335416540434
+SEN,Stay at home requirements,-0.0048690072737382,-1,SN,stay_at_home_requirements,-0.0048690072737382,0.6180219785625384
+NOR,Workplace closing,-0.0048702126024758,-1,NO,workplace_closing,-0.0048702126024758,0.618057666274936
+NAM,Workplace closing,-0.0048764552592211,-1,,workplace_closing,-0.0048764552592211,0.6182425006123027
+GRC,Restrictions on gatherings,-0.0048788890387078,-1,GR,restrictions_on_gatherings,-0.0048788890387078,0.6183145606401201
+LTU,Workplace closing,-0.0049000724755479,-1,LT,workplace_closing,-0.0049000724755479,0.6189417657983146
+NGA,Restrictions on gatherings,-0.0049044768535065,-1,NG,restrictions_on_gatherings,-0.0049044768535065,0.6190721718601412
+TUN,Restrictions on gatherings,-0.0049147096672332,-1,TN,restrictions_on_gatherings,-0.0049147096672332,0.6193751478880952
+LUX,Workplace closing,-0.0049275701229317,-1,LU,workplace_closing,-0.0049275701229317,0.6197559238788712
+MDA,Stay at home requirements,-0.0049650074670772,-1,MD,stay_at_home_requirements,-0.0049650074670772,0.6208643792978102
+VNM,Stay at home requirements,-0.0049917172989834,-1,VN,stay_at_home_requirements,-0.0049917172989834,0.6216552115160442
+VNM,Stay at home requirements,-0.0049917172989834,-1,VN,stay_at_home_requirements,-0.0049917172989834,0.6216552115160442
+UGA,Cancel public events,-0.0050098807694027,-1,UG,cancel_public_events,-0.0050098807694027,0.622193000658745
+UGA,International travel controls,-0.0050366949704439,-1,UG,international_travel_controls,-0.0050366949704439,0.6229869230676938
+DOM,Close public transport,-0.0050471604105965,-1,DO,close_public_transport,-0.0050471604105965,0.6232967867643183
+NGA,International travel controls,-0.0051039827197954,-1,NG,international_travel_controls,-0.0051039827197954,0.6249791976827679
+JAM,School closing,-0.0051046725819266,-1,JM,school_closing,-0.0051046725819266,0.6249996233148499
+OMN,Restrictions on internal movement,-0.0051238094486053,-1,OM,restrictions_on_internal_movement,-0.0051238094486053,0.6255662330478768
+CZE,Restrictions on internal movement,-0.0051379556155759,-1,CZ,restrictions_on_internal_movement,-0.0051379556155759,0.6259850767397486
+SVK,Workplace closing,-0.0051471908315444,-1,SK,workplace_closing,-0.0051471908315444,0.6262585156125909
+ZAF,Restrictions on gatherings,-0.0051539746877754,-1,ZA,restrictions_on_gatherings,-0.0051539746877754,0.6264593739366038
+CYP,Stay at home requirements,-0.0051792624388979,-1,CY,stay_at_home_requirements,-0.0051792624388979,0.6272081007868732
+BHS,School closing,-0.0052248986889878,-1,BS,school_closing,-0.0052248986889878,0.6285593117198816
+GBR,Workplace closing,-0.005245266325341,-1,GB,workplace_closing,-0.005245266325341,0.6291623624277239
+ARG,Workplace closing,-0.0052560226660574,-1,AR,workplace_closing,-0.0052560226660574,0.6294808391900901
+MMR,Workplace closing,-0.005263221755778,-1,MM,workplace_closing,-0.005263221755778,0.6296939918640942
+MMR,Workplace closing,-0.005263221755778,-1,MM,workplace_closing,-0.005263221755778,0.6296939918640942
+KOR,School closing,-0.0052779785896711,-1,KR,school_closing,-0.0052779785896711,0.6301309163540264
+KOR,School closing,-0.0052779785896711,-1,KR,school_closing,-0.0052779785896711,0.6301309163540264
+TTO,School closing,-0.0053262955815103,-1,TT,school_closing,-0.0053262955815103,0.6315614994430093
+QAT,Close public transport,-0.0053267097132598,-1,QA,close_public_transport,-0.0053267097132598,0.6315737611723699
+OMN,Workplace closing,-0.0053445550790525,-1,OM,workplace_closing,-0.0053445550790525,0.6321021317837835
+TTO,International travel controls,-0.0053504711109699,-1,TT,international_travel_controls,-0.0053504711109699,0.6322772953213457
+LUX,School closing,-0.0053713659874142,-1,LU,school_closing,-0.0053713659874142,0.6328959567021512
+KEN,Restrictions on gatherings,-0.0053728612383854,-1,KE,restrictions_on_gatherings,-0.0053728612383854,0.6329402285136145
+EGY,Restrictions on internal movement,-0.005386148972621,-1,EG,restrictions_on_internal_movement,-0.005386148972621,0.6333336554875374
+COL,Stay at home requirements,-0.0053901385498027,-1,CO,stay_at_home_requirements,-0.0053901385498027,0.633451780011252
+AFG,Restrictions on gatherings,-0.0053996839470363,-1,AF,restrictions_on_gatherings,-0.0053996839470363,0.6337344028182649
+LVA,School closing,-0.0054026871222337,-1,LV,school_closing,-0.0054026871222337,0.6338233216744916
+NLD,Workplace closing,-0.0054057038126778,-1,NL,workplace_closing,-0.0054057038126778,0.6339126406939453
+DEU,Restrictions on gatherings,-0.00541134404136,-1,DE,restrictions_on_gatherings,-0.00541134404136,0.6340796381717188
+BEL,Restrictions on internal movement,-0.0054172592846773,-1,BE,restrictions_on_internal_movement,-0.0054172592846773,0.6342547783601873
+VEN,Restrictions on internal movement,-0.0054267375957537,-1,VE,restrictions_on_internal_movement,-0.0054267375957537,0.6345354148613822
+VEN,Restrictions on internal movement,-0.0054267375957537,-1,VE,restrictions_on_internal_movement,-0.0054267375957537,0.6345354148613822
+ECU,School closing,-0.0054318808867587,-1,EC,school_closing,-0.0054318808867587,0.6346876988685894
+NAM,Stay at home requirements,-0.0054396452858321,-1,,stay_at_home_requirements,-0.0054396452858321,0.6349175893809683
+ISR,Stay at home requirements,-0.0054437376637209,-1,IL,stay_at_home_requirements,-0.0054437376637209,0.6350387576569431
+CHE,School closing,-0.0054591653743868,-1,CH,school_closing,-0.0054591653743868,0.6354955456551242
+UKR,Cancel public events,-0.0054673604470389,-1,UA,cancel_public_events,-0.0054673604470389,0.6357381876719967
+BOL,Workplace closing,-0.0054781238760576,-1,BO,workplace_closing,-0.0054781238760576,0.6360568743068118
+BOL,Workplace closing,-0.0054781238760576,-1,BO,workplace_closing,-0.0054781238760576,0.6360568743068118
+JOR,Restrictions on internal movement,-0.0054929808157761,-1,JO,restrictions_on_internal_movement,-0.0054929808157761,0.6364967627581886
+BOL,School closing,-0.0055319612226346,-1,BO,school_closing,-0.0055319612226346,0.6376509056120945
+BOL,School closing,-0.0055319612226346,-1,BO,school_closing,-0.0055319612226346,0.6376509056120945
+VEN,School closing,-0.0055643956757625,-1,VE,school_closing,-0.0055643956757625,0.6386112340261565
+VEN,School closing,-0.0055643956757625,-1,VE,school_closing,-0.0055643956757625,0.6386112340261565
+ZAF,Restrictions on internal movement,-0.0055735399862062,-1,ZA,restrictions_on_internal_movement,-0.0055735399862062,0.638881981342643
+UGA,Restrictions on gatherings,-0.0055786318635912,-1,UG,restrictions_on_gatherings,-0.0055786318635912,0.6390327430809233
+VEN,Workplace closing,-0.0056053159128613,-1,VE,workplace_closing,-0.0056053159128613,0.6398228119196134
+VEN,Workplace closing,-0.0056053159128613,-1,VE,workplace_closing,-0.0056053159128613,0.6398228119196134
+URY,School closing,-0.0056107697721977,-1,UY,school_closing,-0.0056107697721977,0.639984291321359
+AUT,School closing,-0.0056462523410861,-1,AT,school_closing,-0.0056462523410861,0.6410348692044846
+GHA,School closing,-0.0056531964494292,-1,GH,school_closing,-0.0056531964494292,0.6412404723181213
+BHR,School closing,-0.005674985614118,-1,BH,school_closing,-0.005674985614118,0.6418856120368894
+DEU,School closing,-0.0057130542078306,-1,DE,school_closing,-0.0057130542078306,0.6430127576706212
+BEL,Restrictions on gatherings,-0.0057340468723995,-1,BE,restrictions_on_gatherings,-0.0057340468723995,0.6436343143897337
+LKA,Cancel public events,-0.005747214555114,-1,LK,cancel_public_events,-0.005747214555114,0.6440241868444418
+BEL,School closing,-0.0057758949983943,-1,BE,school_closing,-0.0057758949983943,0.644873365478697
+NZL,Restrictions on internal movement,-0.0057959282159917,-1,NZ,restrictions_on_internal_movement,-0.0057959282159917,0.6454665146219246
+KWT,School closing,-0.0057974902355136,-1,KW,school_closing,-0.0057974902355136,0.6455127633354233
+HUN,Restrictions on gatherings,-0.005841334138964,-1,HU,restrictions_on_gatherings,-0.005841334138964,0.6468109059648297
+ITA,School closing,-0.005867387784204,-1,IT,school_closing,-0.005867387784204,0.6475823096236242
+MNG,School closing,-0.0058719263195322,-1,MN,school_closing,-0.0058719263195322,0.6477166878545969
+BLR,Close public transport,-0.0059475719250513,-1,BY,close_public_transport,-0.0059475719250513,0.6499564242266718
+EGY,Restrictions on gatherings,-0.0059546238953596,-1,EG,restrictions_on_gatherings,-0.0059546238953596,0.6501652209477227
+URY,Workplace closing,-0.0059664844981559,-1,UY,workplace_closing,-0.0059664844981559,0.6505163930124488
+AUT,Restrictions on gatherings,-0.0059749884880115,-1,AT,restrictions_on_gatherings,-0.0059749884880115,0.6507681815368004
+MDA,School closing,-0.0059812745784184,-1,MD,school_closing,-0.0059812745784184,0.6509543018702405
+ROU,Workplace closing,-0.0060045817517445,-1,RO,workplace_closing,-0.0060045817517445,0.6516443872158529
+FIN,Workplace closing,-0.0060329461185935,-1,FI,workplace_closing,-0.0060329461185935,0.6524842073701981
+TUN,Workplace closing,-0.0060861443670402,-1,TN,workplace_closing,-0.0060861443670402,0.6540593160782203
+ROU,Restrictions on gatherings,-0.006086644980208,-1,RO,restrictions_on_gatherings,-0.006086644980208,0.6540741383737465
+MLT,School closing,-0.0060978380274527,-1,MT,school_closing,-0.0060978380274527,0.6544055452658756
+COL,School closing,-0.0061053169569133,-1,CO,school_closing,-0.0061053169569133,0.6546269835136381
+GHA,Workplace closing,-0.00614132695768,-1,GH,workplace_closing,-0.00614132695768,0.655693177748216
+UKR,Restrictions on internal movement,-0.0061554544433868,-1,UA,restrictions_on_internal_movement,-0.0061554544433868,0.656111468319973
+MLT,Stay at home requirements,-0.0061595991531965,-1,MT,stay_at_home_requirements,-0.0061595991531965,0.656234186054186
+MDA,Restrictions on internal movement,-0.0062972482767624,-1,MD,restrictions_on_internal_movement,-0.0062972482767624,0.6603097400340789
+PAK,Workplace closing,-0.0063271381211897,-1,PK,workplace_closing,-0.0063271381211897,0.6611947269577751
+ISL,Restrictions on internal movement,-0.0063342599560205,-1,IS,restrictions_on_internal_movement,-0.0063342599560205,0.6614055922472654
+ZAF,Stay at home requirements,-0.0064237224465289,-1,ZA,stay_at_home_requirements,-0.0064237224465289,0.6640544228376619
+NZL,Restrictions on gatherings,-0.0065112865770668,-1,NZ,restrictions_on_gatherings,-0.0065112865770668,0.6666470462519238
+ARG,Restrictions on internal movement,-0.0065327651147971,-1,AR,restrictions_on_internal_movement,-0.0065327651147971,0.6672829888403059
+KEN,School closing,-0.0065340094932097,-1,KE,school_closing,-0.0065340094932097,0.667319832746468
+BLR,Stay at home requirements,-0.0065436079409043,-1,BY,stay_at_home_requirements,-0.0065436079409043,0.6676040262864565
+CZE,School closing,-0.0066358411055947,-1,CZ,school_closing,-0.0066358411055947,0.6703348917775986
+SYC,Restrictions on gatherings,-0.0066736357474377,-1,SC,restrictions_on_gatherings,-0.0066736357474377,0.6714539261672955
+JOR,School closing,-0.00668252245716,-1,JO,school_closing,-0.00668252245716,0.6717170463691435
+NZL,International travel controls,-0.0066838243981423,-1,NZ,international_travel_controls,-0.0066838243981423,0.6717555946040653
+HRV,School closing,-0.0066950296597499,-1,HR,school_closing,-0.0066950296597499,0.6720873631424878
+CHL,Workplace closing,-0.0067023997137298,-1,CL,workplace_closing,-0.0067023997137298,0.6723055777743843
+MEX,Workplace closing,-0.0067661712886297,-1,MX,workplace_closing,-0.0067661712886297,0.6741937445069744
+TTO,Restrictions on internal movement,-0.0068465406649376,-1,TT,restrictions_on_internal_movement,-0.0068465406649376,0.6765733436136578
+PAN,Close public transport,-0.0068572889319644,-1,PA,close_public_transport,-0.0068572889319644,0.6768915813279507
+PER,Restrictions on internal movement,-0.0069022755342851,-1,PE,restrictions_on_internal_movement,-0.0069022755342851,0.6782235573070219
+TUR,School closing,-0.0069172049034295,-1,TR,school_closing,-0.0069172049034295,0.6786655902692196
+IDN,Stay at home requirements,-0.0069267348832206,-1,ID,stay_at_home_requirements,-0.0069267348832206,0.678947756592257
+GHA,Restrictions on internal movement,-0.0069362589510515,-1,GH,restrictions_on_internal_movement,-0.0069362589510515,0.6792297478723134
+EST,School closing,-0.0069572278751675,-1,EE,school_closing,-0.0069572278751675,0.6798506016774168
+MWI,School closing,-0.0069751489085222,-1,MW,school_closing,-0.0069751489085222,0.6803812126752963
+DNK,Restrictions on internal movement,-0.0070114327367285,-1,DK,restrictions_on_internal_movement,-0.0070114327367285,0.6814555144697507
+BHS,Restrictions on internal movement,-0.0070665365743497,-1,BS,restrictions_on_internal_movement,-0.0070665365743497,0.6830870443982137
+NPL,Close public transport,-0.007070631083437,-1,NP,close_public_transport,-0.007070631083437,0.6832082757753133
+DOM,Restrictions on internal movement,-0.0070709447733057,-1,DO,restrictions_on_internal_movement,-0.0070709447733057,0.6832175635932064
+AZE,Restrictions on gatherings,-0.0070732902348463,-1,AZ,restrictions_on_gatherings,-0.0070732902348463,0.6832870086784264
+BHS,Restrictions on gatherings,-0.007078561243033,-1,BS,restrictions_on_gatherings,-0.007078561243033,0.6834430741718842
+KWT,Workplace closing,-0.007087942402944,-1,KW,workplace_closing,-0.007087942402944,0.6837208341940393
+CYP,Restrictions on internal movement,-0.0072162878916585,-1,CY,restrictions_on_internal_movement,-0.0072162878916585,0.6875209235355543
+PRY,Restrictions on gatherings,-0.0073363443103404,-1,PY,restrictions_on_gatherings,-0.0073363443103404,0.6910755877593077
+CRI,School closing,-0.0073464192314179,-1,CR,school_closing,-0.0073464192314179,0.6913738888572791
+MYS,Stay at home requirements,-0.0073898340935493,-1,MY,stay_at_home_requirements,-0.0073898340935493,0.6926593283105962
+UKR,Close public transport,-0.0073985901265084,-1,UA,close_public_transport,-0.0073985901265084,0.6929185793980718
+LKA,Workplace closing,-0.0073995916392288,-1,LK,workplace_closing,-0.0073995916392288,0.6929482324684858
+AFG,International travel controls,-0.0074636603278033,-1,AF,international_travel_controls,-0.0074636603278033,0.6948451962263503
+HUN,School closing,-0.0075280429030883,-1,HU,school_closing,-0.0075280429030883,0.6967514536302554
+PRT,Restrictions on gatherings,-0.0075286198001833,-1,PT,restrictions_on_gatherings,-0.0075286198001833,0.6967685345617615
+CZE,Restrictions on gatherings,-0.0075702349473638,-1,CZ,restrictions_on_gatherings,-0.0075702349473638,0.6980006875484394
+GTM,School closing,-0.0075891985171059,-1,GT,school_closing,-0.0075891985171059,0.6985621662570081
+SGP,Restrictions on gatherings,-0.0076478900264336,-1,SG,restrictions_on_gatherings,-0.0076478900264336,0.7002999209787946
+MOZ,Restrictions on internal movement,-0.0076642834935911,-1,MZ,restrictions_on_internal_movement,-0.0076642834935911,0.7007853033669069
+SLE,School closing,-0.0076681316123164,-1,SL,school_closing,-0.0076681316123164,0.7008992395488434
+SMR,School closing,-0.0077274504241394,-1,SM,school_closing,-0.0077274504241394,0.7026555676194105
+AND,Stay at home requirements,-0.0078307381180567,-1,AD,stay_at_home_requirements,-0.0078307381180567,0.7057137387222367
+SAU,Workplace closing,-0.0078815236464501,-1,SA,workplace_closing,-0.0078815236464501,0.707217410936071
+CZE,Workplace closing,-0.0079184793349743,-1,CZ,workplace_closing,-0.0079184793349743,0.7083116053598545
+NGA,Workplace closing,-0.0079226746949667,-1,NG,workplace_closing,-0.0079226746949667,0.7084358227589279
+COL,Restrictions on gatherings,-0.0079390799400061,-1,CO,restrictions_on_gatherings,-0.0079390799400061,0.7089215538698814
+ARG,Restrictions on gatherings,-0.0080198197053449,-1,AR,restrictions_on_gatherings,-0.0080198197053449,0.7113121195592055
+NAM,School closing,-0.0080452606587804,-1,,school_closing,-0.0080452606587804,0.7120653824666636
+IRN,Restrictions on internal movement,-0.0080503350171106,-1,IR,restrictions_on_internal_movement,-0.0080503350171106,0.7122156254958403
+ARG,School closing,-0.0081299388691595,-1,AR,school_closing,-0.0081299388691595,0.7145725587448731
+BRA,Restrictions on internal movement,-0.0083974083612417,-1,BR,restrictions_on_internal_movement,-0.0083974083612417,0.7224918707224292
+KWT,Restrictions on gatherings,-0.0084371051284789,-1,KW,restrictions_on_gatherings,-0.0084371051284789,0.7236672237759848
+BEL,Close public transport,-0.0084374155961134,-1,BE,close_public_transport,-0.0084374155961134,0.7236764161890612
+BRB,Restrictions on gatherings,-0.008438152229577,-1,BB,restrictions_on_gatherings,-0.008438152229577,0.7236982266399128
+GHA,International travel controls,-0.0086583883823439,-1,GH,international_travel_controls,-0.0086583883823439,0.730219040617313
+FIN,School closing,-0.0087088592141532,-1,FI,school_closing,-0.0087088592141532,0.7317133952061413
+ISL,School closing,-0.0087240731100524,-1,IS,school_closing,-0.0087240731100524,0.7321638525165505
+SWE,Workplace closing,-0.0087733903309057,-1,SE,workplace_closing,-0.0087733903309057,0.7336240506676102
+BRA,Workplace closing,-0.0088232885861663,-1,BR,workplace_closing,-0.0088232885861663,0.7351014522488827
+IRL,Workplace closing,-0.0088275610169321,-1,IE,workplace_closing,-0.0088275610169321,0.7352279515811
+BRB,Restrictions on internal movement,-0.0088649574712377,-1,BB,restrictions_on_internal_movement,-0.0088649574712377,0.7363351963221542
+AZE,Restrictions on internal movement,-0.0089296922459269,-1,AZ,restrictions_on_internal_movement,-0.0089296922459269,0.7382518817451146
+BRA,School closing,-0.0089368316836319,-1,BR,school_closing,-0.0089368316836319,0.738463268225457
+CHL,Restrictions on gatherings,-0.0090115929057094,-1,CL,restrictions_on_gatherings,-0.0090115929057094,0.7406768195237602
+LKA,Restrictions on internal movement,-0.0090361043745522,-1,LK,restrictions_on_internal_movement,-0.0090361043745522,0.7414025619898754
+SGP,Close public transport,-0.0090455869382281,-1,SG,close_public_transport,-0.0090455869382281,0.7416833244032328
+CAN,Workplace closing,-0.0091505409997596,-1,CA,workplace_closing,-0.0091505409997596,0.7447908337872343
+OMN,Public information campaigns,-0.0092449757165681,-1,OM,public_information_campaigns,-0.0092449757165681,0.7475868834529242
+SVN,School closing,-0.0092497925581461,-1,SI,school_closing,-0.0092497925581461,0.7477295018536461
+AFG,Stay at home requirements,-0.009267073168171,-1,AF,stay_at_home_requirements,-0.009267073168171,0.7482411510173855
+BGD,Workplace closing,-0.0093048387564099,-1,BD,workplace_closing,-0.0093048387564099,0.7493593251797974
+SMR,Workplace closing,-0.0093268925391882,-1,SM,workplace_closing,-0.0093268925391882,0.7500122997854132
+COL,Workplace closing,-0.0095040045415654,-1,CO,workplace_closing,-0.0095040045415654,0.7552562817845401
+AND,School closing,-0.0096455193744708,-1,AD,school_closing,-0.0096455193744708,0.7594462927742239
+NOR,School closing,-0.0097491221650985,-1,NO,school_closing,-0.0097491221650985,0.7625137933491083
+EST,Workplace closing,-0.0116007573104226,-1,EE,workplace_closing,-0.0116007573104226,0.8173375277132591
+GHA,Stay at home requirements,-0.0116742523263972,-1,GH,stay_at_home_requirements,-0.0116742523263972,0.8195135888250042
+BLR,Restrictions on internal movement,-0.011796770477562,-1,BY,restrictions_on_internal_movement,-0.011796770477562,0.8231411407167513
+AFG,Workplace closing,-0.0121302386881711,-1,AF,workplace_closing,-0.0121302386881711,0.8330145613220413
+BLR,School closing,-0.0128547977232041,-1,BY,school_closing,-0.0128547977232041,0.8544675090953141
+BLR,Restrictions on gatherings,-0.0130341784116503,-1,BY,restrictions_on_gatherings,-0.0130341784116503,0.8597786629898962
+IRN,Public information campaigns,-0.0155346087101392,-1,IR,public_information_campaigns,-0.0155346087101392,0.9338121067958223
+SYC,Workplace closing,-0.016891122150671,-1,SC,workplace_closing,-0.016891122150671,0.9739761384156145
+NZL,Workplace closing,-0.0177700607579288,-1,NZ,workplace_closing,-0.0177700607579288,1.0

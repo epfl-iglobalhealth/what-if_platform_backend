@@ -50,3 +50,9 @@ def predict_for_country_personalized(country):
                                                                    parameters['features'])
   response = jsonify(predictions)
   return response
+
+# app route get shap values for a country
+@app.route('/api/v1/<country>/get_shap_values', methods=['GET'])
+def get_shap_values(country):
+  cd = CountryData()
+  return jsonify(cd.get_shap_for_country(country))
