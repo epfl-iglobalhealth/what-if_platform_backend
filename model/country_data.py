@@ -57,8 +57,14 @@ class CountryData:
     return data
 
   def get_all_countries(self):
+    names_to_load = ['Austria', 'Belgium', 'Bulgaria', 'Croatia', 'Cyprus', 'Czechia', 'Denmark', 'Estonia', 'Finland',
+                     'France', 'Germany', 'Greece', 'Hungary', 'Ireland', 'Italy', 'Latvia', 'Lithuania', 'Luxembourg',
+                     'Malta', 'Netherlands', 'Norway', 'Portugal', 'Romania', 'Slovakia', 'Slovenia', 'Spain', 'Sweden',
+                     'Switzerland', 'United Kingdom']
+    # from self.data select only the rows where name is in names_to_load
+    data = self.data[self.data.name.isin(names_to_load)]
     # get iso2 and iso3 from self.shap dataframe
-    data = self.shap[['iso2', 'iso3']].merge(self.data[['iso_code', 'name']], left_on = 'iso3', right_on='iso_code')
+    data = self.shap[['iso2', 'iso3']].merge(data[['iso_code', 'name']], left_on = 'iso3', right_on='iso_code')
     # lowercase iso2
     data['iso2'] = data['iso2'].str.lower()
     # create a column "flag" which is a string. It is equal to "flag-icon flag-icon-{iso2}"
