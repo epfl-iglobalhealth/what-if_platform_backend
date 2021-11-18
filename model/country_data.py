@@ -57,10 +57,10 @@ class CountryData:
     return data
 
   def get_all_countries(self):
-    names_to_load = ['Austria', 'Belgium', 'Bulgaria', 'Croatia', 'Cyprus', 'Czechia', 'Denmark', 'Estonia', 'Finland',
+    names_to_load = ['Austria', 'Belgium', 'Bulgaria', 'Croatia', 'Czechia', 'Denmark', 'Estonia', 'Finland',
                      'France', 'Germany', 'Greece', 'Hungary', 'Ireland', 'Italy', 'Latvia', 'Lithuania', 'Luxembourg',
                      'Malta', 'Netherlands', 'Norway', 'Portugal', 'Romania', 'Slovakia', 'Slovenia', 'Spain', 'Sweden',
-                     'Switzerland', 'United Kingdom']
+                     'Switzerland', 'United Kingdom'] # 'Cyprus' excluded because of model issues
     # from self.data select only the rows where name is in names_to_load
     data = self.data[self.data.name.isin(names_to_load)]
     # get iso2 and iso3 from self.shap dataframe
