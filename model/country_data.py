@@ -30,9 +30,9 @@ class CountryData:
     return sundays
 
   def get_shap_for_country(self, iso_code):
-    data = self.shap[self.shap.iso3 == iso_code][['policy', 'shap_value_normalized']].\
+    data = self.shap[self.shap.iso3 == iso_code][['variable', 'shap_value_normalized']].\
       sort_values(by='shap_value_normalized', ascending=False)
-    return {'policies': data['policy'].values.tolist(), 'shap_values': data['shap_value_normalized'].values.tolist()}
+    return {'x': data['variable'].values.tolist(), 'y': [{'data':data['shap_value_normalized'].values.tolist()}]}
 
   def get_constant_features(self, iso_code: str):
     return self.data[self.data.iso_code == iso_code][self.features['constant']].iloc[0].to_dict()
