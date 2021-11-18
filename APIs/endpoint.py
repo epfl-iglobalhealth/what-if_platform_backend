@@ -56,3 +56,9 @@ def predict_for_country_personalized(country):
 def get_shap_values(country):
   cd = CountryData()
   return jsonify(cd.get_shap_for_country(country))
+
+# app route get countries
+@app.route('/api/v1/get_countries', methods=['GET'])
+def get_countries():
+  cd = CountryData()
+  return jsonify(cd.get_all_countries())

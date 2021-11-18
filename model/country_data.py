@@ -55,3 +55,27 @@ class CountryData:
     data = self.data[(self.data.iso_code == iso_code) & (self.data.index.isin(sundays))][self.get_policies_name()]
     # return the dataframe
     return data
+
+  def get_all_countries(self):
+    # get iso2 and iso3 from self.shap dataframe
+    data = self.shap[['iso2', 'iso3']].merge(self.data[['iso_code', 'name']], left_on = 'iso3', right_on='iso_code')
+    # lowercase iso2
+    data['iso2'] = data['iso2'].str.lower()
+    # create a column "flag" which is a string. It is equal to "flag-icon flag-icon-{iso2}"
+    data['flag'] = data['iso2'].apply(lambda x: 'flag-icon flag-icon-{}'.format(x))
+    result = []
+    # sort data by name
+    data = data.sort_values(by='name')
+    for i, iso_code in enumerate(data['iso3'].unique()):
+      # add to result id: i, iso_code, country, flag
+      result.append({'id': i, 'iso_code': iso_code, 'name': data[data['iso3'] == iso_code]['name'].values[0],
+                     'flag': data[data['iso3'] == iso_code]['flag'].values[0]})
+    return result
+
+
+
+
+
+
+
+
