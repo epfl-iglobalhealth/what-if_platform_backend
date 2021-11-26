@@ -76,8 +76,8 @@ class Predict:
       y = [
         {'label': 'Reported viral transmission', 'data': [round(value, 4) for value in ground.values.tolist()]},
         {'label': 'Predicted viral transmission by our model', 'data': [round(value, 4) for value in pred.tolist()]},
-        {'label': 'Error (MAE)', 'data': [round(value, 4) for value in np.abs(pred - ground).values.tolist()]},
-        {'label': 'Epidemic tipping point: Viral transmission becomes exponential', 'data':[1 for _ in x]}
+        {'label': 'Epidemic tipping point: Viral transmission becomes exponential', 'data':[1 for _ in x]},
+        {'label': 'Error (MAE)', 'data': [round(value, 4) for value in np.abs(pred - ground).values.tolist()]}
       ]
 
     return json.loads(json.dumps({'x': x, 'y': y}, ignore_nan=True))
