@@ -63,20 +63,23 @@ class Predict:
 
     # Appending NaNs for impossible predictions (missing data in features)
     pred = self.inject_nans(pred, prediction_mask)
+    # We return the prediction, the ground truth and the error
+    x = final_data_for_prediction.index.strftime('%Y-%m-%d').values.tolist()
 
     if data is not None:
       y = [
-        {'label': 'Ground', 'data': [round(value, 4) for value in ground.values.tolist()]},
-        {'label': 'Predictions', 'data': [round(value, 4) for value in pred.tolist()]},
+        {'label': 'Reported viral transmission', 'data': [round(value, 4) for value in ground.values.tolist()]},
+        {'label': 'Predicted viral transmission by our model', 'data': [round(value, 4) for value in pred.tolist()]},
+        {'label': 'Epidemic tipping point: Viral transmission becomes exponential', 'data':[1 for _ in x]}
       ]
     else:
       y = [
-        {'label': 'Ground', 'data': [round(value, 4) for value in ground.values.tolist()]},
-        {'label': 'Predictions', 'data': [round(value, 4) for value in pred.tolist()]},
-        {'label': 'Error', 'data': [round(value, 4) for value in np.abs(pred - ground).values.tolist()]}
+        {'label': 'Reported viral transmission', 'data': [round(value, 4) for value in ground.values.tolist()]},
+        {'label': 'Predicted viral transmission by our model', 'data': [round(value, 4) for value in pred.tolist()]},
+        {'label': 'Error (MAE)', 'data': [round(value, 4) for value in np.abs(pred - ground).values.tolist()]},
+        {'label': 'Epidemic tipping point: Viral transmission becomes exponential', 'data':[1 for _ in x]}
       ]
-    # We return the prediction, the ground truth and the error
-    x = final_data_for_prediction.index.strftime('%Y-%m-%d').values.tolist()
+
     return json.loads(json.dumps({'x': x, 'y': y}, ignore_nan=True))
 
   def slice_data(self, df, const_cols, var_cols):
