@@ -47,8 +47,6 @@ economic:
     - unemployment_rate_2021_03_31 
     - unemployment_rate_2021_06_30 
 
-    
-    
 weather:
     - maxtempC
     - mintempC

@@ -11,14 +11,22 @@ class CountryData:
     self.features = CountryData.extract_feature_names()
 
   @staticmethod
-  def extract_feature_names():
-    with open('./model/config/r_estim_features.yaml', 'r', encoding='utf-8') as file:
-      swissre_features = yaml.load(file, Loader=yaml.FullLoader)
-    constant_columns = swissre_features['demography'] + \
-                       swissre_features['sanitary'] + \
-                       swissre_features['economic']
-    variable_columns = swissre_features['weather'] + \
-                       swissre_features['policies']
+  def extract_feature_names(economic=False):
+    if economic:
+      with open('./model/config/economic_features.yaml', 'r', encoding='utf-8') as f:
+        economic_features = yaml.load(f, Loader=yaml.FullLoader)
+        constant_columns = economic_features['demography'] + \
+                           economic_features['sanitary'] + \
+                           economic_features['economic']
+        variable_columns = economic_features['policies'] + ['shifted_r_estim']
+    else:
+      with open('./model/config/r_estim_features.yaml', 'r', encoding='utf-8') as file:
+        swissre_features = yaml.load(file, Loader=yaml.FullLoader)
+      constant_columns = swissre_features['demography'] + \
+                         swissre_features['sanitary'] + \
+                         swissre_features['economic']
+      variable_columns = swissre_features['weather'] + \
+                         swissre_features['policies']
 
     return {'constant': constant_columns, 'variable': variable_columns}
 

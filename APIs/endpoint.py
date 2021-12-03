@@ -13,7 +13,7 @@ cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
 @app.route('/api/v1/<country>/predict', methods=['POST'])
 def predict_for_country(country):
   parameters = request.json
-  predict_pipeline = Predict(country)
+  predict_pipeline = Predict(country, window_size=7)
   predictions = predict_pipeline.predict_for_a_period(parameters['start_date'], parameters['end_date'])
   response = jsonify(predictions)
   return response
@@ -45,7 +45,7 @@ def get_variable_data(country):
 @app.route('/api/v1/<country>/predict_personalized', methods=['POST'])
 def predict_for_country_personalized(country):
   parameters = request.json
-  predict_pipeline = Predict(country)
+  predict_pipeline = Predict(country, window_size=7)
   predictions = predict_pipeline.predict_for_a_period_personalized(parameters['start_date'], parameters['end_date'],
                                                                    parameters['features'])
   response = jsonify(predictions)
@@ -62,3 +62,22 @@ def get_shap_values(country):
 def get_countries():
   cd = CountryData()
   return jsonify(cd.get_all_countries())
+
+#app route predict_for_country_economic
+@app.route('/api/v1/<country>/predict_economic', methods=['POST'])
+def predict_for_country_economic(country):
+  parameters = request.json
+  predict_pipeline = Predict(country, window_size=28, economic=True)
+  predictions = predict_pipeline.predict_for_a_period(parameters['start_date'], parameters['end_date'])
+  response = jsonify(predictions)
+  return response
+
+# app route predict for country economic personalized
+@app.route('/api/v1/<country>/predict_economic_personalized', methods=['POST'])
+def predict_for_country_economic_personalized(country):
+  parameters = request.json
+  predict_pipeline = Predict(country, window_size=28, economic=True)
+  predictions = predict_pipeline.predict_for_a_period_personalized(parameters['start_date'], parameters['end_date'],
+                                                                   parameters['features'])
+  response = jsonify(predictions)
+  return response

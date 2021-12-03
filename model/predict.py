@@ -10,23 +10,29 @@ from model.hybrid import HybridLSTM
 
 
 class Predict:
-  def __init__(self, iso_code: str):
+  def __init__(self, iso_code: str, window_size: int, economic=False):
     self.iso_code = iso_code
-    self.model = HybridLSTM.load_from_checkpoint(checkpoint_path=f"./model/checkpoints/{self.iso_code}/model.ckpt")
-    # TODO: one model for each country to avoid leakage
-    self.columns_to_use = CountryData.extract_feature_names()
-    self.data_swissre = pd.read_csv('./model/data/final_data.csv', parse_dates=['date']).set_index('date')
+    self.economic = economic
+    if economic:
+      self.model = HybridLSTM.load_from_checkpoint(checkpoint_path=f"./model/checkpoints/unemp_rate/{self.iso_code}/model.ckpt")
+      self.final_data = pd.read_csv('./model/data/final_data_economic.csv', parse_dates=['date']).set_index('date') #
+    else:
+      self.model = HybridLSTM.load_from_checkpoint(checkpoint_path=f"./model/checkpoints/reproduction_rate/{self.iso_code}/model.ckpt")
+      self.final_data = pd.read_csv('./model/data/final_data.csv', parse_dates=['date']).set_index('date')
+    self.columns_to_use = CountryData.extract_feature_names(economic)
+
+    self.window_size = window_size
 
   def predict_for_a_period(self, start_date: str, end_date: str, data=None):
     start_date = datetime.strptime(start_date, "%Y-%m-%d")
     end_date = datetime.strptime(end_date, "%Y-%m-%d")
-    original_data = self.data_swissre[(self.data_swissre['iso_code'] == self.iso_code) &
-                                      (self.data_swissre.index >= start_date) &
-                                      (self.data_swissre.index <= end_date)]
+    original_data = self.final_data[(self.final_data['iso_code'] == self.iso_code) &
+                                    (self.final_data.index >= start_date) &
+                                    (self.final_data.index <= end_date)]
 
-    ground = original_data['shifted_r_estim']
+    ground = original_data['shifted_r_estim'] if not self.economic else original_data['unemployment_rate_idx']
 
-    if data is not None:
+    if data is not None and not self.economic:
       weather_cols = self.columns_to_use['variable'][:12]
       # prediction data is data concatenated to original_data of weather_cols
       prediction_data = pd.concat([data, original_data[weather_cols]], axis=1)
@@ -35,13 +41,16 @@ class Predict:
 
     constant_data = prediction_data[self.columns_to_use['constant']]
     variable_data = prediction_data[self.columns_to_use['variable']]
-    training_data = self.data_swissre[self.data_swissre['iso_code'] != self.iso_code]
+    training_data = self.final_data[self.final_data['iso_code'] != self.iso_code]
     constant_training_data = training_data[self.columns_to_use['constant']]
     variable_training_data = training_data[self.columns_to_use['variable']]
     constant_mean = constant_training_data.mean()
     variable_mean = variable_training_data.mean()
     constant_std = constant_training_data.std()
     variable_std = variable_training_data.std()
+    if self.economic:
+      variable_mean['shifted_r_estim'] = 0
+      variable_std['shifted_r_estim'] = 1
 
     # Normalizing the new data with the same mean and std as the training data
     constant_data = (constant_data - constant_mean) / constant_std
@@ -53,32 +62,57 @@ class Predict:
     # Creating the data with a shape that can be fed into the network
     sliced = self.slice_data(final_data_for_prediction, self.columns_to_use['constant'],
                              self.columns_to_use['variable'])
+    print(self.columns_to_use['constant'])
+    print(self.columns_to_use['variable'])
     net_input = (torch.from_numpy(sliced[0]), torch.from_numpy(sliced[1]))
     prediction_mask = sliced[2]
 
     # Generate Final Prediction
     pred = self.model.eval()(*(net_input[0], net_input[1])).detach()
     pred = pred.reshape(pred.size(0)).numpy()
-    pred = np.append([np.nan] * (7 - 1), pred).flatten()
+    pred = np.append([np.nan] * (self.window_size- 1), pred).flatten()
+
 
     # Appending NaNs for impossible predictions (missing data in features)
     pred = self.inject_nans(pred, prediction_mask)
+
     # We return the prediction, the ground truth and the error
     x = final_data_for_prediction.index.strftime('%Y-%m-%d').values.tolist()
+    error = [round(value, 4) for value in np.abs(pred - ground).values.tolist()]
+    if self.economic:
+      df2 = pd.DataFrame({'index': final_data_for_prediction.index, 'ground': ground, 'pred': pred, 'error': np.abs(pred - ground)}).sort_values(
+        by='index')
+      df2 = df2[(df2['index'] >= '2020-05-01') & (df2['index'].dt.day == 1)]
+      pred = df2['pred'].values
+      x = df2.index.strftime('%Y-%m').values.tolist()
+      error = [round(value, 4) for value in df2['error'].values.tolist()]
+      ground = df2['ground']
 
     if data is not None:
-      y = [
-        {'label': 'Reported viral transmission', 'data': [round(value, 4) for value in ground.values.tolist()]},
-        {'label': 'Predicted viral transmission by our model', 'data': [round(value, 4) for value in pred.tolist()]},
-        {'label': 'Epidemic tipping point: Viral transmission becomes exponential', 'data':[1 for _ in x]}
-      ]
+      if not self.economic:
+        y = [
+          {'label': 'Reported viral transmission', 'data': [round(value, 4) for value in ground.values.tolist()]},
+          {'label': 'Predicted viral transmission by our model', 'data': [round(value, 4) for value in pred.tolist()]},
+          {'label': 'Epidemic tipping point: Viral transmission becomes exponential', 'data':[1 for _ in x]}
+        ]
+      else:
+        y = [
+          {'label': 'Reported (and interpolated) unemployment rate', 'data': [round(value, 4) for value in ground.values.tolist()]},
+          {'label': 'Predicted unemployment rate by our model', 'data': [round(value, 4) for value in pred.tolist()]},
+        ]
     else:
-      y = [
-        {'label': 'Reported viral transmission', 'data': [round(value, 4) for value in ground.values.tolist()]},
-        {'label': 'Predicted viral transmission by our model', 'data': [round(value, 4) for value in pred.tolist()]},
-        {'label': 'Epidemic tipping point: Viral transmission becomes exponential', 'data':[1 for _ in x]},
-        {'label': 'Error (MAE)', 'data': [round(value, 4) for value in np.abs(pred - ground).values.tolist()]}
-      ]
+      if not self.economic:
+        y = [
+          {'label': 'Reported viral transmission', 'data': [round(value, 4) for value in ground.values.tolist()]},
+          {'label': 'Predicted viral transmission by our model', 'data': [round(value, 4) for value in pred.tolist()]},
+          {'label': 'Epidemic tipping point: Viral transmission becomes exponential', 'data':[1 for _ in x]},
+          {'label': 'Error (MAE)', 'data': error}
+        ]
+      else:
+        y = [{'label': 'Reported (and interpolated) unemployment rate', 'data': [round(value, 4) for value in ground.values.tolist()]},
+        {'label': 'Predicted unemployment rate by our model', 'data': [round(value, 4) for value in pred.tolist()]},
+        {'label': 'Error (MAE)', 'data': error}]
+
 
     return json.loads(json.dumps({'x': x, 'y': y}, ignore_nan=True))
 
@@ -89,8 +123,8 @@ class Predict:
     # Regular slicing
     train_cols = sorted(var_cols) + sorted(const_cols)
     # window size is 7
-    slices = np.array([df[train_cols].values[i:i + 7] for i in
-                       range(len(df) - 7 + 1)])
+    slices = np.array([df[train_cols].values[i:i + self.window_size] for i in
+                       range(len(df) - self.window_size + 1)])
 
     # Mask for training and prediction
     valid_dates = np.array([not np.isnan(x).any() for x in slices])
@@ -153,3 +187,9 @@ class Predict:
     features_dict = {**constant_features, **variable_features}
     df = pd.DataFrame(index=dates, data=features_dict)
     return self.predict_for_a_period(start_date, end_date, df)
+
+if __name__ == '__main__':
+  p = Predict('CHE', 28, economic=True)
+  data = p.predict_for_a_period('2020-04-01', '2021-05-31')
+  print(data['y'][1])
+  print(data['x'])
