@@ -64,11 +64,10 @@ def get_countries():
   return jsonify(cd.get_all_countries())
 
 #app route predict_for_country_economic
-@app.route('/api/v1/<country>/predict_economic', methods=['POST'])
+@app.route('/api/v1/<country>/predict_economic', methods=['GET'])
 def predict_for_country_economic(country):
-  parameters = request.json
   predict_pipeline = Predict(country, window_size=28, economic=True)
-  predictions = predict_pipeline.predict_for_a_period(parameters['start_date'], parameters['end_date'])
+  predictions = predict_pipeline.predict_for_a_period("2020-04-01", "2021-05-31")
   response = jsonify(predictions)
   return response
 
