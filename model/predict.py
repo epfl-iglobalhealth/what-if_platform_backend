@@ -38,14 +38,16 @@ class Predict:
       if not self.economic:
         weather_cols = self.columns_to_use['variable'][:12]
         # prediction data is data concatenated to original_data of weather_cols
-        prediction_data = pd.concat([data, original_data[weather_cols]], axis=1)
+        new_prediction_data = pd.concat([data, original_data[weather_cols]], axis=1)
       else:
-        prediction_data = pd.concat([data, original_data['shifted_r_estim']], axis=1)
-    else:
-      prediction_data = original_data
+        new_prediction_data = pd.concat([data, original_data['shifted_r_estim']], axis=1)
+
+    prediction_data = original_data
 
     constant_data = prediction_data[self.columns_to_use['constant']]
+    new_constant_data = new_prediction_data[self.columns_to_use['constant']]
     variable_data = prediction_data[self.columns_to_use['variable']]
+    new_variable_data = new_prediction_data[self.columns_to_use['variable']]
     training_data = self.final_data[self.final_data['iso_code'] != self.iso_code]
     constant_training_data = training_data[self.columns_to_use['constant']]
     variable_training_data = training_data[self.columns_to_use['variable']]
@@ -60,46 +62,60 @@ class Predict:
     # Normalizing the new data with the same mean and std as the training data
     constant_data = (constant_data - constant_mean) / constant_std
     variable_data = (variable_data - variable_mean) / variable_std
+    new_constant_data = (new_constant_data - constant_mean) / constant_std
+    new_variable_data = (new_variable_data - variable_mean) / variable_std
 
     # Join done on the date as we only have one country so the date is unique
     final_data_for_prediction = constant_data.merge(variable_data, left_index=True, right_index=True)
+    new_final_data_for_prediction = new_constant_data.merge(new_variable_data, left_index=True, right_index=True)
 
     # Creating the data with a shape that can be fed into the network
     sliced = self.slice_data(final_data_for_prediction, self.columns_to_use['constant'],
                              self.columns_to_use['variable'])
+    new_sliced = self.slice_data(new_final_data_for_prediction, self.columns_to_use['constant'],
+                                 self.columns_to_use['variable'])
 
     # print(self.columns_to_use['constant'])
     # print(self.columns_to_use['variable'])
 
     net_input = (torch.from_numpy(sliced[0]), torch.from_numpy(sliced[1]))
+    new_net_input = (torch.from_numpy(new_sliced[0]), torch.from_numpy(new_sliced[1]))
     prediction_mask = sliced[2]
+    new_prediction_mask = new_sliced[2]
 
     # Generate Final Prediction
     pred = self.model.eval()(*(net_input[0], net_input[1])).detach()
     pred = pred.reshape(pred.size(0)).numpy()
     pred = np.append([np.nan] * (self.window_size - 1), pred).flatten()
 
+    new_pred = self.model.eval()(*(new_net_input[0], new_net_input[1])).detach()
+    new_pred = new_pred.reshape(new_pred.size(0)).numpy()
+    new_pred = np.append([np.nan] * (self.window_size - 1), new_pred).flatten()
+
     # Appending NaNs for impossible predictions (missing data in features)
     pred = self.inject_nans(pred, prediction_mask)
+    new_pred = self.inject_nans(new_pred, new_prediction_mask)
 
     # We return the prediction, the ground truth and the error
     x = final_data_for_prediction.index.strftime('%Y-%m-%d').values.tolist()
-    error = [round(value, 4) for value in np.abs(pred - ground).values.tolist()]
+    #error = [round(value, 4) for value in np.abs(pred - ground).values.tolist()]
     if self.economic:
-      df2 = pd.DataFrame({'index': final_data_for_prediction.index, 'ground': ground, 'pred': pred,
-                          'error': np.abs(pred - ground)}).sort_values(
-        by='index')
+      df2 = pd.DataFrame({'index': final_data_for_prediction.index, 'ground': ground, 'pred': pred, 'new_pred': new_pred})
+                          #'error': np.abs(pred - ground)}).sort_values(by='index')
+
       df2 = df2[(df2['index'] >= '2020-05-01') & (df2['index'].dt.day == 1)]
       pred = df2['pred'].values
+      new_pred = df2['new_pred'].values
       x = df2.index.strftime('%Y-%m').values.tolist()
-      error = [round(value, 4) for value in df2['error'].values.tolist()]
+      #error = [round(value, 4) for value in df2['error'].values.tolist()]
       ground = df2['ground']
 
     if not self.economic:
       if data is not None:
         y = [
           {'label': 'Reported viral transmission', 'data': [round(value, 4) for value in ground.values.tolist()]},
-          {'label': 'Predicted viral transmission by our model', 'data': [round(value, 4) for value in pred.tolist()]},
+          {'label': 'Predicted viral transmission by our model (original policies)', 'data': [round(value, 4) for value in pred.tolist()]},
+          {'label': 'Predicted viral transmission by our model (personalized policies)', 'data': [round(value, 4) for value in new_pred.tolist()]},
           {'label': 'Epidemic tipping point: Viral transmission becomes exponential', 'data': [1 for _ in x]}
         ]
       else:
@@ -107,14 +123,25 @@ class Predict:
           {'label': 'Reported viral transmission', 'data': [round(value, 4) for value in ground.values.tolist()]},
           {'label': 'Predicted viral transmission by our model', 'data': [round(value, 4) for value in pred.tolist()]},
           {'label': 'Epidemic tipping point: Viral transmission becomes exponential', 'data': [1 for _ in x]},
-          {'label': 'Error (MAE)', 'data': error}
+          #{'label': 'Error (MAE)', 'data': error}
         ]
     else:
-      y = [
-        {'label': 'Reported (and interpolated) unemployment rate',
-         'data': [round(value, 4) for value in ground.values.tolist()]},
-        {'label': 'Predicted unemployment rate by our model', 'data': [round(value, 4) for value in pred.tolist()]},
-      ]
+      if data is not None:
+        y = [
+          {'label': 'Reported unemployment rate',
+           'data': [round(value, 4) for value in ground.values.tolist()]},
+          {'label': 'Predicted unemployment rate by our model (original policies)', 'data': [round(value, 4) for value in pred.tolist()]},
+          {'label': 'Predicted unemployment rate by our model (personalized policies)', 'data': [round(value, 4) for value in new_pred.tolist()]},
+        ]
+      else:
+        y = [
+          {'label': 'Reported unemployment rate',
+           'data': [round(value, 4) for value in ground.values.tolist()]},
+          {'label': 'Predicted unemployment rate by our model (original policies)',
+           'data': [round(value, 4) for value in pred.tolist()]},
+        ]
+
+
 
     return json.loads(json.dumps({'x': x, 'y': y}, ignore_nan=True))
 
