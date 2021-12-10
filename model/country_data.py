@@ -28,6 +28,9 @@ class CountryData:
       variable_columns = swissre_features['weather'] + \
                          swissre_features['policies']
 
+    print(constant_columns)
+    print(variable_columns)
+
     return {'constant': constant_columns, 'variable': variable_columns}
 
   @staticmethod

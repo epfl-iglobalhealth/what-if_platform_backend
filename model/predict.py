@@ -67,8 +67,10 @@ class Predict:
     # Creating the data with a shape that can be fed into the network
     sliced = self.slice_data(final_data_for_prediction, self.columns_to_use['constant'],
                              self.columns_to_use['variable'])
-    print(self.columns_to_use['constant'])
-    print(self.columns_to_use['variable'])
+
+    # print(self.columns_to_use['constant'])
+    # print(self.columns_to_use['variable'])
+
     net_input = (torch.from_numpy(sliced[0]), torch.from_numpy(sliced[1]))
     prediction_mask = sliced[2]
 
