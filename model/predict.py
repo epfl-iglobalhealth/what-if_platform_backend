@@ -32,10 +32,13 @@ class Predict:
 
     ground = original_data['shifted_r_estim'] if not self.economic else original_data['unemployment_rate_idx']
 
-    if data is not None and not self.economic:
-      weather_cols = self.columns_to_use['variable'][:12]
-      # prediction data is data concatenated to original_data of weather_cols
-      prediction_data = pd.concat([data, original_data[weather_cols]], axis=1)
+    if data is not None:
+      if not self.economic:
+        weather_cols = self.columns_to_use['variable'][:12]
+        # prediction data is data concatenated to original_data of weather_cols
+        prediction_data = pd.concat([data, original_data[weather_cols]], axis=1)
+      else:
+        prediction_data = pd.concat([data, original_data['shifted_r_estim']], axis=1)
     else:
       prediction_data = original_data
 
@@ -187,9 +190,3 @@ class Predict:
     features_dict = {**constant_features, **variable_features}
     df = pd.DataFrame(index=dates, data=features_dict)
     return self.predict_for_a_period(start_date, end_date, df)
-
-if __name__ == '__main__':
-  p = Predict('CHE', 28, economic=True)
-  data = p.predict_for_a_period('2020-04-01', '2021-05-31')
-  print(data['y'][1])
-  print(data['x'])
