@@ -14,10 +14,12 @@ class Predict:
     self.iso_code = iso_code
     self.economic = economic
     if economic:
-      self.model = HybridLSTM.load_from_checkpoint(checkpoint_path=f"./model/checkpoints/unemp_rate/{self.iso_code}/model.ckpt")
-      self.final_data = pd.read_csv('./model/data/final_data_economic.csv', parse_dates=['date']).set_index('date') #
+      self.model = HybridLSTM.load_from_checkpoint(
+        checkpoint_path=f"./model/checkpoints/unemp_rate/{self.iso_code}/model.ckpt")
+      self.final_data = pd.read_csv('./model/data/final_data_economic.csv', parse_dates=['date']).set_index('date')  #
     else:
-      self.model = HybridLSTM.load_from_checkpoint(checkpoint_path=f"./model/checkpoints/reproduction_rate/{self.iso_code}/model.ckpt")
+      self.model = HybridLSTM.load_from_checkpoint(
+        checkpoint_path=f"./model/checkpoints/reproduction_rate/{self.iso_code}/model.ckpt")
       self.final_data = pd.read_csv('./model/data/final_data.csv', parse_dates=['date']).set_index('date')
     self.columns_to_use = CountryData.extract_feature_names(economic)
 
@@ -73,8 +75,7 @@ class Predict:
     # Generate Final Prediction
     pred = self.model.eval()(*(net_input[0], net_input[1])).detach()
     pred = pred.reshape(pred.size(0)).numpy()
-    pred = np.append([np.nan] * (self.window_size- 1), pred).flatten()
-
+    pred = np.append([np.nan] * (self.window_size - 1), pred).flatten()
 
     # Appending NaNs for impossible predictions (missing data in features)
     pred = self.inject_nans(pred, prediction_mask)
@@ -83,7 +84,8 @@ class Predict:
     x = final_data_for_prediction.index.strftime('%Y-%m-%d').values.tolist()
     error = [round(value, 4) for value in np.abs(pred - ground).values.tolist()]
     if self.economic:
-      df2 = pd.DataFrame({'index': final_data_for_prediction.index, 'ground': ground, 'pred': pred, 'error': np.abs(pred - ground)}).sort_values(
+      df2 = pd.DataFrame({'index': final_data_for_prediction.index, 'ground': ground, 'pred': pred,
+                          'error': np.abs(pred - ground)}).sort_values(
         by='index')
       df2 = df2[(df2['index'] >= '2020-05-01') & (df2['index'].dt.day == 1)]
       pred = df2['pred'].values
@@ -91,31 +93,26 @@ class Predict:
       error = [round(value, 4) for value in df2['error'].values.tolist()]
       ground = df2['ground']
 
-    if data is not None:
-      if not self.economic:
+    if not self.economic:
+      if data is not None:
         y = [
           {'label': 'Reported viral transmission', 'data': [round(value, 4) for value in ground.values.tolist()]},
           {'label': 'Predicted viral transmission by our model', 'data': [round(value, 4) for value in pred.tolist()]},
-          {'label': 'Epidemic tipping point: Viral transmission becomes exponential', 'data':[1 for _ in x]}
+          {'label': 'Epidemic tipping point: Viral transmission becomes exponential', 'data': [1 for _ in x]}
         ]
       else:
         y = [
-          {'label': 'Reported (and interpolated) unemployment rate', 'data': [round(value, 4) for value in ground.values.tolist()]},
-          {'label': 'Predicted unemployment rate by our model', 'data': [round(value, 4) for value in pred.tolist()]},
-        ]
-    else:
-      if not self.economic:
-        y = [
           {'label': 'Reported viral transmission', 'data': [round(value, 4) for value in ground.values.tolist()]},
           {'label': 'Predicted viral transmission by our model', 'data': [round(value, 4) for value in pred.tolist()]},
-          {'label': 'Epidemic tipping point: Viral transmission becomes exponential', 'data':[1 for _ in x]},
+          {'label': 'Epidemic tipping point: Viral transmission becomes exponential', 'data': [1 for _ in x]},
           {'label': 'Error (MAE)', 'data': error}
         ]
-      else:
-        y = [{'label': 'Reported (and interpolated) unemployment rate', 'data': [round(value, 4) for value in ground.values.tolist()]},
+    else:
+      y = [
+        {'label': 'Reported (and interpolated) unemployment rate',
+         'data': [round(value, 4) for value in ground.values.tolist()]},
         {'label': 'Predicted unemployment rate by our model', 'data': [round(value, 4) for value in pred.tolist()]},
-        {'label': 'Error (MAE)', 'data': error}]
-
+      ]
 
     return json.loads(json.dumps({'x': x, 'y': y}, ignore_nan=True))
 
