@@ -88,11 +88,12 @@ class Predict:
     if self.economic:
       if data is not None:
         df2 = pd.DataFrame({'index': index, 'ground': ground, 'pred': original_pred, 'new_pred': new_pred})
+        df2 = df2[(df2['index'] >= '2020-05-01') & (df2['index'].dt.day == 1)]
         new_pred = df2['new_pred'].values
       else:
         df2 = pd.DataFrame({'index': index, 'ground': ground, 'pred': original_pred})
+        df2 = df2[(df2['index'] >= '2020-05-01') & (df2['index'].dt.day == 1)]
 
-      df2 = df2[(df2['index'] >= '2020-05-01') & (df2['index'].dt.day == 1)]
       original_pred = df2['pred'].values
 
       x = df2.index.strftime('%Y-%m').values.tolist()
@@ -103,7 +104,7 @@ class Predict:
       if data is not None:
         y = [
           {'label': 'Reported viral transmission', 'data': [round(value, 4) for value in ground.values.tolist()]},
-          {'label': 'Predicted viral transmission by our model (original policies)', 'data': [round(value, 4) for value in original_pred.tolist()]},
+          {'label': 'Predicted viral transmission by our model (original policies)', 'data': [round(value, 4) for value in original_pred.tolist()], 'hidden': True},
           {'label': 'Epidemic tipping point: Viral transmission becomes exponential', 'data': [1 for _ in x]},
           {'label': 'Predicted viral transmission by our model (personalized policies)', 'data': [round(value, 4) for value in new_pred.tolist()]},
         ]
@@ -119,7 +120,7 @@ class Predict:
         y = [
           {'label': 'Reported unemployment rate',
            'data': [round(value, 4) for value in ground.values.tolist()]},
-          {'label': 'Predicted unemployment rate by our model (original policies)', 'data': [round(value, 4) for value in original_pred.tolist()]},
+          {'label': 'Predicted unemployment rate by our model (original policies)', 'data': [round(value, 4) for value in original_pred.tolist()], 'hidden': True},
           {'label': 'Predicted unemployment rate by our model (personalized policies)', 'data': [round(value, 4) for value in new_pred.tolist()]},
         ]
       else:
