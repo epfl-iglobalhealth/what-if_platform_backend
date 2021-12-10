@@ -25,7 +25,7 @@ class Predict:
 
     self.window_size = window_size
 
-  def original_predictions(self, prediction_data):
+  def make_predictions(self, prediction_data):
     constant_data = prediction_data[self.columns_to_use['constant']]
     variable_data = prediction_data[self.columns_to_use['variable']]
     training_data = self.final_data[self.final_data['iso_code'] != self.iso_code]
@@ -70,7 +70,7 @@ class Predict:
                                     (self.final_data.index <= end_date)]
 
     ground = original_data['shifted_r_estim'] if not self.economic else original_data['unemployment_rate_idx']
-    index, original_pred = self.original_predictions(original_data)
+    index, original_pred = self.make_predictions(original_data)
 
 
     if data is not None:
@@ -80,7 +80,7 @@ class Predict:
         new_prediction_data = pd.concat([data, original_data[weather_cols]], axis=1)
       else:
         new_prediction_data = pd.concat([data, original_data['shifted_r_estim']], axis=1)
-      index, new_pred = self.original_predictions(new_prediction_data)
+      index, new_pred = self.make_predictions(new_prediction_data)
 
 
     #error = [round(value, 4) for value in np.abs(pred - ground).values.tolist()]
@@ -104,8 +104,8 @@ class Predict:
         y = [
           {'label': 'Reported viral transmission', 'data': [round(value, 4) for value in ground.values.tolist()]},
           {'label': 'Predicted viral transmission by our model (original policies)', 'data': [round(value, 4) for value in original_pred.tolist()]},
+          {'label': 'Epidemic tipping point: Viral transmission becomes exponential', 'data': [1 for _ in x]},
           {'label': 'Predicted viral transmission by our model (personalized policies)', 'data': [round(value, 4) for value in new_pred.tolist()]},
-          {'label': 'Epidemic tipping point: Viral transmission becomes exponential', 'data': [1 for _ in x]}
         ]
       else:
         y = [
@@ -126,7 +126,7 @@ class Predict:
         y = [
           {'label': 'Reported unemployment rate',
            'data': [round(value, 4) for value in ground.values.tolist()]},
-          {'label': 'Predicted unemployment rate by our model (original policies)',
+          {'label': 'Predicted unemployment rate by our model',
            'data': [round(value, 4) for value in original_pred.tolist()]},
         ]
 
