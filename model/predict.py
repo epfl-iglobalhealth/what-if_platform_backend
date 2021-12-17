@@ -61,8 +61,6 @@ class Predict:
 
     return index, pred
 
-
-
   def predict_for_a_period(self, start_date: str, end_date: str, data=None):
     start_date = datetime.strptime(start_date, "%Y-%m-%d")
     end_date = datetime.strptime(end_date, "%Y-%m-%d")
@@ -73,18 +71,17 @@ class Predict:
     ground = original_data['shifted_r_estim'] if not self.economic else original_data['unemployment_rate_idx']
     index, original_pred = self.make_predictions(original_data)
 
-
     if data is not None:
       if not self.economic:
         weather_cols = self.columns_to_use['variable'][:12]
         # prediction data is data concatenated to original_data of weather_cols
         new_prediction_data = pd.concat([data, original_data[weather_cols]], axis=1)
       else:
-        new_prediction_data = pd.concat([data, original_data['shifted_r_estim']], axis=1)
+        new_prediction_data = data
+
       index, new_pred = self.make_predictions(new_prediction_data)
 
-
-    #error = [round(value, 4) for value in np.abs(pred - ground).values.tolist()]
+    # error = [round(value, 4) for value in np.abs(pred - ground).values.tolist()]
     x = index.strftime('%Y-%m-%d').values.tolist()
     if self.economic:
       if data is not None:
@@ -98,31 +95,36 @@ class Predict:
       original_pred = df2['pred'].values
 
       x = df2.index.strftime('%Y-%m').values.tolist()
-      #error = [round(value, 4) for value in df2['error'].values.tolist()]
+      # error = [round(value, 4) for value in df2['error'].values.tolist()]
       ground = df2['ground']
 
     if not self.economic:
       if data is not None:
         y = [
           {'label': 'Reported viral transmission', 'data': [round(value, 4) for value in ground.values.tolist()]},
-          {'label': 'Predicted viral transmission by our model (original policies)', 'data': [round(value, 4) for value in original_pred.tolist()], 'hidden': True},
+          {'label': 'Predicted viral transmission by our model (original policies)',
+           'data': [round(value, 4) for value in original_pred.tolist()], 'hidden': True},
           {'label': 'Epidemic tipping point: Viral transmission becomes exponential', 'data': [1 for _ in x]},
-          {'label': 'Predicted viral transmission by our model (personalized policies)', 'data': [round(value, 4) for value in new_pred.tolist()]},
+          {'label': 'Predicted viral transmission by our model (personalized policies)',
+           'data': [round(value, 4) for value in new_pred.tolist()]},
         ]
       else:
         y = [
           {'label': 'Reported viral transmission', 'data': [round(value, 4) for value in ground.values.tolist()]},
-          {'label': 'Predicted viral transmission by our model', 'data': [round(value, 4) for value in original_pred.tolist()]},
+          {'label': 'Predicted viral transmission by our model',
+           'data': [round(value, 4) for value in original_pred.tolist()]},
           {'label': 'Epidemic tipping point: Viral transmission becomes exponential', 'data': [1 for _ in x]},
-          #{'label': 'Error (MAE)', 'data': error}
+          # {'label': 'Error (MAE)', 'data': error}
         ]
     else:
       if data is not None:
         y = [
           {'label': 'Reported unemployment rate',
            'data': [round(value, 4) for value in ground.values.tolist()]},
-          {'label': 'Predicted unemployment rate by our model (original policies)', 'data': [round(value, 4) for value in original_pred.tolist()], 'hidden': True},
-          {'label': 'Predicted unemployment rate by our model (personalized policies)', 'data': [round(value, 4) for value in new_pred.tolist()]},
+          {'label': 'Predicted unemployment rate by our model (original policies)',
+           'data': [round(value, 4) for value in original_pred.tolist()], 'hidden': True},
+          {'label': 'Predicted unemployment rate by our model (personalized policies)',
+           'data': [round(value, 4) for value in new_pred.tolist()]},
         ]
       else:
         y = [
@@ -131,8 +133,6 @@ class Predict:
           {'label': 'Predicted unemployment rate by our model',
            'data': [round(value, 4) for value in original_pred.tolist()]},
         ]
-
-
 
     return json.loads(json.dumps({'x': x, 'y': y}, ignore_nan=True))
 

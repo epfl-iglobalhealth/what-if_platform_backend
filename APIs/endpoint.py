@@ -58,10 +58,10 @@ def get_shap_values(country):
   return jsonify(cd.get_shap_for_country())
 
 # app route get countries
-@app.route('/api/v1/get_countries', methods=['GET'])
-def get_countries():
+@app.route('/api/v1/<type>/get_countries', methods=['GET'])
+def get_countries(type):
   cd = CountryData('CHE') # CHE is a dummy country to get all countries
-  return jsonify(cd.get_all_countries())
+  return jsonify(cd.get_all_countries(type))
 
 #app route predict_for_country_economic
 @app.route('/api/v1/<country>/predict_economic', methods=['GET'])
