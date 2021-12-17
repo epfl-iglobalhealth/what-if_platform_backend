@@ -5,13 +5,13 @@ import yaml
 
 class CountryData:
 
-  def __init__(self):
+  def __init__(self, iso_code):
     self.data = pd.read_csv('./model/data/final_data.csv', parse_dates=['date']).set_index('date')
     self.shap = pd.read_csv('./model/data/final_shap.csv')
-    self.features = CountryData.extract_feature_names()
+    self.iso_code = iso_code
+    self.features = CountryData.extract_feature_names(self.iso_code)
 
-  @staticmethod
-  def extract_feature_names(economic=False):
+  def extract_feature_names(self, iso_code, economic=False):
     if economic:
       with open('./model/config/economic_features.yaml', 'r', encoding='utf-8') as f:
         economic_features = yaml.load(f, Loader=yaml.FullLoader)
@@ -19,6 +19,7 @@ class CountryData:
                            economic_features['sanitary'] + \
                            economic_features['economic']
         variable_columns = economic_features['policies'] + ['shifted_r_estim']
+        #TODO: REMOVE SHIFTED
     else:
       with open('./model/config/r_estim_features.yaml', 'r', encoding='utf-8') as file:
         swissre_features = yaml.load(file, Loader=yaml.FullLoader)
@@ -27,11 +28,12 @@ class CountryData:
                          swissre_features['economic']
       variable_columns = swissre_features['weather'] + \
                          swissre_features['policies']
+    final_const_col = [col for col in constant_columns if not self.data[
+      self.data['iso_code'] == iso_code][col].isnull().all()]
+    final_var_col = [col for col in variable_columns if not self.data[
+      self.data['iso_code'] == iso_code][col].isnull().all()]
 
-    print(constant_columns)
-    print(variable_columns)
-
-    return {'constant': constant_columns, 'variable': variable_columns}
+    return {'constant': final_const_col, 'variable': final_var_col}
 
   @staticmethod
   def get_sundays_between_dates(start_date: str, end_date: str):
@@ -48,7 +50,7 @@ class CountryData:
     return {'x': data['variable'].values.tolist(), 'y': [{'data':data['shap_value_normalized'].values.tolist()}]}
 
   def get_constant_features(self, iso_code: str):
-    return self.data[self.data.iso_code == iso_code][self.features['constant']].iloc[0].to_dict()
+    return self.data[self.data.iso_code == iso_code][self.extract_feature_names(iso_code)['constant']].iloc[0].to_dict()
 
   def get_policies_name(self):
     return self.features['variable'][12:]

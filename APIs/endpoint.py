@@ -21,7 +21,7 @@ def predict_for_country(country):
 
 @app.route('/api/v1/<country>/get_constant_data', methods=['GET'])
 def get_constant_data(country):
-  cd = CountryData()
+  cd = CountryData(country)
   return jsonify(cd.get_constant_features(country))
 
 
@@ -30,7 +30,7 @@ def get_variable_data(country):
   start_date = request.args.get('start_date')
   end_date = request.args.get('end_date')
   print(start_date, end_date)
-  cd = CountryData()
+  cd = CountryData(country)
   policies_df = cd.get_policies_for_a_period(country, start_date, end_date)
   # convert the index, which is a date, into a string
   dates = policies_df.index.astype(str).values.tolist()
@@ -54,13 +54,13 @@ def predict_for_country_personalized(country):
 # app route get shap values for a country
 @app.route('/api/v1/<country>/get_shap_values', methods=['GET'])
 def get_shap_values(country):
-  cd = CountryData()
+  cd = CountryData(country)
   return jsonify(cd.get_shap_for_country(country))
 
 # app route get countries
 @app.route('/api/v1/get_countries', methods=['GET'])
 def get_countries():
-  cd = CountryData()
+  cd = CountryData('CHE') # CHE is a dummy country to get all countries
   return jsonify(cd.get_all_countries())
 
 #app route predict_for_country_economic
