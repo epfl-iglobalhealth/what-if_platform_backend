@@ -9,9 +9,8 @@ class CountryData:
     self.data = pd.read_csv('./model/data/final_data.csv', parse_dates=['date']).set_index('date')
     self.shap = pd.read_csv('./model/data/final_shap.csv')
     self.iso_code = iso_code
-    self.features = self.extract_feature_names(self.iso_code)
 
-  def extract_feature_names(self, iso_code, economic=False):
+  def extract_feature_names(self, economic=False):
     if economic:
       with open('./model/config/economic_features.yaml', 'r', encoding='utf-8') as f:
         economic_features = yaml.load(f, Loader=yaml.FullLoader)
@@ -29,9 +28,9 @@ class CountryData:
       variable_columns = swissre_features['weather'] + \
                          swissre_features['policies']
     final_const_col = [col for col in constant_columns if not self.data[
-      self.data['iso_code'] == iso_code][col].isnull().all()]
+      self.data['iso_code'] == self.iso_code][col].isnull().all()]
     final_var_col = [col for col in variable_columns if not self.data[
-      self.data['iso_code'] == iso_code][col].isnull().all()]
+      self.data['iso_code'] == self.iso_code][col].isnull().all()]
 
     return {'constant': final_const_col, 'variable': final_var_col}
 
@@ -42,20 +41,20 @@ class CountryData:
     sundays = pd.date_range(start_date, end_date, freq='W-SUN')
     return sundays
 
-  def get_shap_for_country(self, iso_code):
-    data = self.shap[self.shap.iso3 == iso_code][['variable', 'shap_value_normalized']].\
+  def get_shap_for_country(self):
+    data = self.shap[self.shap.iso3 == self.iso_code][['variable', 'shap_value_normalized']].\
       sort_values(by='shap_value_normalized', ascending=False)
     # approximate shap_values_normalized to 4 decimal places
     data['shap_value_normalized'] = data['shap_value_normalized'].round(4)
     return {'x': data['variable'].values.tolist(), 'y': [{'data':data['shap_value_normalized'].values.tolist()}]}
 
-  def get_constant_features(self, iso_code: str):
-    return self.data[self.data.iso_code == iso_code][self.extract_feature_names(iso_code)['constant']].iloc[0].to_dict()
+  def get_constant_features(self):
+    return self.data[self.data.iso_code == self.iso_code][self.extract_feature_names()['constant']].iloc[0].to_dict()
 
   def get_policies_name(self):
-    return self.features['variable'][12:]
+    return self.extract_feature_names()['variable'][12:]
 
-  def get_policies_for_a_period(self, iso_code: str, start_date: str, end_date: str):
+  def get_policies_for_a_period(self, start_date: str, end_date: str):
     # call the function get_sundays to get the sundays of the given period
     sundays = CountryData.get_sundays_between_dates(start_date, end_date)
     end_date = np.datetime64(end_date)
@@ -65,7 +64,7 @@ class CountryData:
       sundays = np.append(sundays, end_date)
 
     # get the data of the given country where the index is equal to the sundays
-    data = self.data[(self.data.iso_code == iso_code) & (self.data.index.isin(sundays))][self.get_policies_name()]
+    data = self.data[(self.data.iso_code == self.iso_code) & (self.data.index.isin(sundays))][self.get_policies_name()]
     # return the dataframe
     return data
 
