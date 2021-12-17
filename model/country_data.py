@@ -9,7 +9,7 @@ class CountryData:
     self.data = pd.read_csv('./model/data/final_data.csv', parse_dates=['date']).set_index('date')
     self.shap = pd.read_csv('./model/data/final_shap.csv')
     self.iso_code = iso_code
-    self.features = CountryData.extract_feature_names(self.iso_code)
+    self.features = self.extract_feature_names(self.iso_code)
 
   def extract_feature_names(self, iso_code, economic=False):
     if economic:
