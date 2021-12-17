@@ -22,7 +22,7 @@ class Predict:
         checkpoint_path=f"./model/checkpoints/reproduction_rate/{self.iso_code}/model.ckpt")
       self.final_data = pd.read_csv('./model/data/final_data.csv', parse_dates=['date']).set_index('date')
     self.cd = CountryData(iso_code)
-    self.columns_to_use = self.cd.extract_feature_names(economic)
+    self.columns_to_use = self.cd.extract_feature_names(iso_code, economic)
 
     self.window_size = window_size
 
